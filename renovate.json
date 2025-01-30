@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "baseBranches": [
+    "main"
+  ],
+  "labels": [
+    "Renovate",
+    "Dependencies"
+  ],
+  "automergeType": "branch",
+  "automergeComment": "chore(deps): updated dependency",
+  "automerge": true
+}
