@@ -4,7 +4,10 @@ export default function Home() {
       <section
         id="header"
         className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
-        style={{ backgroundImage: "url('/header.png')" }}
+        style={{
+          backgroundImage:
+            "url('https://woori-ab.github.io/website/header.png')",
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
         <div className="absolute top-0 p-2 z-20">
@@ -34,7 +37,9 @@ export default function Home() {
       <section
         id="menu"
         className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
-        style={{ backgroundImage: "url('/menu.png')" }}
+        style={{
+          backgroundImage: "url('https://woori-ab.github.io/website/menu.png')",
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
       </section>
@@ -120,7 +125,10 @@ export default function Home() {
       <section
         id="front"
         className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
-        style={{ backgroundImage: "url('/front.png')" }}
+        style={{
+          backgroundImage:
+            "url('https://woori-ab.github.io/website/front.png')",
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
       </section>
