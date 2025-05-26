@@ -1,19 +1,25 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Glory, Kodchasan, Zen_Loop } from "next/font/google";
 
 const title = "Woori website";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const zenLoop = Zen_Loop({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-zenLoop",
 });
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const glory = Glory({
+  subsets: ["latin"],
+  weight: "300",
+  variable: "--font-glory",
+});
+
+const kodchasan = Kodchasan({
+  subsets: ["latin"],
+  weight: "300",
+  variable: "--font-kodchasan",
 });
 
 export const metadata: Metadata = {
@@ -26,20 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-300 dark:bg-gray-950`}
-      >
+    <html
+      lang="en"
+      className={`${zenLoop.variable} ${glory.variable} ${kodchasan.variable} font-sans`}
+    >
+      <body className={"antialiased"}>
         <main>
-          <div className="flex flex-col container mx-auto bg-gray-100 dark:bg-gray-900 p-12">
-            <h1
-              className="mx-auto text-4xl text-center font-black mb-2 text-gray-700 dark:text-gray-100"
-              data-testid="layout-h1"
-            >
-              {title}
-            </h1>
-            <div>{children}</div>
-          </div>
+          <div>{children}</div>
         </main>
       </body>
     </html>
