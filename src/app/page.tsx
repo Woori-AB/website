@@ -11,7 +11,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
         <div className="absolute top-0 p-2 z-20">
-          <span id="header-title" className="text-[clamp(2rem,10vw,5rem)]">
+          <span id="header-title" className="text-[clamp(3rem,10vw,5rem)]">
             WOORI
           </span>
         </div>
