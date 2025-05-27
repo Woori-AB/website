@@ -54,8 +54,9 @@ export default function Home() {
             >
               <p className="text-2xl italic font-gloryLight md:mr-32">
                 Välkommen till Woori - ett italienskt kök med hjärta och själ,
-                grundat av två par i vänskap och kärlek. "Woori" betyder "vi" på
-                koreanska, och här är alla en del av vår gemenskap.
+                grundat av två par i vänskap och kärlek. &quot;Woori&quot;
+                betyder &quot;vi&quot; på koreanska, och här är alla en del av
+                vår gemenskap.
               </p>
             </motion.div>
             <motion.div
