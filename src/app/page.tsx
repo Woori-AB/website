@@ -9,13 +9,13 @@ export default function Home() {
         id="header"
         className="relative flex justify-center min-h-84 lg:aspect-[3/1] w-full"
         style={{
-          maxHeight: "480px",
+          maxHeight: "420px",
         }}
       >
         <div
           className="w-full overflow-hidden"
           style={{
-            maxHeight: "480px",
+            maxHeight: "420px",
           }}
         >
           <div
