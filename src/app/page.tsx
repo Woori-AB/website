@@ -90,7 +90,7 @@ export default function Home() {
             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center rotate-1">
+            <div className="flex flex-col items-center text-center">
               <h1>Pizza</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Margherita 149 kr</h2>
@@ -171,8 +171,8 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center -rotate-2">
-              <h1>- Barnmeny -</h1>
+            <div className="flex flex-col items-center text-center">
+              <h1>Barnmeny</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Ravioli 80 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
