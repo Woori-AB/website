@@ -22,7 +22,7 @@ export default function Home() {
             className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
             style={{
               backgroundImage:
-                "url('https://woori-ab.github.io/website/header.png')",
+                "url('https://woori-ab.github.io/website/front.png')",
             }}
           ></div>
         </div>
@@ -77,7 +77,8 @@ export default function Home() {
         id="menu"
         className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
         style={{
-          backgroundImage: "url('https://woori-ab.github.io/website/menu.png')",
+          backgroundImage:
+            "url('https://woori-ab.github.io/website/pizza.png')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
@@ -198,16 +199,6 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </section>
-      <section
-        id="front"
-        className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
-        style={{
-          backgroundImage:
-            "url('https://woori-ab.github.io/website/front.png')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
       </section>
       <section id="location" className="flex justify-center py-12">
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
