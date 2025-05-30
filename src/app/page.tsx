@@ -236,10 +236,10 @@ export default function Home() {
                 <span>
                   Mail:{" "}
                   <a
-                    href="mailto:wooristockholm@gmail.com"
+                    href="mailto:kontakt@wooristockholm.se"
                     className="hover:underline"
                   >
-                    wooristockholm@gmail.com
+                    kontakt@wooristockholm.se
                   </a>
                 </span>
               </div>
