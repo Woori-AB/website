@@ -102,7 +102,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Pepperoni 149 kr</h2>
-                <span>Tomatsås, Fior di latte, Pepperoni, Parmesan</span>
+                <span>Tomatsås, Fior di latte, Pepperoni, Parmesan, Basilika</span>
                 <span className="italic">
                   (Allergi: Gluten, Laktos, Mjölkprotein)
                 </span>
@@ -110,10 +110,10 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Prosciutto 169 kr</h2>
                 <span>
-                  Tomatsås, Fior di latte, Prosciutto crudo, Ruccola, Parmesan
+                  Tomatsås, Fior di latte, Prosciutto crudo, Pesto, Parmesan, Ruccola, Pinjenötter
                 </span>
                 <span className="italic">
-                  (Allergi: Gluten, Laktos, Mjölkprotein)
+                  (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
                 </span>
               </div>
             </div>
@@ -195,6 +195,8 @@ export default function Home() {
                 <h2>Coca-Cola Zero (33cl) 30 kr</h2>
                 <h2>Ramlösa Natuell (33cl) 30 kr</h2>
                 <h2>Ramlösa Citrus (33cl) 30 kr</h2>
+                <h2>Fanta (33cl) 30 kr</h2>
+                <h2>Red Bull Sockerfri (25cl) 30 kr</h2>
               </div>
             </div>
           </motion.div>
