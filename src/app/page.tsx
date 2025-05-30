@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Ravioli 169 kr</h2>
-                <span>Spenat, Ricotta, Parmesan, Friterad salvia</span>
+                <span>Spenat, Ricotta, Parmesan</span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
               </div>
             </div>
