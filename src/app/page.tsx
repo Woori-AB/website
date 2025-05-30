@@ -161,7 +161,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Tuna Niçoise 175 kr</h2>
                 <span>
-                  Sallad, Tonfisk, Tomater, Kokt ägg, Oliver, Kaprismajonnäs
+                  Sallad, Tonfisk, Tomater, Oliver, Kaprismajonnäs
                 </span>
               </div>
             </div>
