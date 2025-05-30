@@ -140,7 +140,7 @@ export default function Home() {
                   Burrata
                 </span>
                 <span className="italic">
-                  (Allergi: Laktos, Mjölkprotein, nötter)
+                  (Allergi: Laktos, Mjölkprotein, Nötter)
                 </span>
               </div>
               <div className="flex flex-col items-center text-center">
