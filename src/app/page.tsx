@@ -95,7 +95,7 @@ export default function Home() {
               <h1>Pizza</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Margherita 149 kr</h2>
-                <span>Tomatsås, Fior di latte, Burrata, Parmesan</span>
+                <span>Tomatsås, Fior di latte, Burrata, Parmesan, Basilika</span>
                 <span className="italic">
                   (Allergi: Gluten, Laktos, Mjölkprotein)
                 </span>
