@@ -26,7 +26,7 @@ export default function Home() {
             }}
           ></div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/0 z-10"></div>
         <div className="absolute top-0 p-2 z-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -75,13 +75,25 @@ export default function Home() {
       </section>
       <section
         id="menu"
-        className="relative flex justify-center aspect-[3/1] bg-no-repeat bg-contain bg-center"
+        className="relative flex justify-center min-h-84 lg:aspect-[3/1] w-full"
         style={{
-          backgroundImage:
-            "url('https://woori-ab.github.io/website/pizza.png')",
+          maxHeight: "420px",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
+        <div
+          className="w-full overflow-hidden"
+          style={{
+            maxHeight: "420px",
+          }}
+        >
+          <div
+            className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
+            style={{
+              backgroundImage:
+                "url('https://woori-ab.github.io/website/pizza.png')",
+            }}
+          ></div>
+        </div>
       </section>
       <section id="menu" className="flex justify-center py-12">
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
@@ -95,14 +107,18 @@ export default function Home() {
               <h1>Pizza</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Margherita 149 kr</h2>
-                <span>Tomatsås, Fior di latte, Burrata, Parmesan, Basilika</span>
+                <span>
+                  Tomatsås, Fior di latte, Burrata, Parmesan, Basilika
+                </span>
                 <span className="italic">
                   (Allergi: Gluten, Laktos, Mjölkprotein)
                 </span>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Pepperoni 149 kr</h2>
-                <span>Tomatsås, Fior di latte, Pepperoni, Parmesan, Basilika</span>
+                <span>
+                  Tomatsås, Fior di latte, Pepperoni, Parmesan, Basilika
+                </span>
                 <span className="italic">
                   (Allergi: Gluten, Laktos, Mjölkprotein)
                 </span>
@@ -110,7 +126,8 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Prosciutto 169 kr</h2>
                 <span>
-                  Tomatsås, Fior di latte, Prosciutto crudo, Pesto, Parmesan, Ruccola, Pinjenötter
+                  Tomatsås, Fior di latte, Prosciutto crudo, Pesto, Parmesan,
+                  Ruccola, Pinjenötter
                 </span>
                 <span className="italic">
                   (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
@@ -160,9 +177,7 @@ export default function Home() {
               <h1>Sallad</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Tuna Niçoise 175 kr</h2>
-                <span>
-                  Sallad, Tonfisk, Tomater, Oliver, Kaprismajonnäs
-                </span>
+                <span>Sallad, Tonfisk, Tomater, Oliver, Kaprismajonnäs</span>
               </div>
             </div>
           </motion.div>
@@ -202,7 +217,10 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section id="location" className="flex justify-center py-12">
+      <section
+        id="location"
+        className="flex justify-center py-12 dark:bg-black/50 bg-black/3"
+      >
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
