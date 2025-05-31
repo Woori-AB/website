@@ -218,7 +218,7 @@ export default function Home() {
               <span>Torsdag: 11:00 - 20:00</span>
               <span>Fredag: 11:00 - 20:00</span>
               <span>Lördag: 11:00 - 20:00</span>
-              <span>Söndag: Stängt</span>
+              <span>Söndag: 11:00 - 17:00</span>
             </div>
           </motion.div>
           <motion.div
