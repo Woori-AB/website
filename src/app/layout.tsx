@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Glory, Kodchasan, Zen_Loop } from "next/font/google";
 
-const title = "Woori website";
+const title = "Woori";
 
 const zenLoop = Zen_Loop({
   subsets: ["latin"],
