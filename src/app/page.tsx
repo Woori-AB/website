@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 const foodImages = [
@@ -29,6 +30,12 @@ export default function Home() {
 
   return (
     <div data-testid="Home">
+      <Head>
+        {foodImages.map((foodImage) => (
+          <link key={foodImage} rel="preload" href={foodImage} as="image" />
+        ))}
+        <link rel="preload" href="/path/to/image.ext" as="image" />
+      </Head>
       <section
         id="header"
         className="relative flex justify-center min-h-84 lg:aspect-[3/1] w-full"
