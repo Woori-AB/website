@@ -150,6 +150,9 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Vesuvio 129 kr</h2>
                 <span>Tomatsås, Fior di latte, Skinka, Parmesan</span>
+                <span className="italic">
+                  (Allergi: Gluten, Laktos, Mjölkprotein)
+                </span>
                 <h2>Margherita 149 kr</h2>
                 <span>
                   Tomatsås, Fior di latte, Burrata, Parmesan, Basilika
