@@ -1,8 +1,34 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+const basePath = "/website";
+
+const foodImages = [
+  `${basePath}/pizza.png`,
+  `${basePath}/pesto-pasta.png`,
+  `${basePath}/truffle-pasta.png`,
+  `${basePath}/tuna-pasta.png`,
+];
+
+const fadeVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+};
 
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % foodImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div data-testid="Home">
       <section
@@ -21,8 +47,7 @@ export default function Home() {
           <div
             className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
             style={{
-              backgroundImage:
-                "url('https://woori-ab.github.io/website/front.png')",
+              backgroundImage: `url('${basePath}/front.png')`,
             }}
           ></div>
         </div>
@@ -92,13 +117,19 @@ export default function Home() {
             maxHeight: "420px",
           }}
         >
-          <div
-            className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
-            style={{
-              backgroundImage:
-                "url('https://woori-ab.github.io/website/pizza.png')",
-            }}
-          ></div>
+          <AnimatePresence>
+            <motion.img
+              key={foodImages[index]}
+              src={foodImages[index]}
+              alt={`Slide ${index}`}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              variants={fadeVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 1 }}
+            />
+          </AnimatePresence>
         </div>
       </section>
       <section id="menu" className="flex justify-center py-12">
