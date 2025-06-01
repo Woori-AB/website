@@ -3,13 +3,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const basePath = "/website";
-
 const foodImages = [
-  `${basePath}/pizza.png`,
-  `${basePath}/pesto-pasta.png`,
-  `${basePath}/truffle-pasta.png`,
-  `${basePath}/tuna-pasta.png`,
+  "/pizza.png",
+  "/pesto-pasta.png",
+  "/truffle-pasta.png",
+  "/tuna-pasta.png",
 ];
 
 const fadeVariants = {
@@ -47,7 +45,7 @@ export default function Home() {
           <div
             className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
             style={{
-              backgroundImage: `url('${basePath}/front.png')`,
+              backgroundImage: "url('/front.png')",
             }}
           ></div>
         </div>
