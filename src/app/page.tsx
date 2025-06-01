@@ -33,10 +33,16 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
+            className="relative"
           >
-            <span id="header-title" className="text-[5rem]">
-              WOORI
-            </span>
+            <div className="flex relative">
+              <div className="relative">
+                <span id="header-title-primary">WOORI</span>
+              </div>
+              <div className="relative top-6">
+                <span id="header-title-secondary">우리</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>

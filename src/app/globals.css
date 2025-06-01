@@ -12,8 +12,16 @@
   }
 }
 
-#header-title {
+#header-title-primary {
   font-family: var(--font-zenLoop);
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+#header-title-secondary {
+  font-family: var(--font-singleDay);
+  font-size: 1.6rem;
+  vertical-align: top;
   color: #ffffff;
 }
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Glory, Kodchasan, Zen_Loop } from "next/font/google";
+import { Glory, Kodchasan, Zen_Loop, Single_Day } from "next/font/google";
 
 const title = "Woori";
 
@@ -22,6 +22,11 @@ const kodchasan = Kodchasan({
   variable: "--font-kodchasan",
 });
 
+const singleDay = Single_Day({
+  weight: "400",
+  variable: "--font-singleDay",
+});
+
 export const metadata: Metadata = {
   title,
 };
@@ -34,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${zenLoop.variable} ${glory.variable} ${kodchasan.variable} font-sans`}
+      className={`${zenLoop.variable} ${glory.variable} ${kodchasan.variable} ${singleDay.variable} font-sans`}
     >
       <body className={"antialiased"}>
         <main>
