@@ -7,7 +7,7 @@ const foodImages = [
   "/pizza.png",
   "/pesto-pasta.png",
   "/truffle-pasta.png",
-  "/tuna-pasta.png",
+  "/tuna-salad.png",
 ];
 
 const fadeVariants = {
