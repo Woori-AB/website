@@ -237,6 +237,10 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               <h1>Barnmeny</h1>
               <div className="flex flex-col items-center text-center">
+                <h2>Barnpizza 99 kr</h2>
+                <span>Valfri variant från huvudmenyn</span>
+              </div>
+              <div className="flex flex-col items-center text-center">
                 <h2>Ravioli 80 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
