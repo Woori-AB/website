@@ -137,6 +137,21 @@ export default function Home() {
           </AnimatePresence>
         </div>
       </section>
+      <section id="info" className="flex justify-center py-12">
+        <div className="container max-w-screen-lg">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col items-center text-center">
+              <h2>Varmt välkomna att äta hos oss eller för avhämtning</h2>
+              <h2>Vi erbjuder ej utkörning</h2>
+            </div>
+          </motion.div>
+        </div>
+      </section>
       <section id="menu" className="flex justify-center py-12">
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
           <motion.div
