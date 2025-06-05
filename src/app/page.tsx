@@ -198,7 +198,7 @@ export default function Home() {
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
               </div>
               <div className="flex flex-col items-center text-center">
-                <h2>Pesto alla Genovese 179 kr</h2>
+                <h2>Pesto alla Genovese 139 kr</h2>
                 <span>
                   Spaghetti, Basilika, Cashewnötter, Vitlök, Parmesan, Tomater,
                   Burrata
@@ -208,7 +208,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex flex-col items-center text-center">
-                <h2>Ravioli 169 kr</h2>
+                <h2>Ravioli 139 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
               </div>
@@ -223,7 +223,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               <h1>Sallad</h1>
               <div className="flex flex-col items-center text-center">
-                <h2>Tuna Niçoise 175 kr</h2>
+                <h2>Tuna Niçoise 129 kr</h2>
                 <span>Sallad, Tonfisk, Tomater, Oliver, Kaprismajonnäs</span>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
                 <span>Valfri variant från huvudmenyn</span>
               </div>
               <div className="flex flex-col items-center text-center">
-                <h2>Ravioli 80 kr</h2>
+                <h2>Ravioli 60 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
               </div>
