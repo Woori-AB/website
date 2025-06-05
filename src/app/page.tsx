@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Instagram } from "lucide-react";
 
 const foodImages = [
   "/pizza.png",
@@ -73,6 +74,16 @@ export default function Home() {
                 <span id="header-title-secondary">우리</span>
               </div>
             </div>
+            <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
+              <a
+                className="flex gap-2"
+                href="https://www.instagram.com/wooristockholm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram /> Follow us on Instagram
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -137,7 +148,7 @@ export default function Home() {
           </AnimatePresence>
         </div>
       </section>
-      <section id="info" className="flex justify-center py-12">
+      <section id="info" className="flex justify-center py-12 bg-black/3">
         <div className="container max-w-screen-lg">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -147,7 +158,7 @@ export default function Home() {
           >
             <div className="flex flex-col items-center text-center">
               <h2>Varmt välkomna att äta hos oss eller för avhämtning</h2>
-              <h2>Vi erbjuder ej utkörning</h2>
+              <h2>För tillfället erbjuder vi ej utkörning, men Wolt är planerat</h2>
             </div>
           </motion.div>
         </div>
