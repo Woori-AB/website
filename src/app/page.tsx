@@ -53,11 +53,11 @@ export default function Home() {
           <div
             className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
             style={{
-              backgroundImage: "url('/front.png')",
+              backgroundImage: "url('/restaurant.jpg')",
             }}
           ></div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/0 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/0 z-10"></div>
         <div className="absolute top-0 p-2 z-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
