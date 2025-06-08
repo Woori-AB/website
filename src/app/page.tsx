@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import { Instagram } from "lucide-react";
 
 const foodImages = [
-  "/pizza.png",
-  "/pesto-pasta.png",
-  "/truffle-pasta.png",
-  "/tuna-salad.png",
+  "/pesto-pasta-sm.jpg",
+  "/truffle-pasta-sm.jpg",
+  "/tuna-salad-sm.jpg",
+  "/pizza-sm.jpg",
 ];
 
 const fadeVariants = {
