@@ -211,6 +211,31 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col items-center text-center">
+              <h1>Koreanskt</h1>
+              <div className="flex flex-col items-center text-center">
+                <h2>Biff bibimbap 139 kr</h2>
+                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö.</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <h2>Svamp bibimbap 139 kr</h2>
+                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö.</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <h2>Bulgogi 149 kr</h2>
+                <span>Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök, Sesamolja, Sesamfrö</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
@@ -237,20 +262,6 @@ export default function Home() {
                 <h2>Ravioli 139 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col items-center text-center">
-              <h1>Sallad</h1>
-              <div className="flex flex-col items-center text-center">
-                <h2>Tuna Niçoise 129 kr</h2>
-                <span>Sallad, Tonfisk, Tomater, Oliver, Kaprismajonnäs</span>
               </div>
             </div>
           </motion.div>
