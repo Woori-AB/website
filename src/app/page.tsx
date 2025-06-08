@@ -53,7 +53,7 @@ export default function Home() {
           <div
             className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
             style={{
-              backgroundImage: "url('/restaurant.jpg')",
+              backgroundImage: "url('/main-picture-small.jpg')",
             }}
           ></div>
         </div>
