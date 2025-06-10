@@ -218,12 +218,12 @@ export default function Home() {
               <h1>Koreanskt</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Biff bibimbap 139 kr</h2>
-                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö.</span>
+                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Svamp bibimbap 139 kr</h2>
-                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö.</span>
+                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
               <div className="flex flex-col items-center text-center">
@@ -244,7 +244,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Tagliatelle al Tartufo e Funghi 189 kr</h2>
                 <span>
-                  Tagliatelle, Tryffelkräm, Shiitake, Skogschampinjoner
+                  Tagliatelle, Tryffelkräm, Shiitake, Skogschampinjoner, Parmesan
                 </span>
                 <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
               </div>
@@ -255,13 +255,13 @@ export default function Home() {
                   Burrata
                 </span>
                 <span className="italic">
-                  (Allergi: Laktos, Mjölkprotein, Nötter)
+                  (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
                 </span>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Ravioli 139 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
-                <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
+                <span className="italic">(Allergi: Gluten, Laktos, Mjölkprotein)</span>
               </div>
             </div>
           </motion.div>
@@ -280,7 +280,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Ravioli 60 kr</h2>
                 <span>Spenat, Ricotta, Parmesan</span>
-                <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
+                <span className="italic">(Allergi: Gluten, Laktos, Mjölkprotein)</span>
               </div>
             </div>
           </motion.div>
