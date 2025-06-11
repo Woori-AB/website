@@ -100,21 +100,11 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <p className="text-2xl italic font-gloryLight md:mr-32">
-                Välkommen till Woori - ett italienskt kök med hjärta och själ,
-                grundat av två par i vänskap och kärlek. &quot;Woori&quot;
-                betyder &quot;vi&quot; på koreanska, och här är alla en del av
-                vår gemenskap.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1.4, duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              <p className="text-2xl italic font-gloryLight md:ml-32">
-                Pizza och pasta står i fokus - varje måltid en varm stund, varje
-                gäst en del av familjen. Kom för smaken, stanna för gemenskapen.
+                Välkommen till Woori, en restaurang där italienska smaker möter
+                koreansk tradition. Namnet &quot;Woori&quot; betyder
+                &quot;vi&quot; på koreanska, och här är alla en del av vår
+                gemenskap. Njut av våra koreanska rätter tillsammans med pizza
+                och pasta.
               </p>
             </motion.div>
           </div>
@@ -158,7 +148,9 @@ export default function Home() {
           >
             <div className="flex flex-col items-center text-center">
               <h2>Varmt välkomna att äta hos oss eller för avhämtning</h2>
-              <h2>För tillfället erbjuder vi ej utkörning, men Wolt är planerat</h2>
+              <h2>
+                För tillfället erbjuder vi ej utkörning, men Wolt är planerat
+              </h2>
             </div>
           </motion.div>
         </div>
@@ -175,17 +167,28 @@ export default function Home() {
               <h1>Koreanskt</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Biff bibimbap 139 kr</h2>
-                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
+                <span>
+                  Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul
+                  lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås,
+                  Sesamolja, Sesamfrö
+                </span>
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Svamp bibimbap 139 kr</h2>
-                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
+                <span>
+                  Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta
+                  morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja,
+                  Sesamfrö
+                </span>
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h2>Bulgogi 149 kr</h2>
-                <span>Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök, Sesamolja, Sesamfrö</span>
+                <span>
+                  Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök,
+                  Sesamolja, Sesamfrö
+                </span>
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
             </div>
