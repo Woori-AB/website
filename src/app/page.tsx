@@ -168,6 +168,31 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col items-center text-center">
+              <h1>Koreanskt</h1>
+              <div className="flex flex-col items-center text-center">
+                <h2>Biff bibimbap 139 kr</h2>
+                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <h2>Svamp bibimbap 139 kr</h2>
+                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <h2>Bulgogi 149 kr</h2>
+                <span>Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök, Sesamolja, Sesamfrö</span>
+                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
@@ -206,81 +231,9 @@ export default function Home() {
                   (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
                 </span>
               </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col items-center text-center">
-              <h1>Koreanskt</h1>
-              <div className="flex flex-col items-center text-center">
-                <h2>Biff bibimbap 139 kr</h2>
-                <span>Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
-                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <h2>Svamp bibimbap 139 kr</h2>
-                <span>Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja, Sesamfrö</span>
-                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <h2>Bulgogi 149 kr</h2>
-                <span>Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök, Sesamolja, Sesamfrö</span>
-                <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col items-center text-center">
-              <h1>Pasta</h1>
-              <div className="flex flex-col items-center text-center">
-                <h2>Tagliatelle al Tartufo e Funghi 189 kr</h2>
-                <span>
-                  Tagliatelle, Tryffelkräm, Shiitake, Skogschampinjoner, Parmesan
-                </span>
-                <span className="italic">(Allergi: Laktos, Mjölkprotein)</span>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <h2>Pesto alla Genovese 139 kr</h2>
-                <span>
-                  Spaghetti, Basilika, Cashewnötter, Vitlök, Parmesan, Tomater,
-                  Burrata
-                </span>
-                <span className="italic">
-                  (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
-                </span>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <h2>Ravioli 139 kr</h2>
-                <span>Spenat, Ricotta, Parmesan</span>
-                <span className="italic">(Allergi: Gluten, Laktos, Mjölkprotein)</span>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col items-center text-center">
-              <h1>Barnmeny</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Barnpizza 99 kr</h2>
-                <span>Valfri variant från huvudmenyn</span>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <h2>Ravioli 60 kr</h2>
-                <span>Spenat, Ricotta, Parmesan</span>
-                <span className="italic">(Allergi: Gluten, Laktos, Mjölkprotein)</span>
+                <span>Valfri variant från menyn</span>
               </div>
             </div>
           </motion.div>
@@ -296,7 +249,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <h2>Coca-Cola (33cl) 30 kr</h2>
                 <h2>Coca-Cola Zero (33cl) 30 kr</h2>
-                <h2>Ramlösa Natuell (33cl) 30 kr</h2>
+                <h2>Ramlösa Naturell (33cl) 30 kr</h2>
                 <h2>Ramlösa Citrus (33cl) 30 kr</h2>
                 <h2>Fanta (33cl) 30 kr</h2>
                 <h2>Red Bull Sockerfri (25cl) 30 kr</h2>
