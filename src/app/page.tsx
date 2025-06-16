@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { Instagram } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const foodImages = [
   "/pesto-pasta-sm.jpg",
@@ -74,15 +74,28 @@ export default function Home() {
                 <span id="header-title-secondary">우리</span>
               </div>
             </div>
-            <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
-              <a
-                className="flex gap-2"
-                href="https://www.instagram.com/wooristockholm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram /> Follow us on Instagram
-              </a>
+            <div className="flex flex-col gap-2">
+              <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
+                <a
+                  className="flex gap-2"
+                  href="https://www.instagram.com/wooristockholm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram /> Follow us on Instagram
+                </a>
+              </div>
+              <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
+                <a
+                  className="flex gap-2"
+                  href="https://www.facebook.com/people/Woori/61577166415207"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Facebook style={{ marginLeft: -2 }} />{" "}
+                  <span style={{ marginLeft: 2 }}>Follow us on Facebook</span>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -163,7 +176,10 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center">
+            <div
+              id="korean-menu"
+              className="flex flex-col items-center text-center"
+            >
               <h1>Koreanskt</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Biff bibimbap 149 kr</h2>
@@ -199,7 +215,10 @@ export default function Home() {
             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center">
+            <div
+              id="pizza-menu"
+              className="flex flex-col items-center text-center"
+            >
               <h1>Pizza</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Vesuvio 129 kr</h2>
@@ -247,7 +266,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="md:col-span-2"
           >
-            <div className="flex flex-col items-center text-center">
+            <div
+              id="drink-menu"
+              className="flex flex-col items-center text-center"
+            >
               <h1>Dryck</h1>
               <div className="flex flex-col items-center text-center">
                 <h2>Coca-Cola (33cl) 30 kr</h2>
@@ -272,7 +294,10 @@ export default function Home() {
             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center">
+            <div
+              id="open-hours"
+              className="flex flex-col items-center text-center"
+            >
               <h1>Öppettider</h1>
               <span>Måndag: Stängt</span>
               <span>Tisdag: 11:00 - 20:00</span>
@@ -289,7 +314,10 @@ export default function Home() {
             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center text-center gap-4">
+            <div
+              id="contact-details"
+              className="flex flex-col items-center text-center gap-4"
+            >
               <div className="flex flex-col items-center text-center">
                 <h1>Besök oss</h1>
                 <span>Stagneliusvägen 47, 112 57, Stockholm</span>
