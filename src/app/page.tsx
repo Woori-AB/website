@@ -166,7 +166,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               <h1>Koreanskt</h1>
               <div className="flex flex-col items-center text-center">
-                <h2>Biff bibimbap 139 kr</h2>
+                <h2>Biff bibimbap 149 kr</h2>
                 <span>
                   Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul
                   lök, Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås,
@@ -184,7 +184,7 @@ export default function Home() {
                 <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
               </div>
               <div className="flex flex-col items-center text-center">
-                <h2>Bulgogi 149 kr</h2>
+                <h2>Bulgogi 159 kr</h2>
                 <span>
                   Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök,
                   Sesamolja, Sesamfrö
@@ -280,7 +280,7 @@ export default function Home() {
               <span>Torsdag: 11:00 - 20:00</span>
               <span>Fredag: 11:00 - 20:00</span>
               <span>Lördag: 11:00 - 20:00</span>
-              <span>Söndag: 11:00 - 17:00</span>
+              <span>Söndag: Stängt</span>
             </div>
           </motion.div>
           <motion.div
