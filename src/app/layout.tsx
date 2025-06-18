@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Glory, Kodchasan, Zen_Loop, Single_Day } from "next/font/google";
 
-const title = "Woori";
-
 const zenLoop = Zen_Loop({
   subsets: ["latin"],
   weight: "400",
@@ -28,7 +26,37 @@ const singleDay = Single_Day({
 });
 
 export const metadata: Metadata = {
-  title,
+  category: "Food & Drink",
+  creator: "Woori",
+  title: "Woori",
+  description: "Koreanska rätter i Fredhäll, Kristineberg!",
+  keywords: [
+    "Woori",
+    "Korean",
+    "Koreansk",
+    "Italiensk",
+    "Restaurang",
+    "Bibimbap",
+    "Bulgogi",
+    "Pizza",
+    "Fredhäll",
+    "Kristineberg",
+    "Stockholm",
+  ],
+  authors: [{ name: "Woori", url: "https://wooristockholm.se" }],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+  referrer: "origin-when-cross-origin",
+  openGraph: {
+    siteName: "Woori Stockholm",
+    title: "Woori",
+    description: "Woori",
+    authors: "Woori",
+    url: "https://wooristockholm.se",
+  },
 };
 
 export default function RootLayout({
