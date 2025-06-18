@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Woori Stockholm",
     title: "Woori",
-    description: "Woori",
+    description: "Koreanska rätter i Fredhäll, Kristineberg!",
     authors: "Woori",
     url: "https://wooristockholm.se",
   },
