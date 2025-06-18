@@ -325,7 +325,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <h1>Kontakt</h1>
-                <span>Telefon: 08-656 66 75</span>
+                <span>
+                  Telefon:{" "}
+                  <a href="tel:+4686566675" className="hover:underline">
+                    08-656 66 75
+                  </a>
+                </span>
                 <span>
                   Mail:{" "}
                   <a
