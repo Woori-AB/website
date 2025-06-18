@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Facebook, Instagram } from "lucide-react";
 
 const foodImages = [
+  "/bulgogi-sm.jpg",
   "/pesto-pasta-sm.jpg",
   "/truffle-pasta-sm.jpg",
   "/tuna-salad-sm.jpg",
