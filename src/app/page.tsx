@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import WoltLogo from "@/components/WoltLogo";
 
 const foodImages = [
   "/bulgogi-sm.jpg",
@@ -76,6 +77,18 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
+              <div className="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5]/100 text-white rounded-4xl px-4 py-2 overflow-hidden">
+                <a
+                  className="flex gap-2"
+                  href="https://wolt.com/en/swe/stockholm/restaurant/woori"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <WoltLogo />{" "}
+                  <span style={{ marginLeft: 2 }}>Leverans till dörren</span>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/0 z-10"></div>
+                </a>
+              </div>
               <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
                 <a
                   className="flex gap-2"
