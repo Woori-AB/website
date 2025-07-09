@@ -16,7 +16,7 @@ export default function ContactDetails() {
         <span>
           <a
             href="https://maps.app.goo.gl/9Ne5EDEXKdsdvig7A"
-            className="flex gap-1 hover:underline items-center"
+            className="flex gap-1 hover:underline items-start text-left"
           >
             <MapPin size={"1.2rem"} />
             Stagneliusvägen 47, 112 57, Stockholm

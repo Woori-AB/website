@@ -72,13 +72,13 @@ export default function Home() {
       </section>
       <section
         id="menu"
-        className="flex flex-col items-center justify-center py-12"
+        className="flex flex-col items-center justify-center py-12 px-8"
       >
         <Menu />
       </section>
       <section
         id="location"
-        className="flex justify-center py-12 dark:bg-black/50 bg-black/3"
+        className="flex justify-center py-12 dark:bg-black/50 bg-black/3  px-8"
       >
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
           <motion.div
