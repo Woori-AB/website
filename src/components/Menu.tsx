@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useIntl } from "react-intl";
 
 export default function Menu() {
+  const intl = useIntl();
+
   return (
     <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
       <motion.div
@@ -15,32 +18,53 @@ export default function Menu() {
           id="korean-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>Koreanskt</h1>
+          <h1>{intl.formatMessage({ id: "menu.korean" })}</h1>
           <div className="flex flex-col items-center text-center">
-            <h2>Biff bibimbap 149 kr</h2>
+            <h2>
+              {intl.formatMessage({ id: "menu.korean.beef-bibimbap.name" })} 149
+              kr
+            </h2>
             <span>
-              Ris, Entrecôte, Böngroddar, Stekta champinjoner, Stekt gul lök,
-              Stekta morötter, Gurka, Sunny side up ägg, Gochujangsås,
-              Sesamolja, Sesamfrö
+              {intl.formatMessage({
+                id: "menu.korean.beef-bibimbap.ingredients",
+              })}
             </span>
-            <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean.beef-bibimbap.allergies",
+              })}
+            </span>
           </div>
           <div className="flex flex-col items-center text-center">
-            <h2>Svamp bibimbap 139 kr</h2>
+            <h2>
+              {intl.formatMessage({ id: "menu.korean.mushroom-bibimbap.name" })}{" "}
+              139 kr
+            </h2>
             <span>
-              Ris, Böngroddar, Stekta champinjoner, Stekt gul lök, Stekta
-              morötter, Gurka, Sunny side up ägg, Gochujangsås, Sesamolja,
-              Sesamfrö
+              {intl.formatMessage({
+                id: "menu.korean.mushroom-bibimbap.ingredients",
+              })}
             </span>
-            <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean.mushroom-bibimbap.allergies",
+              })}
+            </span>
           </div>
           <div className="flex flex-col items-center text-center">
-            <h2>Bulgogi 159 kr</h2>
+            <h2>
+              {intl.formatMessage({ id: "menu.korean.bulgogi.name" })} 159 kr
+            </h2>
             <span>
-              Ris, Entrecôte, Champinjoner, Stekt gul lök, Vårlök, Gräslök,
-              Sesamolja, Sesamfrö
+              {intl.formatMessage({
+                id: "menu.korean.bulgogi.ingredients",
+              })}
             </span>
-            <span className="italic">(Allergi: Soja, Gluten, Sesam)</span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean.bulgogi.allergies",
+              })}
+            </span>
           </div>
         </div>
       </motion.div>
@@ -54,39 +78,89 @@ export default function Menu() {
           id="pizza-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>Pizza</h1>
+          <h1>{intl.formatMessage({ id: "menu.pizza" })}</h1>
           <div className="flex flex-col items-center text-center">
-            <h2>Vesuvio 129 kr</h2>
-            <span>Tomatsås, Fior di latte, Skinka, Parmesan</span>
-            <span className="italic">
-              (Allergi: Gluten, Laktos, Mjölkprotein)
-            </span>
-            <h2>Margherita 149 kr</h2>
-            <span>Tomatsås, Fior di latte, Burrata, Parmesan, Basilika</span>
-            <span className="italic">
-              (Allergi: Gluten, Laktos, Mjölkprotein)
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>Pepperoni 149 kr</h2>
-            <span>Tomatsås, Fior di latte, Pepperoni, Parmesan, Basilika</span>
-            <span className="italic">
-              (Allergi: Gluten, Laktos, Mjölkprotein)
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>Prosciutto 169 kr</h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.pizza.vesuvio.name",
+              })}{" "}
+              129 kr
+            </h2>
             <span>
-              Tomatsås, Fior di latte, Prosciutto crudo, Pesto, Parmesan,
-              Ruccola, Pinjenötter
+              {intl.formatMessage({
+                id: "menu.pizza.vesuvio.ingredients",
+              })}
             </span>
             <span className="italic">
-              (Allergi: Gluten, Laktos, Mjölkprotein, Nötter)
+              {intl.formatMessage({
+                id: "menu.pizza.vesuvio.allergies",
+              })}
+            </span>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.pizza.margherita.name",
+              })}{" "}
+              149 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.pizza.margherita.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.pizza.margherita.allergies",
+              })}
             </span>
           </div>
           <div className="flex flex-col items-center text-center">
-            <h2>Barnpizza 99 kr</h2>
-            <span>Valfri variant från menyn</span>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.pizza.pepperoni.name",
+              })}{" "}
+              149 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.pizza.pepperoni.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.pizza.pepperoni.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({
+                id: "menu.pizza.prosciutto.name",
+              })}{" "}
+              169 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.pizza.prosciutto.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.pizza.prosciutto.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({
+                id: "menu.pizza.children.name",
+              })}{" "}
+              99 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.pizza.children.ingredients",
+              })}
+            </span>
           </div>
         </div>
       </motion.div>
@@ -101,14 +175,44 @@ export default function Menu() {
           id="drink-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>Dryck</h1>
+          <h1>{intl.formatMessage({ id: "menu.drinks" })}</h1>
           <div className="flex flex-col items-center text-center">
-            <h2>Coca-Cola (33cl) 30 kr</h2>
-            <h2>Coca-Cola Zero (33cl) 30 kr</h2>
-            <h2>Ramlösa Naturell (33cl) 30 kr</h2>
-            <h2>Ramlösa Citrus (33cl) 30 kr</h2>
-            <h2>Fanta (33cl) 30 kr</h2>
-            <h2>Red Bull Sockerfri (25cl) 30 kr</h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.coca-cola.name",
+              })}{" "}
+              (33cl) 30 kr
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.coca-cola-zero.name",
+              })}{" "}
+              (33cl) 30 kr
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.ramlosa-natural.name",
+              })}{" "}
+              (33cl) 30 kr
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.ramlosa-citrus.name",
+              })}{" "}
+              (33cl) 30 kr
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.fanta.name",
+              })}{" "}
+              (33cl) 30 kr
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.drinks.red-bull-sugar-free.name",
+              })}{" "}
+              (25cl) 30 kr
+            </h2>
           </div>
         </div>
       </motion.div>

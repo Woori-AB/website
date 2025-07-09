@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
+    "test:run": "vitest --run",
     "test:coverage": "vitest --reporter=verbose --coverage --run",
     "test:ui": "vitest --ui --coverage",
-    "verify": "npm run lint && npm run test && npm run build"
+    "verify": "npm run lint && npm run test:coverage && npm run build"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.1",

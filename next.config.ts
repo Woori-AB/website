@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: true,
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;

@@ -17,7 +17,7 @@ export default function Carousel({ images, interval }: Props) {
     }, interval);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [images.length, interval]);
 
   return (
     <AnimatePresence data-testid="Carousel">

@@ -29,7 +29,7 @@ export default function Header() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative"
+          className="relative flex flex-col items-center"
         >
           <WooriLogo />
           <div className="flex flex-col gap-2">
