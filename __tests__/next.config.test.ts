@@ -7,6 +7,7 @@ describe("next.config", () => {
       experimental: {
         reactCompiler: true,
       },
+      trailingSlash: true,
     });
   });
 });
