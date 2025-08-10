@@ -66,6 +66,38 @@ export default function Menu() {
               })}
             </span>
           </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({ id: "menu.korean.party-noodles.name" })} 129
+              kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.korean.party-noodles.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean.party-noodles.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({ id: "menu.korean.bibim-noodles.name" })} 129
+              kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.korean.bibim-noodles.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean.bibim-noodles.allergies",
+              })}
+            </span>
+          </div>
         </div>
       </motion.div>
       <motion.div
