@@ -1,4 +1,4 @@
-# Woori
+# Woori website
 
 ```sh
 $ npm install
