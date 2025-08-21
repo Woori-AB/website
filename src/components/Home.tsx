@@ -38,7 +38,12 @@ export default function Home() {
               transition={{ delay: 1, duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              <p className="text-2xl italic font-gloryLight md:mr-32">
+              {intl.formatMessage({ id: "notice" }) !== "notice" && (
+                <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-red-500 font-bold text-white">
+                  {intl.formatMessage({ id: "notice" })}
+                </p>
+              )}
+              <p className="text-2xl italic font-gloryLight">
                 {intl.formatMessage({ id: "welcome" })}
               </p>
             </motion.div>
