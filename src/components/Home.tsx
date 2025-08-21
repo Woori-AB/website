@@ -39,7 +39,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               {intl.formatMessage({ id: "notice" }) !== "notice" && (
-                <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-red-500 font-bold text-white">
+                <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-yellow-500 font-bold text-white">
                   {intl.formatMessage({ id: "notice" })}
                 </p>
               )}
