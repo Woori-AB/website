@@ -38,11 +38,11 @@ export default function Home() {
               transition={{ delay: 1, duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              {intl.formatMessage({ id: "notice" }) !== "notice" && (
+              {/*intl.formatMessage({ id: "notice" }) !== "notice" && (
                 <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-yellow-500 font-bold text-white">
                   {intl.formatMessage({ id: "notice" })}
                 </p>
-              )}
+              )*/}
               <p className="text-2xl italic font-gloryLight">
                 {intl.formatMessage({ id: "welcome" })}
               </p>
