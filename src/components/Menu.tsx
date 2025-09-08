@@ -51,53 +51,6 @@ export default function Menu() {
               })}
             </span>
           </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({ id: "menu.korean.bulgogi.name" })} 159 kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.korean.bulgogi.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.korean.bulgogi.allergies",
-              })}
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({ id: "menu.korean.party-noodles.name" })} 129
-              kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.korean.party-noodles.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.korean.party-noodles.allergies",
-              })}
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({ id: "menu.korean.bibim-noodles.name" })} 129
-              kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.korean.bibim-noodles.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.korean.bibim-noodles.allergies",
-              })}
-            </span>
-          </div>
         </div>
       </motion.div>
       <motion.div
@@ -107,90 +60,25 @@ export default function Menu() {
         viewport={{ once: true }}
       >
         <div
-          id="pizza-menu"
+          id="soon-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>{intl.formatMessage({ id: "menu.pizza" })}</h1>
+          <h1>{intl.formatMessage({ id: "menu.soon" })}</h1>
           <div className="flex flex-col items-center text-center">
             <h2>
               {intl.formatMessage({
-                id: "menu.pizza.vesuvio.name",
+                id: "menu.soon.kfc.name",
               })}{" "}
-              129 kr
+              129/149 kr
             </h2>
             <span>
               {intl.formatMessage({
-                id: "menu.pizza.vesuvio.ingredients",
+                id: "menu.soon.kfc.ingredients",
               })}
             </span>
             <span className="italic">
               {intl.formatMessage({
-                id: "menu.pizza.vesuvio.allergies",
-              })}
-            </span>
-            <h2>
-              {intl.formatMessage({
-                id: "menu.pizza.margherita.name",
-              })}{" "}
-              149 kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.pizza.margherita.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.pizza.margherita.allergies",
-              })}
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({
-                id: "menu.pizza.pepperoni.name",
-              })}{" "}
-              149 kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.pizza.pepperoni.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.pizza.pepperoni.allergies",
-              })}
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({
-                id: "menu.pizza.prosciutto.name",
-              })}{" "}
-              169 kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.pizza.prosciutto.ingredients",
-              })}
-            </span>
-            <span className="italic">
-              {intl.formatMessage({
-                id: "menu.pizza.prosciutto.allergies",
-              })}
-            </span>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <h2>
-              {intl.formatMessage({
-                id: "menu.pizza.children.name",
-              })}{" "}
-              99 kr
-            </h2>
-            <span>
-              {intl.formatMessage({
-                id: "menu.pizza.children.ingredients",
+                id: "menu.soon.kfc.allergies",
               })}
             </span>
           </div>
