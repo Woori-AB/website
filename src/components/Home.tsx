@@ -66,6 +66,9 @@ export default function Home() {
           <Carousel
             interval={5000}
             images={[
+              "/korean-fried-chicken-original.jpg",
+              "/beef-bibimbap.jpg",
+              "/korean-fried-chicken-sweet-spicy.jpg",
               "/bulgogi-sm.jpg",
               "/pesto-pasta-sm.jpg",
               "/truffle-pasta-sm.jpg",
