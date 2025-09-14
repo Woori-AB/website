@@ -18,36 +18,38 @@ export default function Menu() {
           id="korean-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>{intl.formatMessage({ id: "menu.korean" })}</h1>
+          <h1>{intl.formatMessage({ id: "menu.bibimbap" })}</h1>
           <div className="flex flex-col items-center text-center">
             <h2>
-              {intl.formatMessage({ id: "menu.korean.beef-bibimbap.name" })} 149
-              kr
+              {intl.formatMessage({ id: "menu.bibimbap.beef-bibimbap.name" })}{" "}
+              149 kr
             </h2>
             <span>
               {intl.formatMessage({
-                id: "menu.korean.beef-bibimbap.ingredients",
+                id: "menu.bibimbap.beef-bibimbap.ingredients",
               })}
             </span>
             <span className="italic">
               {intl.formatMessage({
-                id: "menu.korean.beef-bibimbap.allergies",
+                id: "menu.bibimbap.beef-bibimbap.allergies",
               })}
             </span>
           </div>
           <div className="flex flex-col items-center text-center">
             <h2>
-              {intl.formatMessage({ id: "menu.korean.mushroom-bibimbap.name" })}{" "}
+              {intl.formatMessage({
+                id: "menu.bibimbap.mushroom-bibimbap.name",
+              })}{" "}
               139 kr
             </h2>
             <span>
               {intl.formatMessage({
-                id: "menu.korean.mushroom-bibimbap.ingredients",
+                id: "menu.bibimbap.mushroom-bibimbap.ingredients",
               })}
             </span>
             <span className="italic">
               {intl.formatMessage({
-                id: "menu.korean.mushroom-bibimbap.allergies",
+                id: "menu.bibimbap.mushroom-bibimbap.allergies",
               })}
             </span>
           </div>
