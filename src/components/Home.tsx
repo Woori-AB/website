@@ -70,6 +70,7 @@ export default function Home() {
               "/beef-bibimbap.jpg",
               "/korean-fried-chicken-sweet-spicy.jpg",
               "/bulgogi-sm.jpg",
+              "/korean-fried-chicken-honey-soy.jpg",
               "/pesto-pasta-sm.jpg",
               "/truffle-pasta-sm.jpg",
               "/tuna-salad-sm.jpg",
