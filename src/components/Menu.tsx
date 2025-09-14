@@ -60,25 +60,79 @@ export default function Menu() {
         viewport={{ once: true }}
       >
         <div
-          id="soon-menu"
+          id="korean-fried-chicken-menu"
           className="flex flex-col items-center text-center gap-2"
         >
-          <h1>{intl.formatMessage({ id: "menu.soon" })}</h1>
+          <h1>{intl.formatMessage({ id: "menu.korean-fried-chicken" })}</h1>
           <div className="flex flex-col items-center text-center">
             <h2>
               {intl.formatMessage({
-                id: "menu.soon.kfc.name",
+                id: "menu.korean-fried-chicken.sweet-spicy.name",
               })}{" "}
               129/149 kr
             </h2>
             <span>
               {intl.formatMessage({
-                id: "menu.soon.kfc.ingredients",
+                id: "menu.korean-fried-chicken.sweet-spicy.ingredients",
               })}
             </span>
             <span className="italic">
               {intl.formatMessage({
-                id: "menu.soon.kfc.allergies",
+                id: "menu.korean-fried-chicken.sweet-spicy.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.honey-soy.name",
+              })}{" "}
+              129/149 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.honey-soy.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.honey-soy.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.original.name",
+              })}{" "}
+              129/149 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.original.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.original.allergies",
+              })}
+            </span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.kids-menu.name",
+              })}{" "}
+              99 kr
+            </h2>
+            <span>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.kids-menu.ingredients",
+              })}
+            </span>
+            <span className="italic">
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.kids-menu.allergies",
               })}
             </span>
           </div>
@@ -101,37 +155,37 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.drinks.coca-cola.name",
               })}{" "}
-              (33cl) 30 kr
+              (33cl) 25 kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.coca-cola-zero.name",
               })}{" "}
-              (33cl) 30 kr
+              (33cl) 25 kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.ramlosa-natural.name",
               })}{" "}
-              (33cl) 30 kr
+              (33cl) 25 kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.ramlosa-citrus.name",
               })}{" "}
-              (33cl) 30 kr
+              (33cl) 25 kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.fanta.name",
               })}{" "}
-              (33cl) 30 kr
+              (33cl) 25 kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.red-bull-sugar-free.name",
               })}{" "}
-              (25cl) 30 kr
+              (25cl) 25 kr
             </h2>
           </div>
         </div>
