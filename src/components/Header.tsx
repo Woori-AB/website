@@ -5,6 +5,8 @@ import WooriLogo from "./WooriLogo";
 import WoltButton from "./WoltButton";
 import InstagramButton from "./InstagramButton";
 import FacebookButton from "./FacebookButton";
+import FoodoraButton from "./FoodoraButton";
+import UberEatsButton from "./UberEatsButton";
 
 export default function Header() {
   return (
@@ -29,11 +31,15 @@ export default function Header() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative flex flex-col items-center"
+          className="relative flex flex-col items-center gap-2"
         >
           <WooriLogo />
-          <div className="flex flex-col gap-2">
+          <div className="flex gap-2">
+            <FoodoraButton />
+            <UberEatsButton />
             <WoltButton />
+          </div>
+          <div className="flex flex-col gap-2">
             <InstagramButton />
             <FacebookButton />
           </div>
