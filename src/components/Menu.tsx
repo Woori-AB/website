@@ -22,7 +22,7 @@ export default function Menu() {
           <div className="flex flex-col items-center text-center">
             <h2>
               {intl.formatMessage({ id: "menu.bibimbap.beef-bibimbap.name" })}{" "}
-              149 kr
+              149kr
             </h2>
             <span>
               {intl.formatMessage({
@@ -40,7 +40,7 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.bibimbap.mushroom-bibimbap.name",
               })}{" "}
-              139 kr
+              139kr
             </h2>
             <span>
               {intl.formatMessage({
@@ -71,7 +71,7 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.korean-fried-chicken.sweet-spicy.name",
               })}{" "}
-              129 kr<span className="text-sm">(150g)</span> 149 kr
+              129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
             </h2>
             <span>
@@ -90,7 +90,7 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.korean-fried-chicken.honey-soy.name",
               })}{" "}
-              129 kr<span className="text-sm">(150g)</span> 149 kr
+              129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
             </h2>
             <span>
@@ -109,7 +109,7 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.korean-fried-chicken.original.name",
               })}{" "}
-              129 kr<span className="text-sm">(150g)</span> 149 kr
+              129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
             </h2>
             <span>
@@ -128,7 +128,7 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.korean-fried-chicken.kids-menu.name",
               })}{" "}
-              99 kr
+              99kr
             </h2>
             <span>
               {intl.formatMessage({
@@ -160,31 +160,31 @@ export default function Menu() {
               {intl.formatMessage({
                 id: "menu.drinks.coca-cola.name",
               })}{" "}
-              (33cl) 25 kr
+              (33cl) 25kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.coca-cola-zero.name",
               })}{" "}
-              (33cl) 25 kr
+              (33cl) 25kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.ramlosa-natural.name",
               })}{" "}
-              (33cl) 25 kr
+              (33cl) 25kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.ramlosa-citrus.name",
               })}{" "}
-              (33cl) 25 kr
+              (33cl) 25kr
             </h2>
             <h2>
               {intl.formatMessage({
                 id: "menu.drinks.fanta.name",
               })}{" "}
-              (33cl) 25 kr
+              (33cl) 25kr
             </h2>
           </div>
         </div>
