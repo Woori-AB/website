@@ -7,7 +7,7 @@ export default function Menu() {
   const intl = useIntl();
 
   return (
-    <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
+    <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-8 items-stretch">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function Menu() {
       >
         <div
           id="korean-menu"
-          className="flex flex-col items-center text-center gap-2"
+          className="flex flex-col items-center text-center gap-8"
         >
           <h1>{intl.formatMessage({ id: "menu.bibimbap" })}</h1>
           <div className="flex flex-col items-center text-center">
@@ -63,7 +63,7 @@ export default function Menu() {
       >
         <div
           id="korean-fried-chicken-menu"
-          className="flex flex-col items-center text-center gap-2"
+          className="flex flex-col items-center text-center gap-8"
         >
           <h1>{intl.formatMessage({ id: "menu.korean-fried-chicken" })}</h1>
           <div className="flex flex-col items-center text-center">
@@ -73,6 +73,11 @@ export default function Menu() {
               })}{" "}
               129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.sweet-spicy.extra-info",
+              })}
             </h2>
             <span>
               {intl.formatMessage({
@@ -93,6 +98,11 @@ export default function Menu() {
               129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
             </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.honey-soy.extra-info",
+              })}
+            </h2>
             <span>
               {intl.formatMessage({
                 id: "menu.korean-fried-chicken.honey-soy.ingredients",
@@ -111,6 +121,11 @@ export default function Menu() {
               })}{" "}
               129kr<span className="text-sm">(150g)</span> 149kr
               <span className="text-sm">(200g)</span>
+            </h2>
+            <h2>
+              {intl.formatMessage({
+                id: "menu.korean-fried-chicken.original.extra-info",
+              })}
             </h2>
             <span>
               {intl.formatMessage({
