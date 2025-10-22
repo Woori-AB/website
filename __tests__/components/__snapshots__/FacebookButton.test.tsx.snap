@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FacebookButton > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2"
+  >
+    <a
+      class="flex gap-2"
+      href="https://www.facebook.com/people/Woori/61577166415207"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <mocked-lucide-react-facebook
+        style="margin-left: -2px;"
+      />
+       
+      <span
+        style="margin-left: 2px;"
+      >
+        mocked-i18n-'follow-on-facebook'
+      </span>
+    </a>
+  </div>
+</div>
+`;

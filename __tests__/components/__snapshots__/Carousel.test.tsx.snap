@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Carousel > matches snapshot(s) 1`] = `
+<div>
+  <div>
+    <div
+      class="absolute w-full h-full opacity-0 ease-in-out fill-both"
+      style="animation: fade 10s infinite; animation-delay: 0s;"
+    >
+      <mocked-image
+        alt="Slide 1"
+        class="object-cover w-full h-full"
+        fill=""
+        sizes="100vw"
+        src="/foo.jpg"
+      />
+    </div>
+    <div
+      class="absolute w-full h-full opacity-0 ease-in-out fill-both"
+      style="animation: fade 10s infinite; animation-delay: 5s;"
+    >
+      <mocked-image
+        alt="Slide 2"
+        class="object-cover w-full h-full"
+        fill=""
+        sizes="100vw"
+        src="/bar.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Carousel > matches snapshot(s) 2`] = `
+[MockFunction] {
+  "calls": [
+    [
+      "
+    @keyframes fade {
+      0%   { opacity: 0; }
+      15%  { opacity: 1; }
+      65% { opacity: 1; }
+      80% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  ",
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

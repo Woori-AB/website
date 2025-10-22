@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FoodoraButton > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="relative bg-[#df1067]/90 hover:bg-[#ed478c]/100 text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
+  >
+    <a
+      class="flex gap-2"
+      href="https://www.foodora.se/en/restaurant/lzn4/woori"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <mocked-foodoralogo
+        size="0.6"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white/10 to-white/0 z-10"
+      />
+    </a>
+  </div>
+</div>
+`;

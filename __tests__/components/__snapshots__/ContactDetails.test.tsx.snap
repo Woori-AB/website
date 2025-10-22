@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ContactDetails > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center text-center gap-4"
+    id="contact-details"
+  >
+    <div
+      class="flex flex-col items-center text-center"
+    >
+      <h1>
+        mocked-i18n-'visit-us'
+      </h1>
+      <span>
+        <a
+          class="flex gap-1 hover:underline items-start text-left"
+          href="https://maps.app.goo.gl/9Ne5EDEXKdsdvig7A"
+        >
+          <mocked-lucide-react-mappin
+            size="1.2rem"
+          />
+          Stagneliusvägen 47, 112 57, Stockholm
+        </a>
+      </span>
+    </div>
+    <div
+      class="flex flex-col items-center text-center"
+    >
+      <h1>
+        mocked-i18n-'contact'
+      </h1>
+      <span>
+        <a
+          class="flex gap-1 hover:underline items-center"
+          href="tel:+4686566675"
+        >
+          <mocked-lucide-react-phone
+            size="1.2rem"
+          />
+          08-656 66 75
+        </a>
+      </span>
+      <span>
+        <a
+          class="flex gap-1 hover:underline items-center"
+          href="mailto:kontakt@wooristockholm.se"
+        >
+          <mocked-lucide-react-mail
+            size="1.2rem"
+          />
+          kontakt@wooristockholm.se
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+`;

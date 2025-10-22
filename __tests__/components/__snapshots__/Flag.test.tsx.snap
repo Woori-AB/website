@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Flag > matches snapshot(s) 1`] = `
+<div>
+  <img
+    alt="Svenska"
+    class="h-5 w-auto block"
+    src="/flags/sv.svg"
+    title="Svenska"
+  />
+</div>
+`;

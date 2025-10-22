@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
+import { useStyle } from "@/hooks/useStyle";
 
 export type Props = {
   images: string[];
@@ -33,14 +33,7 @@ export default function Carousel({
     }
   `;
 
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.innerHTML = keyframes;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, [keyframes]);
+  useStyle(keyframes);
 
   return (
     <div>
