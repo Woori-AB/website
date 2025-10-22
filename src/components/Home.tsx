@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Menu from "@/components/Menu";
 import OpeningHours from "@/components/OpeningHours";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useIntl } from "react-intl";
 
 export default function Home() {

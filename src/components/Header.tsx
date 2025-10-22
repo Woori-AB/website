@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import WooriLogo from "./WooriLogo";
 import WoltButton from "./WoltButton";
 import InstagramButton from "./InstagramButton";
