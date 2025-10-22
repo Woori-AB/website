@@ -1,7 +1,7 @@
 "use client";
 
 import { IntlProvider } from "react-intl";
-import messages, { Locales } from "@/locales/messages";
+import messages, { type Locales } from "@/locales/messages";
 
 export type Props = {
   locale: Locales;
