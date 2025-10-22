@@ -64,7 +64,8 @@ export default function Home() {
           }}
         >
           <Carousel
-            interval={5000}
+            opaqueDuration={5}
+            crossfadeDuration={3}
             images={[
               "/korean-fried-chicken-original.jpg",
               "/beef-bibimbap.jpg",
