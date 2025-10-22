@@ -9,7 +9,7 @@ export default function FoodoraLogo({ size }: Props) {
     <div
       style={{
         width: 139 * (size ?? 1),
-        height: 29 * (size ?? 1),
+        height: 31 * (size ?? 1),
         overflow: "hidden",
       }}
     >
