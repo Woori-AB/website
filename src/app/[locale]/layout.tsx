@@ -1,6 +1,6 @@
 import React from "react";
 import Providers from "../providers";
-import { Locales } from "@/locales/messages";
+import type { Locales } from "@/locales/messages";
 
 export type Props = {
   children: React.ReactNode;

@@ -8,7 +8,6 @@ export type Props = {
 
 export default function Flag({ src, alt, onClick }: Props) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
       alt={alt}

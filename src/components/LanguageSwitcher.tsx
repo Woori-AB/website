@@ -2,7 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import Flag from "./Flag";
-import { Locales } from "@/locales/messages";
+import type { Locales } from "@/locales/messages";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
