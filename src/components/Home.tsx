@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Menu from "@/components/Menu";
 import OpeningHours from "@/components/OpeningHours";
-import { motion } from "motion/react";
 import { useIntl } from "react-intl";
 
 export default function Home() {
@@ -32,21 +31,14 @@ export default function Home() {
       >
         <div className="container max-w-screen-md">
           <div className="flex flex-col py-12 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1, duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              {/*intl.formatMessage({ id: "notice" }) !== "notice" && (
+            {/*intl.formatMessage({ id: "notice" }) !== "notice" && (
                 <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-yellow-500 font-bold text-white">
                   {intl.formatMessage({ id: "notice" })}
                 </p>
               )*/}
-              <p className="text-2xl italic font-gloryLight">
-                {intl.formatMessage({ id: "welcome" })}
-              </p>
-            </motion.div>
+            <p className="text-2xl italic font-gloryLight">
+              {intl.formatMessage({ id: "welcome" })}
+            </p>
           </div>
         </div>
       </section>
@@ -91,22 +83,8 @@ export default function Home() {
         className="flex justify-center py-12 dark:bg-black/50 bg-black/3  px-8"
       >
         <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <OpeningHours />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <ContactDetails />
-          </motion.div>
+          <OpeningHours />
+          <ContactDetails />
         </div>
       </section>
     </div>

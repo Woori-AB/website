@@ -14,6 +14,12 @@ export default defineConfig({
         statements: 0,
         branches: 0,
       },
+      exclude: [
+        "**/__mocks__/**",
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/__tests__/**",
+      ],
     },
   },
   resolve: {

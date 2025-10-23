@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import WooriLogo from "./WooriLogo";
 import WoltButton from "./WoltButton";
 import InstagramButton from "./InstagramButton";
@@ -26,13 +25,7 @@ export default function Header() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/0 z-10"></div>
       <div className="absolute top-0 p-2 z-20">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative flex flex-col items-center gap-2"
-        >
+        <div className="relative flex flex-col items-center gap-2">
           <WooriLogo />
           <div className="flex gap-2">
             <FoodoraButton />
@@ -43,7 +36,7 @@ export default function Header() {
             <InstagramButton />
             <FacebookButton />
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );
