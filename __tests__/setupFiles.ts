@@ -32,6 +32,7 @@ vi.mock("@/components/FoodoraButton", () =>
   createMockComponent("FoodoraButton")
 );
 vi.mock("@/components/FoodoraLogo", () => createMockComponent("FoodoraLogo"));
+vi.mock("@/components/Header", () => createMockComponent("Header"));
 vi.mock("@/components/InstagramButton", () =>
   createMockComponent("InstagramButton")
 );
