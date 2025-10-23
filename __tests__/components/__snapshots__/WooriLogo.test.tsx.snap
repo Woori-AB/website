@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WooriLogo > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex relative"
+  >
+    <div
+      class="relative"
+    >
+      <span
+        id="header-title-primary"
+      >
+        WOORI
+      </span>
+    </div>
+    <div
+      class="relative top-6"
+    >
+      <span
+        id="header-title-secondary"
+      >
+        우리
+      </span>
+    </div>
+  </div>
+</div>
+`;

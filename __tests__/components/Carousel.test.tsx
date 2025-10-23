@@ -1,4 +1,3 @@
-import Carousel from "@/components/Carousel";
 import { cleanup, render } from "@testing-library/react";
 import { describe, it, vi, expect, afterEach } from "vitest";
 import * as useStyle from "@/hooks/useStyle";
@@ -9,8 +8,13 @@ describe("Carousel", () => {
     vi.clearAllMocks();
   });
 
-  it("matches snapshot(s)", () => {
+  it("matches snapshot(s)", async () => {
     // Arrange
+    const { default: Carousel } = await vi.importActual<
+      // eslint-disable-next-line @typescript-eslint/consistent-type-imports
+      typeof import("@/components/Carousel")
+    >("@/components/Carousel");
+
     const useStyleSpy = vi.spyOn(useStyle, "useStyle");
 
     // Act

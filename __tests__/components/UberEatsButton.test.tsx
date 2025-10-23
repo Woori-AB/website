@@ -1,7 +1,7 @@
 import { cleanup, render } from "@testing-library/react";
 import { describe, it, vi, expect, afterEach } from "vitest";
 
-describe("FoodoraButton", () => {
+describe("UberEatsButton", () => {
   afterEach(() => {
     cleanup();
     vi.clearAllMocks();
@@ -9,13 +9,13 @@ describe("FoodoraButton", () => {
 
   it("matches snapshot(s)", async () => {
     // Arrange
-    const { default: FoodoraButton } = await vi.importActual<
+    const { default: UberEatsButton } = await vi.importActual<
       // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-      typeof import("@/components/FoodoraButton")
-    >("@/components/FoodoraButton");
+      typeof import("@/components/UberEatsButton")
+    >("@/components/UberEatsButton");
 
     // Act
-    const { container } = render(<FoodoraButton />);
+    const { container } = render(<UberEatsButton />);
 
     // Assert
     expect(container).toMatchSnapshot();

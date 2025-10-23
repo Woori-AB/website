@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LanguageSwitcher > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex flex-row gap-2"
+  >
+    <mocked-flag
+      alt="Svenska"
+      src="/flags/sv.svg"
+    />
+    <mocked-flag
+      alt="English"
+      src="/flags/en.svg"
+    />
+    <mocked-flag
+      alt="한국어"
+      src="/flags/ko.svg"
+    />
+  </div>
+</div>
+`;

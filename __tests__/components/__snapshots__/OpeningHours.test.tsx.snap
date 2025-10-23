@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OpeningHours > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center text-center"
+    id="open-hours"
+  >
+    <h1>
+      mocked-i18n-'opening-hours'
+    </h1>
+    <span>
+      mocked-i18n-'monday'
+      :
+       
+      mocked-i18n-'closed'
+    </span>
+    <span>
+      mocked-i18n-'tuesday'
+      : 11:00 - 20:00
+    </span>
+    <span>
+      mocked-i18n-'wednesday'
+      : 11:00 - 20:00
+    </span>
+    <span>
+      mocked-i18n-'thursday'
+      : 11:00 - 20:00
+    </span>
+    <span>
+      mocked-i18n-'friday'
+      : 11:00 - 20:00
+    </span>
+    <span>
+      mocked-i18n-'saturday'
+      : 11:00 - 20:00
+    </span>
+    <span>
+      mocked-i18n-'sunday'
+      :
+       
+      mocked-i18n-'closed'
+    </span>
+  </div>
+</div>
+`;

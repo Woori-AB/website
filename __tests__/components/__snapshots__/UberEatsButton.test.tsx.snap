@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UberEatsButton > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="relative bg-[#06c167]/90 hover:bg-[#32d184]/100 text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
+  >
+    <a
+      class="flex gap-2"
+      href="https://www.ubereats.com/se-en/store/woori/2t8azOX1WQW7Fd--w0qouw"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <mocked-ubereatslogo
+        size="0.6"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white/10 to-white/0 z-10"
+      />
+    </a>
+  </div>
+</div>
+`;
