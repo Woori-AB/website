@@ -6,6 +6,7 @@ import { vi } from "vitest";
 vi.mock("lucide-react");
 vi.mock("react-intl");
 vi.mock("next/image");
+vi.mock("next/font/google");
 vi.mock("@/hooks/useStyle");
 
 // Mocked project modules below...
@@ -20,6 +21,13 @@ const createMockComponent = (mockName: string) => ({
   default: mockComponent(mockName),
 });
 
+// Mocked app
+vi.mock("@/app/[locale]/layout", () => createMockComponent("Layout"));
+vi.mock("@/app/[locale]/page", () => createMockComponent("Page"));
+vi.mock("@/app/providers/index", () => createMockComponent("Providers"));
+vi.mock("@/app/page", () => createMockComponent("Page"));
+
+// Mocked components
 vi.mock("@/components/Carousel", () => createMockComponent("Carousel"));
 vi.mock("@/components/ContactDetails", () =>
   createMockComponent("ContactDetails")

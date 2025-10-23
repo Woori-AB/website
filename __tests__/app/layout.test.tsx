@@ -1,7 +1,7 @@
 import { cleanup, render } from "@testing-library/react";
 import { describe, it, vi, expect, afterEach } from "vitest";
 
-describe("Page", () => {
+describe("Layout", () => {
   afterEach(() => {
     cleanup();
     vi.clearAllMocks();
@@ -9,15 +9,15 @@ describe("Page", () => {
 
   it("matches snapshot(s)", async () => {
     // Arrange
-    const { default: Page } = await vi.importActual<
+    const { default: Layout } = await vi.importActual<
       // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-      typeof import("@/app/page")
-    >("@/app/page");
+      typeof import("@/app/layout")
+    >("@/app/layout");
 
     // Act
-    const { container } = render(<Page />);
+    const { baseElement } = render(<Layout>Foo</Layout>);
 
     // Assert
-    expect(container).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
   });
 });

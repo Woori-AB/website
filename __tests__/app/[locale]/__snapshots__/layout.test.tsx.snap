@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout > matches snapshot(s) 1`] = `
+<div>
+  <div>
+    <mocked-providers
+      locale="sv"
+    >
+      <div>
+        Foo
+      </div>
+    </mocked-providers>
+  </div>
+</div>
+`;

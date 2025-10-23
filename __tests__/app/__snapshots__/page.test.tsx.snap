@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page > matches snapshot(s) 1`] = `
+<div>
+  <mocked-providers
+    locale="sv"
+  >
+    <mocked-home />
+  </mocked-providers>
+</div>
+`;

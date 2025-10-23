@@ -9,10 +9,10 @@ export default defineConfig({
     setupFiles: ["./__tests__/setupFiles.ts"],
     coverage: {
       thresholds: {
-        lines: 0,
-        functions: 0,
-        statements: 0,
-        branches: 0,
+        lines: 100,
+        functions: 100,
+        statements: 100,
+        branches: 100,
       },
       exclude: [
         "**/__mocks__/**",

@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout > matches snapshot(s) 1`] = `
+<body
+  class="antialiased"
+>
+  <div>
+    <main>
+      <div>
+        Foo
+      </div>
+    </main>
+  </div>
+</body>
+`;
