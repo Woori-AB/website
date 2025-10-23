@@ -1,0 +1,207 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-8 items-stretch"
+  >
+    <div
+      class="flex flex-col items-center text-center gap-8"
+      id="korean-menu"
+    >
+      <h1>
+        mocked-i18n-'menu.bibimbap'
+      </h1>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.bibimbap.beef-bibimbap.name'
+           
+          149kr
+        </h2>
+        <span>
+          mocked-i18n-'menu.bibimbap.beef-bibimbap.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.bibimbap.beef-bibimbap.allergies'
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.name'
+           
+          139kr
+        </h2>
+        <span>
+          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.allergies'
+        </span>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center text-center gap-8"
+      id="korean-fried-chicken-menu"
+    >
+      <h1>
+        mocked-i18n-'menu.korean-fried-chicken'
+      </h1>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.name'
+           
+          129kr
+          <span
+            class="text-sm"
+          >
+            (150g)
+          </span>
+           149kr
+          <span
+            class="text-sm"
+          >
+            (200g)
+          </span>
+        </h2>
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.extra-info'
+        </h2>
+        <span>
+          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.allergies'
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.honey-soy.name'
+           
+          129kr
+          <span
+            class="text-sm"
+          >
+            (150g)
+          </span>
+           149kr
+          <span
+            class="text-sm"
+          >
+            (200g)
+          </span>
+        </h2>
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.honey-soy.extra-info'
+        </h2>
+        <span>
+          mocked-i18n-'menu.korean-fried-chicken.honey-soy.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.korean-fried-chicken.honey-soy.allergies'
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.original.name'
+           
+          129kr
+          <span
+            class="text-sm"
+          >
+            (150g)
+          </span>
+           149kr
+          <span
+            class="text-sm"
+          >
+            (200g)
+          </span>
+        </h2>
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.original.extra-info'
+        </h2>
+        <span>
+          mocked-i18n-'menu.korean-fried-chicken.original.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.korean-fried-chicken.original.allergies'
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.korean-fried-chicken.kids-menu.name'
+           
+          99kr
+        </h2>
+        <span>
+          mocked-i18n-'menu.korean-fried-chicken.kids-menu.ingredients'
+        </span>
+        <span
+          class="italic"
+        >
+          mocked-i18n-'menu.korean-fried-chicken.kids-menu.allergies'
+        </span>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center text-center gap-2 md:col-span-2"
+      id="drink-menu"
+    >
+      <h1>
+        mocked-i18n-'menu.drinks'
+      </h1>
+      <div
+        class="flex flex-col items-center text-center"
+      >
+        <h2>
+          mocked-i18n-'menu.drinks.coca-cola.name'
+           
+          (33cl) 25kr
+        </h2>
+        <h2>
+          mocked-i18n-'menu.drinks.coca-cola-zero.name'
+           
+          (33cl) 25kr
+        </h2>
+        <h2>
+          mocked-i18n-'menu.drinks.ramlosa-natural.name'
+           
+          (33cl) 25kr
+        </h2>
+        <h2>
+          mocked-i18n-'menu.drinks.ramlosa-citrus.name'
+           
+          (33cl) 25kr
+        </h2>
+        <h2>
+          mocked-i18n-'menu.drinks.fanta.name'
+           
+          (33cl) 25kr
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;

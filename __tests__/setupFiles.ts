@@ -39,6 +39,7 @@ vi.mock("@/components/LanguageSwitcher", () =>
   createMockComponent("LanguageSwitcher")
 );
 vi.mock("@/components/OpeningHours", () => createMockComponent("OpeningHours"));
+vi.mock("@/components/Menu", () => createMockComponent("Menu"));
 vi.mock("@/components/UberEatsButton", () =>
   createMockComponent("UberEatsButton")
 );
