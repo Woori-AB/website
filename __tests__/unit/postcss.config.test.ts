@@ -1,4 +1,4 @@
-import postcss from "../postcss.config.mjs";
+import postcss from "../../postcss.config.mjs";
 import { describe, expect, it } from "vitest";
 
 describe("postcss.config", () => {

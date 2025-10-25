@@ -1,4 +1,4 @@
-import nextConfig from "../next.config";
+import nextConfig from "../../next.config";
 import { describe, expect, it } from "vitest";
 
 describe("next.config", () => {

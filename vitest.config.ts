@@ -5,8 +5,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   test: {
+    dir: "__tests__/unit",
     environment: "jsdom",
-    setupFiles: ["./__tests__/setupFiles.ts"],
+    setupFiles: ["./__tests__/unit/setupFiles.ts"],
     coverage: {
       thresholds: {
         lines: 100,

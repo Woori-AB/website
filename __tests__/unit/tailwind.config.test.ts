@@ -1,4 +1,4 @@
-import tailwind from "../tailwind.config";
+import tailwind from "../../tailwind.config";
 import { describe, expect, it } from "vitest";
 
 describe("tailwind.config", () => {
