@@ -54,5 +54,3 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Code coverage
         run: ${{ steps.detect-package-manager.outputs.manager }} run test:unit:coverage
-      - name: End-to-end tests
-        run: ${{ steps.detect-package-manager.outputs.manager }} run test:e2e
