@@ -53,4 +53,4 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Code coverage
-        run: ${{ steps.detect-package-manager.outputs.manager }} run test:coverage
+        run: ${{ steps.detect-package-manager.outputs.manager }} run test:unit:coverage
