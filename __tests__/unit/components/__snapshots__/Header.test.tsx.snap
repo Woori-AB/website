@@ -7,8 +7,8 @@ exports[`Header > matches snapshot(s) 1`] = `
     style="max-height: 420px;"
   >
     <div
-      class="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
-      style="background-image: url("/main-picture-small.jpg");"
+      class="bg-no-repeat bg-cover w-full h-full overflow-hidden"
+      style="background-image: url("/main-picture-fall-1-small.jpg"); background-position: 50% 65%;"
     />
   </div>
   <div

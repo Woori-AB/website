@@ -17,9 +17,10 @@ export default function Header() {
         }}
       >
         <div
-          className="bg-no-repeat bg-cover bg-center w-full h-full overflow-hidden"
+          className="bg-no-repeat bg-cover w-full h-full overflow-hidden"
           style={{
-            backgroundImage: "url('/main-picture-small.jpg')",
+            backgroundImage: "url('/main-picture-fall-1-small.jpg')",
+            backgroundPosition: "50% 65%",
           }}
         ></div>
       </div>
