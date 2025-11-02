@@ -2,11 +2,15 @@
 
 exports[`Flag > matches snapshot(s) 1`] = `
 <div>
-  <img
-    alt="Svenska"
-    class="h-5 w-auto block"
-    src="/flags/sv.svg"
-    title="Svenska"
-  />
+  <button
+    class="p-0 border-none bg-transparent cursor-pointer"
+  >
+    <img
+      alt="Svenska"
+      class="h-5 w-auto block"
+      src="/flags/sv.svg"
+      title="Svenska"
+    />
+  </button>
 </div>
 `;

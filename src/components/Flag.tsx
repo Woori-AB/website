@@ -8,12 +8,11 @@ export type Props = {
 
 export default function Flag({ src, alt, onClick }: Props) {
   return (
-    <img
-      src={src}
-      alt={alt}
-      title={alt}
+    <button
       onClick={onClick}
-      className="h-5 w-auto block"
-    />
+      className="p-0 border-none bg-transparent cursor-pointer"
+    >
+      <img src={src} alt={alt} title={alt} className="h-5 w-auto block" />
+    </button>
   );
 }
