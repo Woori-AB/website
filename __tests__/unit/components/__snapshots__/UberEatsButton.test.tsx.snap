@@ -6,6 +6,7 @@ exports[`UberEatsButton > matches snapshot(s) 1`] = `
     class="relative bg-[#06c167]/90 hover:bg-[#32d184]/100 text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
   >
     <a
+      aria-label="mocked-i18n-'ubereats-link-description'"
       class="flex gap-2"
       href="https://www.ubereats.com/se-en/store/woori/2t8azOX1WQW7Fd--w0qouw"
       rel="noopener noreferrer"

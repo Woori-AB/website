@@ -6,6 +6,7 @@ exports[`WoltButton > matches snapshot(s) 1`] = `
     class="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5]/100 text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
   >
     <a
+      aria-label="mocked-i18n-'wolt-link-description'"
       class="flex gap-2"
       href="https://wolt.com/en/swe/stockholm/restaurant/woori"
       rel="noopener noreferrer"
