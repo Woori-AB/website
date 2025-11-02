@@ -3,7 +3,7 @@
 exports[`WooriLogo > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="flex relative"
+    class="flex relative select-none"
   >
     <div
       class="relative"

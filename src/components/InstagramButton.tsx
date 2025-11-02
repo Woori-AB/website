@@ -7,7 +7,7 @@ export default function InstagramButton() {
   const intl = useIntl();
 
   return (
-    <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2">
+    <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2 select-none">
       <a
         className="flex gap-2"
         href="https://www.instagram.com/wooristockholm"

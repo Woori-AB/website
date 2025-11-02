@@ -2,7 +2,9 @@
 
 exports[`Carousel > matches snapshot(s) 1`] = `
 <div>
-  <div>
+  <div
+    class="select-none"
+  >
     <div
       class="absolute w-full h-full opacity-0 ease-in-out fill-both"
       style="animation: fade 10s infinite; animation-delay: 0s;"

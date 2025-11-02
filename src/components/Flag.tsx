@@ -12,7 +12,12 @@ export default function Flag({ src, alt, onClick }: Props) {
       onClick={onClick}
       className="p-0 border-none bg-transparent cursor-pointer"
     >
-      <img src={src} alt={alt} title={alt} className="h-5 w-auto block" />
+      <img
+        src={src}
+        alt={alt}
+        title={alt}
+        className="h-5 w-auto block select-none"
+      />
     </button>
   );
 }

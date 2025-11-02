@@ -36,7 +36,7 @@ export default function Carousel({
   useStyle(keyframes);
 
   return (
-    <div>
+    <div className="select-none">
       {images.map((src, index) => (
         <div
           className="absolute w-full h-full opacity-0 ease-in-out fill-both"

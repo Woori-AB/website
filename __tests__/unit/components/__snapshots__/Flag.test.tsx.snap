@@ -7,7 +7,7 @@ exports[`Flag > matches snapshot(s) 1`] = `
   >
     <img
       alt="Svenska"
-      class="h-5 w-auto block"
+      class="h-5 w-auto block select-none"
       src="/flags/sv.svg"
       title="Svenska"
     />
