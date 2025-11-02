@@ -1,7 +1,7 @@
 "use client";
 
 import { useIntl } from "react-intl";
-import UberEatsLogo from "./UberEatsLogo";
+import UberEatsLogo from "@/components/UberEatsLogo";
 
 export default function UberEatsButton() {
   const intl = useIntl();

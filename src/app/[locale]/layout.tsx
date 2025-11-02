@@ -1,5 +1,5 @@
 import React from "react";
-import Providers from "../providers";
+import Providers from "@/app/providers";
 import type { Locales } from "@/locales/messages";
 
 export type Props = {

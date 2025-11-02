@@ -1,11 +1,11 @@
 "use client";
 
-import WooriLogo from "./WooriLogo";
-import WoltButton from "./WoltButton";
-import InstagramButton from "./InstagramButton";
-import FacebookButton from "./FacebookButton";
-import FoodoraButton from "./FoodoraButton";
-import UberEatsButton from "./UberEatsButton";
+import WooriLogo from "@/components/WooriLogo";
+import WoltButton from "@/components/WoltButton";
+import InstagramButton from "@/components/InstagramButton";
+import FacebookButton from "@/components/FacebookButton";
+import FoodoraButton from "@/components/FoodoraButton";
+import UberEatsButton from "@/components/UberEatsButton";
 
 export default function Header() {
   return (
@@ -24,7 +24,7 @@ export default function Header() {
           }}
         ></div>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/0 z-10"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 to-black/0 z-10"></div>
       <div className="absolute top-0 p-2 z-20">
         <div className="relative flex flex-col items-center gap-2">
           <WooriLogo />

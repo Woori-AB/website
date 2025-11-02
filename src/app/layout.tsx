@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { Glory, Kodchasan, Zen_Loop, Single_Day } from "next/font/google";
 
 const zenLoop = Zen_Loop({

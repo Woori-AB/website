@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
-import Flag from "./Flag";
+import Flag from "@/components/Flag";
 import type { Locales } from "@/locales/messages";
 
 export default function LanguageSwitcher() {

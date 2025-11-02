@@ -15,7 +15,7 @@ export default function Home() {
     <div data-testid="Home">
       <section
         id="header"
-        className="relative flex justify-center min-h-84 lg:aspect-[3/1] w-full"
+        className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
         style={{
           maxHeight: "420px",
         }}
@@ -29,13 +29,8 @@ export default function Home() {
         id="intro"
         className="flex flex-col justify-center p-8 items-center"
       >
-        <div className="container max-w-screen-md">
+        <div className="container max-w-xl">
           <div className="flex flex-col py-12 gap-8">
-            {/*intl.formatMessage({ id: "notice" }) !== "notice" && (
-                <p className="text-2xl p-2 text-center font-gloryLight md:mb-6 bg-yellow-500 font-bold text-white">
-                  {intl.formatMessage({ id: "notice" })}
-                </p>
-              )*/}
             <p className="text-2xl italic font-gloryLight">
               {intl.formatMessage({ id: "welcome" })}
             </p>
@@ -44,7 +39,7 @@ export default function Home() {
       </section>
       <section
         id="menu"
-        className="relative flex justify-center min-h-84 lg:aspect-[3/1] w-full"
+        className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
         style={{
           maxHeight: "420px",
         }}
@@ -82,7 +77,7 @@ export default function Home() {
         id="location"
         className="flex justify-center py-12 dark:bg-black/50 bg-black/3  px-8"
       >
-        <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
+        <div className="container max-w-5xl grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
           <OpeningHours />
           <ContactDetails />
         </div>
