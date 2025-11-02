@@ -3,7 +3,7 @@
 exports[`WoltButton > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5]/100 text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
+    class="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5] text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
   >
     <a
       aria-label="mocked-i18n-'wolt-link-description'"
@@ -14,7 +14,7 @@ exports[`WoltButton > matches snapshot(s) 1`] = `
     >
       <mocked-woltlogo />
       <div
-        class="absolute inset-0 bg-gradient-to-b from-white/10 to-white/0 z-10"
+        class="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10"
       />
     </a>
   </div>

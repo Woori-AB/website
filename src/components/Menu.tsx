@@ -6,7 +6,7 @@ export default function Menu() {
   const intl = useIntl();
 
   return (
-    <div className="container max-w-screen-lg grid md:grid-cols-2 xs:grid-cols-2 gap-8 items-stretch">
+    <div className="container max-w-5xl grid md:grid-cols-2 xs:grid-cols-2 gap-8 items-stretch">
       <div
         id="korean-menu"
         className="flex flex-col items-center text-center gap-8"
