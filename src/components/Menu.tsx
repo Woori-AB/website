@@ -29,7 +29,7 @@ export default function Menu() {
             })}
           />
         </MenuCard>
-        <MenuCard
+        {/*<MenuCard
           id="starters-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
         >
@@ -70,7 +70,7 @@ export default function Menu() {
               id: "menu.starters.starter-3.price",
             })}
           />
-        </MenuCard>
+        </MenuCard>*/}
         <MenuCard
           id="mains-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2"
@@ -172,7 +172,7 @@ export default function Menu() {
             />
           </MenuCard>
         </MenuCard>
-        <MenuCard
+        {/*<MenuCard
           id="desserts-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
         >
@@ -213,7 +213,7 @@ export default function Menu() {
               id: "menu.desserts.dessert-3.price",
             })}
           />
-        </MenuCard>
+        </MenuCard>*/}
         <MenuCard
           id="drinks-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
@@ -222,7 +222,7 @@ export default function Menu() {
             title={intl.formatMessage({ id: "menu.drinks" })}
             className="col-span-1 md:col-span-2 xl:col-span-3"
           />
-          <MenuCard id="beer-menu">
+          {/*<MenuCard id="beer-menu">
             <MenuTitle title={intl.formatMessage({ id: "menu.drinks.beer" })} />
             <MenuItem
               title={intl.formatMessage({
@@ -311,14 +311,14 @@ export default function Menu() {
                 id: "menu.drinks.soju.soju-3.price",
               })}
             />
-          </MenuCard>
+          </MenuCard>*/}
           <MenuCard
             id="alcohol-free-menu"
-            className="col-span-1 md:col-span-2 xl:col-span-1"
+            className="col-span-1 md:col-span-2 xl:col-span-3"
           >
-            <MenuTitle
+            {/*<MenuTitle
               title={intl.formatMessage({ id: "menu.drinks.alcohol-free" })}
-            />
+            />*/}
             <MenuItem
               title={intl.formatMessage({
                 id: "menu.drinks.alcohol-free.coca-cola.name",
@@ -374,7 +374,7 @@ export default function Menu() {
                 id: "menu.drinks.alcohol-free.fanta.price",
               })}
             />
-            <MenuItem
+            {/*<MenuItem
               title={intl.formatMessage({
                 id: "menu.drinks.alcohol-free.kirin-ichiban-alcohol-free.name",
               })}
@@ -384,7 +384,7 @@ export default function Menu() {
               price={intl.formatMessage({
                 id: "menu.drinks.alcohol-free.kirin-ichiban-alcohol-free.price",
               })}
-            />
+            />*/}
           </MenuCard>
         </MenuCard>
       </MenuCard>
