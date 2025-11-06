@@ -3,205 +3,124 @@
 exports[`Menu > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="container max-w-5xl grid md:grid-cols-2 xs:grid-cols-2 gap-8 items-stretch"
+    class="container"
   >
-    <div
-      class="flex flex-col items-center text-center gap-8"
-      id="korean-menu"
+    <mocked-menucard
+      id="full-menu"
     >
-      <h1>
-        mocked-i18n-'menu.bibimbap'
-      </h1>
-      <div
-        class="flex flex-col items-center text-center"
+      <mocked-menucard
+        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
+        id="weekly-menu"
       >
-        <h2>
-          mocked-i18n-'menu.bibimbap.beef-bibimbap.name'
-           
-          149kr
-        </h2>
-        <span>
-          mocked-i18n-'menu.bibimbap.beef-bibimbap.ingredients'
-        </span>
-        <span
-          class="italic"
+        <mocked-menutitle
+          title="mocked-i18n-'menu.weekly'"
+        />
+        <mocked-menuitem
+          allergies="mocked-i18n-'menu.weekly.weekly-1.allergies'"
+          ingredients="mocked-i18n-'menu.weekly.weekly-1.ingredients'"
+          price="mocked-i18n-'menu.weekly.weekly-1.price'"
+          title="mocked-i18n-'menu.weekly.weekly-1.name'"
+        />
+      </mocked-menucard>
+      <mocked-menucard
+        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2"
+        id="mains-menu"
+      >
+        <mocked-menutitle
+          class="col-span-1 md:col-span-2"
+          title="mocked-i18n-'menu.mains'"
+        />
+        <mocked-menucard
+          id="bibimbap-menu"
         >
-          mocked-i18n-'menu.bibimbap.beef-bibimbap.allergies'
-        </span>
-      </div>
-      <div
-        class="flex flex-col items-center text-center"
-      >
-        <h2>
-          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.name'
-           
-          139kr
-        </h2>
-        <span>
-          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.ingredients'
-        </span>
-        <span
-          class="italic"
+          <mocked-menutitle
+            title="mocked-i18n-'menu.bibimbap'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.bibimbap.beef-bibimbap.allergies'"
+            ingredients="mocked-i18n-'menu.bibimbap.beef-bibimbap.ingredients'"
+            price="mocked-i18n-'menu.bibimbap.beef-bibimbap.price'"
+            title="mocked-i18n-'menu.bibimbap.beef-bibimbap.name'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.allergies'"
+            ingredients="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.ingredients'"
+            price="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.price'"
+            title="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.name'"
+          />
+        </mocked-menucard>
+        <mocked-menucard
+          id="kfc-menu"
         >
-          mocked-i18n-'menu.bibimbap.mushroom-bibimbap.allergies'
-        </span>
-      </div>
-    </div>
-    <div
-      class="flex flex-col items-center text-center gap-8"
-      id="korean-fried-chicken-menu"
-    >
-      <h1>
-        mocked-i18n-'menu.korean-fried-chicken'
-      </h1>
-      <div
-        class="flex flex-col items-center text-center"
+          <mocked-menutitle
+            title="mocked-i18n-'menu.korean-fried-chicken'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.allergies'"
+            ingredients="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.ingredients'"
+            price="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.price'"
+            title="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.name'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.allergies'"
+            ingredients="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.ingredients'"
+            price="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.price'"
+            title="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.name'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.korean-fried-chicken.honey-soy.allergies'"
+            ingredients="mocked-i18n-'menu.korean-fried-chicken.honey-soy.ingredients'"
+            price="mocked-i18n-'menu.korean-fried-chicken.honey-soy.price'"
+            title="mocked-i18n-'menu.korean-fried-chicken.honey-soy.name'"
+          />
+          <mocked-menuitem
+            allergies="mocked-i18n-'menu.korean-fried-chicken.kids-menu.allergies'"
+            ingredients="mocked-i18n-'menu.korean-fried-chicken.kids-menu.ingredients'"
+            price="mocked-i18n-'menu.korean-fried-chicken.kids-menu.price'"
+            title="mocked-i18n-'menu.korean-fried-chicken.kids-menu.name'"
+          />
+        </mocked-menucard>
+      </mocked-menucard>
+      <mocked-menucard
+        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+        id="drinks-menu"
       >
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.name'
-           
-          129kr
-          <span
-            class="text-sm"
-          >
-            (150g)
-          </span>
-           149kr
-          <span
-            class="text-sm"
-          >
-            (200g)
-          </span>
-        </h2>
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.extra-info'
-        </h2>
-        <span>
-          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.ingredients'
-        </span>
-        <span
-          class="italic"
+        <mocked-menutitle
+          class="col-span-1 md:col-span-2 xl:col-span-3"
+          title="mocked-i18n-'menu.drinks'"
+        />
+        <mocked-menucard
+          class="col-span-1 md:col-span-2 xl:col-span-3"
+          id="alcohol-free-menu"
         >
-          mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.allergies'
-        </span>
-      </div>
-      <div
-        class="flex flex-col items-center text-center"
-      >
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.honey-soy.name'
-           
-          129kr
-          <span
-            class="text-sm"
-          >
-            (150g)
-          </span>
-           149kr
-          <span
-            class="text-sm"
-          >
-            (200g)
-          </span>
-        </h2>
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.honey-soy.extra-info'
-        </h2>
-        <span>
-          mocked-i18n-'menu.korean-fried-chicken.honey-soy.ingredients'
-        </span>
-        <span
-          class="italic"
-        >
-          mocked-i18n-'menu.korean-fried-chicken.honey-soy.allergies'
-        </span>
-      </div>
-      <div
-        class="flex flex-col items-center text-center"
-      >
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.original.name'
-           
-          129kr
-          <span
-            class="text-sm"
-          >
-            (150g)
-          </span>
-           149kr
-          <span
-            class="text-sm"
-          >
-            (200g)
-          </span>
-        </h2>
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.original.extra-info'
-        </h2>
-        <span>
-          mocked-i18n-'menu.korean-fried-chicken.original.ingredients'
-        </span>
-        <span
-          class="italic"
-        >
-          mocked-i18n-'menu.korean-fried-chicken.original.allergies'
-        </span>
-      </div>
-      <div
-        class="flex flex-col items-center text-center"
-      >
-        <h2>
-          mocked-i18n-'menu.korean-fried-chicken.kids-menu.name'
-           
-          99kr
-        </h2>
-        <span>
-          mocked-i18n-'menu.korean-fried-chicken.kids-menu.ingredients'
-        </span>
-        <span
-          class="italic"
-        >
-          mocked-i18n-'menu.korean-fried-chicken.kids-menu.allergies'
-        </span>
-      </div>
-    </div>
-    <div
-      class="flex flex-col items-center text-center gap-2 md:col-span-2"
-      id="drink-menu"
-    >
-      <h1>
-        mocked-i18n-'menu.drinks'
-      </h1>
-      <div
-        class="flex flex-col items-center text-center"
-      >
-        <h2>
-          mocked-i18n-'menu.drinks.coca-cola.name'
-           
-          (33cl) 25kr
-        </h2>
-        <h2>
-          mocked-i18n-'menu.drinks.coca-cola-zero.name'
-           
-          (33cl) 25kr
-        </h2>
-        <h2>
-          mocked-i18n-'menu.drinks.ramlosa-natural.name'
-           
-          (33cl) 25kr
-        </h2>
-        <h2>
-          mocked-i18n-'menu.drinks.ramlosa-citrus.name'
-           
-          (33cl) 25kr
-        </h2>
-        <h2>
-          mocked-i18n-'menu.drinks.fanta.name'
-           
-          (33cl) 25kr
-        </h2>
-      </div>
-    </div>
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.fanta.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.fanta.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.fanta.name'"
+          />
+        </mocked-menucard>
+      </mocked-menucard>
+    </mocked-menucard>
   </div>
 </div>
 `;

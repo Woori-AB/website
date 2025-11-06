@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MenuItem > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center text-center"
+  >
+    <h2>
+      mock-title
+       
+      mock-abv
+       
+      (mock-amount)
+       
+      mock-price
+    </h2>
+    <span>
+      mock-ingredients
+    </span>
+    <span
+      class="italic"
+    >
+      mock-allergies
+    </span>
+  </div>
+</div>
+`;

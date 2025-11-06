@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MenuTitle > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="mock-className"
+  >
+    <h1
+      class="text-center"
+    >
+      mock-title
+    </h1>
+  </div>
+</div>
+`;
