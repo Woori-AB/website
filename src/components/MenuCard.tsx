@@ -16,7 +16,7 @@ export default function MenuCard({
   className: cn,
 }: Props) {
   return (
-    <div className={`container grid p-4 py-8 gap-2 self-start ${cn ?? ""}`}>
+    <div className={`container grid p-2 py-8 gap-2 self-start ${cn ?? ""}`}>
       {children}
     </div>
   );

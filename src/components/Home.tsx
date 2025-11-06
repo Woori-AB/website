@@ -69,7 +69,7 @@ export default function Home() {
       </section>
       <section
         id="menu"
-        className="flex flex-col items-center justify-center py-12 px-8"
+        className="flex flex-col items-center justify-center py-12 px-0"
       >
         <Menu />
       </section>
