@@ -4,6 +4,7 @@ exports[`MenuCard > matches snapshot(s) with extended className 1`] = `
 <div>
   <div
     class="container grid p-2 py-8 gap-2 self-start mock-className"
+    id="test-card"
   >
     <div>
       Foo
@@ -16,6 +17,7 @@ exports[`MenuCard > matches snapshot(s) with no extended className 1`] = `
 <div>
   <div
     class="container grid p-2 py-8 gap-2 self-start "
+    id="test-card"
   >
     <div>
       Foo

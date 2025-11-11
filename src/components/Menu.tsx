@@ -29,7 +29,7 @@ export default function Menu() {
             })}
           />
         </MenuCard>
-        {/*<MenuCard
+        <MenuCard
           id="starters-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
         >
@@ -70,7 +70,7 @@ export default function Menu() {
               id: "menu.starters.starter-3.price",
             })}
           />
-        </MenuCard>*/}
+        </MenuCard>
         <MenuCard
           id="mains-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2"
