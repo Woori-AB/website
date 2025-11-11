@@ -108,17 +108,39 @@ exports[`Menu > matches snapshot(s) 1`] = `
         </mocked-menucard>
       </mocked-menucard>
       <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
         id="drinks-menu"
       >
         <mocked-menutitle
-          class="col-span-1 md:col-span-2 xl:col-span-3"
+          class="col-span-1"
           title="mocked-i18n-'menu.drinks'"
         />
         <mocked-menucard
-          class="col-span-1 md:col-span-2 xl:col-span-3"
+          id="beer-menu"
+        >
+          <mocked-menutitle
+            title="mocked-i18n-'menu.drinks.beer'"
+          />
+          <mocked-menuitem
+            abv="mocked-i18n-'menu.drinks.beer.beer-3.abv'"
+            amount="mocked-i18n-'menu.drinks.beer.beer-3.amount'"
+            price="mocked-i18n-'menu.drinks.beer.beer-3.price'"
+            title="mocked-i18n-'menu.drinks.beer.beer-3.name'"
+          />
+          <mocked-menuitem
+            abv="mocked-i18n-'menu.drinks.beer.beer-4.abv'"
+            amount="mocked-i18n-'menu.drinks.beer.beer-4.amount'"
+            price="mocked-i18n-'menu.drinks.beer.beer-4.price'"
+            title="mocked-i18n-'menu.drinks.beer.beer-4.name'"
+          />
+        </mocked-menucard>
+        <mocked-menucard
+          class="col-span-1"
           id="alcohol-free-menu"
         >
+          <mocked-menutitle
+            title="mocked-i18n-'menu.drinks.alcohol-free'"
+          />
           <mocked-menuitem
             amount="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.amount'"
             price="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.price'"
@@ -143,6 +165,11 @@ exports[`Menu > matches snapshot(s) 1`] = `
             amount="mocked-i18n-'menu.drinks.alcohol-free.fanta.amount'"
             price="mocked-i18n-'menu.drinks.alcohol-free.fanta.price'"
             title="mocked-i18n-'menu.drinks.alcohol-free.fanta.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.name'"
           />
         </mocked-menucard>
       </mocked-menucard>
