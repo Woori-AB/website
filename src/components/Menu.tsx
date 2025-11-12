@@ -218,10 +218,102 @@ export default function Menu() {
           id="drinks-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
         >
-          <MenuTitle
+          {/*<MenuTitle
             title={intl.formatMessage({ id: "menu.drinks" })}
             className="col-span-1"
-          />
+          />*/}
+          <MenuCard id="wine-menu" className="md:grid-cols-2 sm:grid-cols-1">
+            <MenuTitle
+              title={intl.formatMessage({ id: "menu.drinks.wine" })}
+              className="md:col-span-2 sm:grid-cols-1"
+            />
+            <MenuCard id="red-wine-menu">
+              <MenuTitle
+                title={intl.formatMessage({ id: "menu.drinks.wine.red" })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.red.raiola-2021.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.red.raiola-2021.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.red.raiola-2021.price",
+                })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.red.belfo-palhete-2024.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.red.belfo-palhete-2024.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.red.belfo-palhete-2024.price",
+                })}
+              />
+            </MenuCard>
+            <MenuCard id="white-wine-menu">
+              <MenuTitle
+                title={intl.formatMessage({ id: "menu.drinks.wine.white" })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.white.branco-2022.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.white.branco-2022.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.white.branco-2022.price",
+                })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.white.primieras-gotas-bica.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.white.primieras-gotas-bica.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.white.primieras-gotas-bica.price",
+                })}
+              />
+            </MenuCard>
+            <MenuCard id="orange-wine-menu">
+              <MenuTitle
+                title={intl.formatMessage({ id: "menu.drinks.wine.orange" })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.orange.dolia-branco-2023.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.orange.dolia-branco-2023.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.orange.dolia-branco-2023.price",
+                })}
+              />
+            </MenuCard>
+            <MenuCard id="rose-wine-menu">
+              <MenuTitle
+                title={intl.formatMessage({ id: "menu.drinks.wine.rose" })}
+              />
+              <MenuItem
+                title={intl.formatMessage({
+                  id: "menu.drinks.wine.rose.baga-rosado-2024.name",
+                })}
+                abv={intl.formatMessage({
+                  id: "menu.drinks.wine.rose.baga-rosado-2024.abv",
+                })}
+                price={intl.formatMessage({
+                  id: "menu.drinks.wine.rose.baga-rosado-2024.price",
+                })}
+              />
+            </MenuCard>
+          </MenuCard>
           <MenuCard id="beer-menu">
             <MenuTitle title={intl.formatMessage({ id: "menu.drinks.beer" })} />
             {/*<MenuItem
@@ -312,10 +404,7 @@ export default function Menu() {
               })}
             />
           </MenuCard>*/}
-          <MenuCard
-            id="alcohol-free-menu"
-            className="col-span-1"
-          >
+          <MenuCard id="alcohol-free-menu" className="col-span-1">
             <MenuTitle
               title={intl.formatMessage({ id: "menu.drinks.alcohol-free" })}
             />

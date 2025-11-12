@@ -7,11 +7,9 @@ exports[`MenuItem > matches snapshot(s) 1`] = `
   >
     <h2>
       mock-title
-       
-      mock-abv
-       
-      (mock-amount)
-       
+       (mock-amount)
+      , mock-abv
+      , 
       mock-price
     </h2>
     <span>

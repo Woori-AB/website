@@ -111,10 +111,73 @@ exports[`Menu > matches snapshot(s) 1`] = `
         class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
         id="drinks-menu"
       >
-        <mocked-menutitle
-          class="col-span-1"
-          title="mocked-i18n-'menu.drinks'"
-        />
+        <mocked-menucard
+          class="md:grid-cols-2 sm:grid-cols-1"
+          id="wine-menu"
+        >
+          <mocked-menutitle
+            class="md:col-span-2 sm:grid-cols-1"
+            title="mocked-i18n-'menu.drinks.wine'"
+          />
+          <mocked-menucard
+            id="red-wine-menu"
+          >
+            <mocked-menutitle
+              title="mocked-i18n-'menu.drinks.wine.red'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.red.raiola-2021.abv'"
+              price="mocked-i18n-'menu.drinks.wine.red.raiola-2021.price'"
+              title="mocked-i18n-'menu.drinks.wine.red.raiola-2021.name'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.abv'"
+              price="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.price'"
+              title="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.name'"
+            />
+          </mocked-menucard>
+          <mocked-menucard
+            id="white-wine-menu"
+          >
+            <mocked-menutitle
+              title="mocked-i18n-'menu.drinks.wine.white'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.white.branco-2022.abv'"
+              price="mocked-i18n-'menu.drinks.wine.white.branco-2022.price'"
+              title="mocked-i18n-'menu.drinks.wine.white.branco-2022.name'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.abv'"
+              price="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.price'"
+              title="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.name'"
+            />
+          </mocked-menucard>
+          <mocked-menucard
+            id="orange-wine-menu"
+          >
+            <mocked-menutitle
+              title="mocked-i18n-'menu.drinks.wine.orange'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.abv'"
+              price="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.price'"
+              title="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.name'"
+            />
+          </mocked-menucard>
+          <mocked-menucard
+            id="rose-wine-menu"
+          >
+            <mocked-menutitle
+              title="mocked-i18n-'menu.drinks.wine.rose'"
+            />
+            <mocked-menuitem
+              abv="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.abv'"
+              price="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.price'"
+              title="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.name'"
+            />
+          </mocked-menucard>
+        </mocked-menucard>
         <mocked-menucard
           id="beer-menu"
         >

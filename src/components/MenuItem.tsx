@@ -20,7 +20,9 @@ export default function MenuItem({
   return (
     <div className="flex flex-col items-center text-center">
       <h2>
-        {title} {abv} {amount && `(${amount})`} {price}
+        {title}
+        {amount && ` (${amount})`}
+        {abv && `, ${abv}`}, {price}
       </h2>
       {ingredients && <span>{ingredients}</span>}
       {allergies && <span className="italic">{allergies}</span>}
