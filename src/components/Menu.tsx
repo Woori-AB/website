@@ -474,6 +474,28 @@ export default function Menu() {
                 id: "menu.drinks.alcohol-free.mariestads-alcohol-free.price",
               })}
             />
+            <MenuItem
+              title={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.name",
+              })}
+              amount={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.amount",
+              })}
+              price={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.price",
+              })}
+            />
+            <MenuItem
+              title={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.name",
+              })}
+              amount={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.amount",
+              })}
+              price={intl.formatMessage({
+                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.price",
+              })}
+            />
           </MenuCard>
         </MenuCard>
       </MenuCard>

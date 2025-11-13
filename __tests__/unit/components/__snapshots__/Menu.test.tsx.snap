@@ -234,6 +234,16 @@ exports[`Menu > matches snapshot(s) 1`] = `
             price="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.price'"
             title="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.name'"
           />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.name'"
+          />
+          <mocked-menuitem
+            amount="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.amount'"
+            price="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.price'"
+            title="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.name'"
+          />
         </mocked-menucard>
       </mocked-menucard>
     </mocked-menucard>
