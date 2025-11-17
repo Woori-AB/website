@@ -59,10 +59,10 @@ export default function Home() {
               "/korean-fried-chicken-sweet-spicy.jpg",
               "/bulgogi-sm.jpg",
               "/korean-fried-chicken-honey-soy.jpg",
+              "/natural-wines.jpg",
               "/pesto-pasta-sm.jpg",
               "/truffle-pasta-sm.jpg",
               "/tuna-salad-sm.jpg",
-              "/pizza-sm.jpg",
             ]}
           />
         </div>
