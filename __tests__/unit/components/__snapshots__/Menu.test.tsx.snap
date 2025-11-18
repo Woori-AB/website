@@ -108,6 +108,32 @@ exports[`Menu > matches snapshot(s) 1`] = `
         </mocked-menucard>
       </mocked-menucard>
       <mocked-menucard
+        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
+        id="desserts-menu"
+      >
+        <mocked-menutitle
+          title="mocked-i18n-'menu.desserts'"
+        />
+        <mocked-menuitem
+          allergies="mocked-i18n-'menu.desserts.dessert-1.allergies'"
+          ingredients="mocked-i18n-'menu.desserts.dessert-1.ingredients'"
+          price="mocked-i18n-'menu.desserts.dessert-1.price'"
+          title="mocked-i18n-'menu.desserts.dessert-1.name'"
+        />
+        <mocked-menuitem
+          allergies="mocked-i18n-'menu.desserts.dessert-2.allergies'"
+          ingredients="mocked-i18n-'menu.desserts.dessert-2.ingredients'"
+          price="mocked-i18n-'menu.desserts.dessert-2.price'"
+          title="mocked-i18n-'menu.desserts.dessert-2.name'"
+        />
+        <mocked-menuitem
+          allergies="mocked-i18n-'menu.desserts.dessert-3.allergies'"
+          ingredients="mocked-i18n-'menu.desserts.dessert-3.ingredients'"
+          price="mocked-i18n-'menu.desserts.dessert-3.price'"
+          title="mocked-i18n-'menu.desserts.dessert-3.name'"
+        />
+      </mocked-menucard>
+      <mocked-menucard
         class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
         id="drinks-menu"
       >

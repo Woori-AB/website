@@ -172,7 +172,7 @@ export default function Menu() {
             />
           </MenuCard>
         </MenuCard>
-        {/*<MenuCard
+        <MenuCard
           id="desserts-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
         >
@@ -213,7 +213,7 @@ export default function Menu() {
               id: "menu.desserts.dessert-3.price",
             })}
           />
-        </MenuCard>*/}
+        </MenuCard>
         <MenuCard
           id="drinks-menu"
           className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
