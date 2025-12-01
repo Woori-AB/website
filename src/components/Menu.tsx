@@ -201,18 +201,6 @@ export default function Menu() {
               id: "menu.desserts.dessert-2.price",
             })}
           />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.desserts.dessert-3.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.desserts.dessert-3.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.desserts.dessert-3.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.desserts.dessert-3.price",
-            })}
-          />
         </MenuCard>
         <MenuCard
           id="drinks-menu"
