@@ -353,7 +353,7 @@ export default function Menu() {
               })}
             />
           </MenuCard>
-          {/*<MenuCard id="soju-menu">
+          <MenuCard id="soju-menu">
             <MenuTitle title={intl.formatMessage({ id: "menu.drinks.soju" })} />
             <MenuItem
               title={intl.formatMessage({
@@ -391,7 +391,7 @@ export default function Menu() {
                 id: "menu.drinks.soju.soju-3.price",
               })}
             />
-          </MenuCard>*/}
+          </MenuCard>
           <MenuCard id="alcohol-free-menu" className="col-span-1">
             <MenuTitle
               title={intl.formatMessage({ id: "menu.drinks.alcohol-free" })}

@@ -218,6 +218,31 @@ exports[`Menu > matches snapshot(s) 1`] = `
           />
         </mocked-menucard>
         <mocked-menucard
+          id="soju-menu"
+        >
+          <mocked-menutitle
+            title="mocked-i18n-'menu.drinks.soju'"
+          />
+          <mocked-menuitem
+            abv="mocked-i18n-'menu.drinks.soju.soju-1.abv'"
+            amount="mocked-i18n-'menu.drinks.soju.soju-1.amount'"
+            price="mocked-i18n-'menu.drinks.soju.soju-1.price'"
+            title="mocked-i18n-'menu.drinks.soju.soju-1.name'"
+          />
+          <mocked-menuitem
+            abv="mocked-i18n-'menu.drinks.soju.soju-2.abv'"
+            amount="mocked-i18n-'menu.drinks.soju.soju-2.amount'"
+            price="mocked-i18n-'menu.drinks.soju.soju-2.price'"
+            title="mocked-i18n-'menu.drinks.soju.soju-2.name'"
+          />
+          <mocked-menuitem
+            abv="mocked-i18n-'menu.drinks.soju.soju-3.abv'"
+            amount="mocked-i18n-'menu.drinks.soju.soju-3.amount'"
+            price="mocked-i18n-'menu.drinks.soju.soju-3.price'"
+            title="mocked-i18n-'menu.drinks.soju.soju-3.name'"
+          />
+        </mocked-menucard>
+        <mocked-menucard
           class="col-span-1"
           id="alcohol-free-menu"
         >
