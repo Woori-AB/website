@@ -9,6 +9,9 @@ exports[`OpeningHours > matches snapshot(s) 1`] = `
     <h1>
       mocked-i18n-'opening-hours'
     </h1>
+    <h2>
+      mocked-i18n-'opening-hours-subtitle'
+    </h2>
     <span>
       mocked-i18n-'monday'
       :
