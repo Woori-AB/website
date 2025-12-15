@@ -55,6 +55,9 @@ vi.mock("@/components/MenuCard", () => createMockComponent("MenuCard"));
 vi.mock("@/components/MenuItem", () => createMockComponent("MenuItem"));
 vi.mock("@/components/MenuTitle", () => createMockComponent("MenuTitle"));
 
+vi.mock("@/components/TikTokButton", () => createMockComponent("TikTokButton"));
+vi.mock("@/components/TikTokLogo", () => createMockComponent("TikTokLogo"));
+
 vi.mock("@/components/UberEatsButton", () =>
   createMockComponent("UberEatsButton")
 );

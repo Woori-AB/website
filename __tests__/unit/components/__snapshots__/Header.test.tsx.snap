@@ -33,6 +33,7 @@ exports[`Header > matches snapshot(s) 1`] = `
       >
         <mocked-instagrambutton />
         <mocked-facebookbutton />
+        <mocked-tiktokbutton />
       </div>
     </div>
   </div>
