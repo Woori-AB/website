@@ -6,6 +6,7 @@ import InstagramButton from "@/components/InstagramButton";
 import FacebookButton from "@/components/FacebookButton";
 import FoodoraButton from "@/components/FoodoraButton";
 import UberEatsButton from "@/components/UberEatsButton";
+import TikTokButton from "./TikTokButton";
 
 export default function Header() {
   return (
@@ -36,6 +37,7 @@ export default function Header() {
           <div className="flex flex-col gap-2">
             <InstagramButton />
             <FacebookButton />
+            <TikTokButton />
           </div>
         </div>
       </div>
