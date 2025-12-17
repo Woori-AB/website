@@ -20,3 +20,10 @@ The easiest way to get started is to use the development container provided with
 | `npm run start` | Starts the website using the compiled static files (must run `npm run build` first). |
 
 *See [`package.json`](package.json) for complete list of available npm scripts.*
+
+## Debugging
+
+Use the **Run and Debug** panel in [**Visual Studio Code**](https://code.visualstudio.com/) to
+
+- Start the local development server with debugger attached.
+- Run tests with the debugger attached.
