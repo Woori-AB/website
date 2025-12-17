@@ -5,50 +5,88 @@ import { useIntl } from "react-intl";
 
 function MenuItemName({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center text-lg font-bold">{intl.formatMessage({ id: i18n })}</span>;
+  return (
+    <span className="flex w-full justify-center text-lg font-bold">
+      {intl.formatMessage({ id: i18n })}
+    </span>
+  );
 }
 
 function MenuItemPrice({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center">{intl.formatMessage({ id: i18n })}</span>;
+  return (
+    <span className="flex w-full justify-center">
+      {intl.formatMessage({ id: i18n })}
+    </span>
+  );
 }
 
 function MenuItemIngredients({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">{intl.formatMessage({ id: i18n })}</span>;
+  return (
+    <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">
+      {intl.formatMessage({ id: i18n })}
+    </span>
+  );
 }
 
 function MenuItemExtraInfo({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">{intl.formatMessage({ id: i18n })}</span>;
+  return (
+    <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">
+      {intl.formatMessage({ id: i18n })}
+    </span>
+  );
 }
 
 function MenuItemAllergens({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]">{intl.formatMessage({ id: i18n })}</span>;
+  return (
+    <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]">
+      {intl.formatMessage({ id: i18n })}
+    </span>
+  );
 }
 
 function MenuTitle({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <h1 className="flex justify-center mb-2">{intl.formatMessage({ id: i18n })}</h1>;
+  return (
+    <h1 className="flex justify-center mb-2">
+      {intl.formatMessage({ id: i18n })}
+    </h1>
+  );
 }
 
 function MenuItemCategory({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <h2 className="flex justify-center mt-2 mb-2">{intl.formatMessage({ id: i18n })}</h2>;
+  return (
+    <h2 className="flex justify-center mt-2 mb-2">
+      {intl.formatMessage({ id: i18n })}
+    </h2>
+  );
 }
 
 function MenuItemSubcategory({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <h3 className="flex justify-center font-bold">{intl.formatMessage({ id: i18n })}</h3>;
+  return (
+    <h3 className="flex justify-center font-bold">
+      {intl.formatMessage({ id: i18n })}
+    </h3>
+  );
 }
 
 function MenuItem({ children }: { children: ReactNode }) {
   return <div className="flex flex-col w-full">{children}</div>;
 }
 
-function MenuRow({ children, cols }: { children: ReactNode, cols: number }) {
-  return <div className={`grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-${cols}`}>{children}</div>;
+function MenuRow({ children, cols }: { children: ReactNode; cols: number }) {
+  return (
+    <div
+      className={`grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-${cols}`}
+    >
+      {children}
+    </div>
+  );
 }
 
 function MenuColumn({ children }: { children: ReactNode }) {
@@ -56,16 +94,18 @@ function MenuColumn({ children }: { children: ReactNode }) {
 }
 
 function MenuSheet({ children }: { children: ReactNode }) {
-  return <div className="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3">{children}</div>;
+  return (
+    <div className="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3">
+      {children}
+    </div>
+  );
 }
 
 export type Props = {
   className?: string;
 };
 
-export default function Menu({
-  className: cn,
-}: Props) {
+export default function Menu({ className: cn }: Props) {
   return (
     <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
       <MenuSheet>
@@ -82,7 +122,7 @@ export default function Menu({
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.starters" } />
+        <MenuTitle i18n={"menu.starters"} />
         <MenuRow cols={1}>
           <MenuColumn>
             <MenuItem>
@@ -95,7 +135,7 @@ export default function Menu({
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.mains" } />
+        <MenuTitle i18n={"menu.mains"} />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItemCategory i18n="menu.mains.bibimbap" />
@@ -137,7 +177,7 @@ export default function Menu({
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.desserts" } />
+        <MenuTitle i18n={"menu.desserts"} />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
@@ -158,11 +198,11 @@ export default function Menu({
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.drinks" } />
+        <MenuTitle i18n={"menu.drinks"} />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.beer" } />
+              <MenuItemCategory i18n={"menu.drinks.beer"} />
               <MenuItemName i18n="menu.drinks.beer.beer-3.name" />
               <MenuItemPrice i18n="menu.drinks.beer.beer-3.price" />
             </MenuItem>
@@ -173,7 +213,7 @@ export default function Menu({
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.soju" } />
+              <MenuItemCategory i18n={"menu.drinks.soju"} />
               <MenuItemName i18n="menu.drinks.soju.soju-1.name" />
               <MenuItemPrice i18n="menu.drinks.soju.soju-1.price" />
             </MenuItem>
@@ -188,46 +228,40 @@ export default function Menu({
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.wine" } />
-              <MenuItemSubcategory i18n={"menu.drinks.wine.red" } />
+              <MenuItemCategory i18n={"menu.drinks.wine"} />
+              <MenuItemSubcategory i18n={"menu.drinks.wine.red"} />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.red-1.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.red-1.ingredients" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-2.name" />
               <MenuItemPrice i18n="menu.drinks.wine.red-2.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.red-2.ingredients" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.white" } />
+              <MenuItemSubcategory i18n={"menu.drinks.wine.white"} />
               <MenuItemName i18n="menu.drinks.wine.white-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.white-1.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.white-1.ingredients" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.white-2.name" />
               <MenuItemPrice i18n="menu.drinks.wine.white-2.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.white-2.ingredients" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.orange" } />
+              <MenuItemSubcategory i18n={"menu.drinks.wine.orange"} />
               <MenuItemName i18n="menu.drinks.wine.orange-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.orange-1.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.orange-1.ingredients" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.rose" } />
+              <MenuItemSubcategory i18n={"menu.drinks.wine.rose"} />
               <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
-              <MenuItemIngredients i18n="menu.drinks.wine.rose-1.ingredients" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.alcohol-free" } />
+              <MenuItemCategory i18n={"menu.drinks.alcohol-free"} />
               <MenuItemName i18n="menu.drinks.alcohol-free-1.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-2.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-3.name" />
