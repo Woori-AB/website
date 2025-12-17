@@ -30,12 +30,12 @@ function MenuItemAllergens({ i18n }: { i18n: string }) {
 
 function MenuTitle({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <h1 className="flex justify-center mb-2 bg-white/20 dark:bg-black/20">{intl.formatMessage({ id: i18n })}</h1>;
+  return <h1 className="flex justify-center mb-2">{intl.formatMessage({ id: i18n })}</h1>;
 }
 
 function MenuItemCategory({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <h2 className="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20">{intl.formatMessage({ id: i18n })}</h2>;
+  return <h2 className="flex justify-center mt-2 mb-2">{intl.formatMessage({ id: i18n })}</h2>;
 }
 
 function MenuItemSubcategory({ i18n }: { i18n: string }) {
@@ -67,7 +67,7 @@ export default function Menu({
   className: cn,
 }: Props) {
   return (
-    <div id="menu" className={`flex flex-col gap-4 text-center ${cn}`}>
+    <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
       <MenuSheet>
         <MenuTitle i18n={"menu.weekly"} />
         <MenuRow cols={1}>

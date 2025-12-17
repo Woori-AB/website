@@ -3,14 +3,14 @@
 exports[`Menu > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="flex flex-col gap-4 text-center undefined"
+    class="flex flex-col px-4 gap-4 text-center undefined"
     id="menu"
   >
     <div
       class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
       <h1
-        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+        class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.weekly'
       </h1>
@@ -51,7 +51,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
       class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
       <h1
-        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+        class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.starters'
       </h1>
@@ -92,7 +92,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
       class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
       <h1
-        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+        class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.mains'
       </h1>
@@ -103,7 +103,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
           <h2
-            class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            class="flex justify-center mt-2 mb-2"
           >
             mocked-i18n-'menu.mains.bibimbap'
           </h2>
@@ -160,7 +160,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
           <h2
-            class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            class="flex justify-center mt-2 mb-2"
           >
             mocked-i18n-'menu.mains.korean-fried-chicken'
           </h2>
@@ -248,7 +248,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
       class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
       <h1
-        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+        class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.desserts'
       </h1>
@@ -317,7 +317,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
       class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
       <h1
-        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+        class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.drinks'
       </h1>
@@ -331,7 +331,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
             class="flex flex-col w-full"
           >
             <h2
-              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+              class="flex justify-center mt-2 mb-2"
             >
               mocked-i18n-'menu.drinks.beer'
             </h2>
@@ -368,7 +368,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
             class="flex flex-col w-full"
           >
             <h2
-              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+              class="flex justify-center mt-2 mb-2"
             >
               mocked-i18n-'menu.drinks.soju'
             </h2>
@@ -419,7 +419,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
             class="flex flex-col w-full"
           >
             <h2
-              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+              class="flex justify-center mt-2 mb-2"
             >
               mocked-i18n-'menu.drinks.wine'
             </h2>
@@ -566,7 +566,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
             class="flex flex-col w-full"
           >
             <h2
-              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+              class="flex justify-center mt-2 mb-2"
             >
               mocked-i18n-'menu.drinks.alcohol-free'
             </h2>
