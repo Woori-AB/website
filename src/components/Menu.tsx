@@ -25,7 +25,7 @@ function MenuItemExtraInfo({ i18n }: { i18n: string }) {
 
 function MenuItemAllergens({ i18n }: { i18n: string }) {
   const intl = useIntl();
-  return <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]">{intl.formatMessage({ id: i18n })}</span>;
+  return <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]">{intl.formatMessage({ id: i18n })}</span>;
 }
 
 function MenuTitle({ i18n }: { i18n: string }) {

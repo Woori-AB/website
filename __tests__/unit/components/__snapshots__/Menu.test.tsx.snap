@@ -39,7 +39,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.weekly.weekly-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.weekly.weekly-1.allergies'
             </span>
@@ -80,7 +80,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.starters.starter-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.starters.starter-1.allergies'
             </span>
@@ -126,7 +126,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.bibimbap-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.mains.bibimbap-1.allergies'
             </span>
@@ -150,7 +150,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.bibimbap-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.mains.bibimbap-2.allergies'
             </span>
@@ -188,7 +188,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-1.allergies'
             </span>
@@ -212,7 +212,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-2.allergies'
             </span>
@@ -236,7 +236,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-3.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-3.allergies'
             </span>
@@ -277,7 +277,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.desserts.dessert-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.desserts.dessert-1.allergies'
             </span>
@@ -305,7 +305,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.desserts.dessert-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
             >
               mocked-i18n-'menu.desserts.dessert-2.allergies'
             </span>
