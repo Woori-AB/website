@@ -1,5 +1,5 @@
 import { cleanup, screen, render, fireEvent } from "@testing-library/react";
-import { describe, it, vi, expect, afterEach } from "vitest";
+import { vi } from "vitest";
 
 const useRouterMock = {
   push: vi.fn(),

@@ -1,5 +1,5 @@
 import { cleanup, render } from "@testing-library/react";
-import { describe, it, vi, expect, afterEach } from "vitest";
+import { vi } from "vitest";
 
 describe("FoodoraButton", () => {
   afterEach(() => {

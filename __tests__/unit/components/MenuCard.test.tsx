@@ -1,5 +1,5 @@
 import { cleanup, render } from "@testing-library/react";
-import { describe, it, vi, expect, afterEach } from "vitest";
+import { vi } from "vitest";
 
 describe("MenuCard", () => {
   afterEach(() => {
@@ -16,9 +16,7 @@ describe("MenuCard", () => {
 
     // Act
     const { container } = render(
-      <MenuCard
-        id="test-card"
-      >
+      <MenuCard id="test-card">
         <div>Foo</div>
       </MenuCard>
     );
@@ -36,10 +34,7 @@ describe("MenuCard", () => {
 
     // Act
     const { container } = render(
-      <MenuCard
-        id="test-card"
-        className="mock-className"
-      >
+      <MenuCard id="test-card" className="mock-className">
         <div>Foo</div>
       </MenuCard>
     );

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, cleanup } from "@testing-library/react";
-import { describe, it, vi, expect, afterEach } from "vitest";
+import { vi } from "vitest";
 
 describe("Flag", () => {
   afterEach(() => {

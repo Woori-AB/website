@@ -1,5 +1,5 @@
 import { cleanup, render } from "@testing-library/react";
-import { describe, it, vi, expect, afterEach } from "vitest";
+import { vi } from "vitest";
 
 describe("MenuTitle", () => {
   afterEach(() => {
@@ -15,10 +15,9 @@ describe("MenuTitle", () => {
     >("@/components/MenuTitle");
 
     // Act
-    const { container } = render(<MenuTitle
-      title="mock-title"
-      className="mock-className"
-    />);
+    const { container } = render(
+      <MenuTitle title="mock-title" className="mock-className" />
+    );
 
     // Assert
     expect(container).toMatchSnapshot();
