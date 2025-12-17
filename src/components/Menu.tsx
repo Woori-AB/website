@@ -1,492 +1,252 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useIntl } from "react-intl";
-import MenuCard from "@/components/MenuCard";
-import MenuTitle from "@/components/MenuTitle";
-import MenuItem from "@/components/MenuItem";
 
-export default function Menu() {
+function MenuItemName({ i18n }: { i18n: string }) {
   const intl = useIntl();
+  return <span className="flex w-full justify-center text-lg font-bold">{intl.formatMessage({ id: i18n })}</span>;
+}
 
+function MenuItemPrice({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <span className="flex w-full justify-center">{intl.formatMessage({ id: i18n })}</span>;
+}
+
+function MenuItemIngredients({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">{intl.formatMessage({ id: i18n })}</span>;
+}
+
+function MenuItemExtraInfo({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">{intl.formatMessage({ id: i18n })}</span>;
+}
+
+function MenuItemAllergens({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]">{intl.formatMessage({ id: i18n })}</span>;
+}
+
+function MenuTitle({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <h1 className="flex justify-center mb-2 bg-white/20 dark:bg-black/20">{intl.formatMessage({ id: i18n })}</h1>;
+}
+
+function MenuItemCategory({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <h2 className="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20">{intl.formatMessage({ id: i18n })}</h2>;
+}
+
+function MenuItemSubcategory({ i18n }: { i18n: string }) {
+  const intl = useIntl();
+  return <h3 className="flex justify-center font-bold">{intl.formatMessage({ id: i18n })}</h3>;
+}
+
+function MenuItem({ children }: { children: ReactNode }) {
+  return <div className="flex flex-col w-full">{children}</div>;
+}
+
+function MenuRow({ children, cols }: { children: ReactNode, cols: number }) {
+  return <div className={`grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-${cols}`}>{children}</div>;
+}
+
+function MenuColumn({ children }: { children: ReactNode }) {
+  return <div className="flex flex-col gap-2 w-full pt-2 pb-4">{children}</div>;
+}
+
+function MenuSheet({ children }: { children: ReactNode }) {
+  return <div className="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3">{children}</div>;
+}
+
+export type Props = {
+  className?: string;
+};
+
+export default function Menu({
+  className: cn,
+}: Props) {
   return (
-    <div className="container">
-      <MenuCard id="full-menu">
-        <MenuCard
-          id="weekly-menu"
-          className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        >
-          <MenuTitle title={intl.formatMessage({ id: "menu.weekly" })} />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.weekly.weekly-1.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.weekly.weekly-1.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.weekly.weekly-1.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.weekly.weekly-1.price",
-            })}
-          />
-        </MenuCard>
-        <MenuCard
-          id="starters-menu"
-          className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        >
-          <MenuTitle title={intl.formatMessage({ id: "menu.starters" })} />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.starters.starter-1.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.starters.starter-1.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.starters.starter-1.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.starters.starter-1.price",
-            })}
-          />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.starters.starter-2.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.starters.starter-2.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.starters.starter-2.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.starters.starter-2.price",
-            })}
-          />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.starters.starter-3.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.starters.starter-3.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.starters.starter-3.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.starters.starter-3.price",
-            })}
-          />
-        </MenuCard>
-        <MenuCard
-          id="mains-menu"
-          className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2"
-        >
-          <MenuTitle
-            title={intl.formatMessage({ id: "menu.mains" })}
-            className="col-span-1 md:col-span-2"
-          />
-          <MenuCard id="bibimbap-menu">
-            <MenuTitle title={intl.formatMessage({ id: "menu.bibimbap" })} />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.bibimbap.beef-bibimbap.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.bibimbap.beef-bibimbap.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.bibimbap.beef-bibimbap.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.bibimbap.beef-bibimbap.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.bibimbap.mushroom-bibimbap.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.bibimbap.mushroom-bibimbap.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.bibimbap.mushroom-bibimbap.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.bibimbap.mushroom-bibimbap.price",
-              })}
-            />
-          </MenuCard>
-          <MenuCard id="kfc-menu">
-            <MenuTitle
-              title={intl.formatMessage({ id: "menu.korean-fried-chicken" })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.korean-fried-chicken.woori-chicken-plate.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.korean-fried-chicken.woori-chicken-plate.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.korean-fried-chicken.woori-chicken-plate.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.korean-fried-chicken.woori-chicken-plate.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.korean-fried-chicken.sweet-spicy.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.korean-fried-chicken.sweet-spicy.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.korean-fried-chicken.sweet-spicy.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.korean-fried-chicken.sweet-spicy.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.korean-fried-chicken.honey-soy.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.korean-fried-chicken.honey-soy.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.korean-fried-chicken.honey-soy.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.korean-fried-chicken.honey-soy.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.korean-fried-chicken.kids-menu.name",
-              })}
-              ingredients={intl.formatMessage({
-                id: "menu.korean-fried-chicken.kids-menu.ingredients",
-              })}
-              allergies={intl.formatMessage({
-                id: "menu.korean-fried-chicken.kids-menu.allergies",
-              })}
-              price={intl.formatMessage({
-                id: "menu.korean-fried-chicken.kids-menu.price",
-              })}
-            />
-          </MenuCard>
-        </MenuCard>
-        <MenuCard
-          id="desserts-menu"
-          className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        >
-          <MenuTitle title={intl.formatMessage({ id: "menu.desserts" })} />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.desserts.dessert-1.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.desserts.dessert-1.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.desserts.dessert-1.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.desserts.dessert-1.price",
-            })}
-          />
-          <MenuItem
-            title={intl.formatMessage({ id: "menu.desserts.dessert-2.name" })}
-            ingredients={intl.formatMessage({
-              id: "menu.desserts.dessert-2.ingredients",
-            })}
-            allergies={intl.formatMessage({
-              id: "menu.desserts.dessert-2.allergies",
-            })}
-            price={intl.formatMessage({
-              id: "menu.desserts.dessert-2.price",
-            })}
-          />
-        </MenuCard>
-        <MenuCard
-          id="drinks-menu"
-          className="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
-        >
-          {/*<MenuTitle
-            title={intl.formatMessage({ id: "menu.drinks" })}
-            className="col-span-1"
-          />*/}
-          <MenuCard id="wine-menu" className="md:grid-cols-2 sm:grid-cols-1">
-            <MenuTitle
-              title={intl.formatMessage({ id: "menu.drinks.wine" })}
-              className="md:col-span-2 sm:grid-cols-1"
-            />
-            <MenuCard id="red-wine-menu">
-              <MenuTitle
-                title={intl.formatMessage({ id: "menu.drinks.wine.red" })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.red.raiola-2021.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.red.raiola-2021.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.red.raiola-2021.price",
-                })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.red.belfo-palhete-2024.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.red.belfo-palhete-2024.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.red.belfo-palhete-2024.price",
-                })}
-              />
-            </MenuCard>
-            <MenuCard id="white-wine-menu">
-              <MenuTitle
-                title={intl.formatMessage({ id: "menu.drinks.wine.white" })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.white.branco-2022.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.white.branco-2022.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.white.branco-2022.price",
-                })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.white.primieras-gotas-bica.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.white.primieras-gotas-bica.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.white.primieras-gotas-bica.price",
-                })}
-              />
-            </MenuCard>
-            <MenuCard id="orange-wine-menu">
-              <MenuTitle
-                title={intl.formatMessage({ id: "menu.drinks.wine.orange" })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.orange.dolia-branco-2023.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.orange.dolia-branco-2023.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.orange.dolia-branco-2023.price",
-                })}
-              />
-            </MenuCard>
-            <MenuCard id="rose-wine-menu">
-              <MenuTitle
-                title={intl.formatMessage({ id: "menu.drinks.wine.rose" })}
-              />
-              <MenuItem
-                title={intl.formatMessage({
-                  id: "menu.drinks.wine.rose.baga-rosado-2024.name",
-                })}
-                abv={intl.formatMessage({
-                  id: "menu.drinks.wine.rose.baga-rosado-2024.abv",
-                })}
-                price={intl.formatMessage({
-                  id: "menu.drinks.wine.rose.baga-rosado-2024.price",
-                })}
-              />
-            </MenuCard>
-          </MenuCard>
-          <MenuCard id="beer-menu">
-            <MenuTitle title={intl.formatMessage({ id: "menu.drinks.beer" })} />
-            {/*<MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.beer.beer-1.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.beer.beer-1.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.beer.beer-1.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.beer.beer-1.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.beer.beer-2.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.beer.beer-2.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.beer.beer-2.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.beer.beer-2.price",
-              })}
-            />*/}
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.beer.beer-3.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.beer.beer-3.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.beer.beer-3.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.beer.beer-3.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.beer.beer-4.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.beer.beer-4.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.beer.beer-4.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.beer.beer-4.price",
-              })}
-            />
-          </MenuCard>
-          <MenuCard id="soju-menu">
-            <MenuTitle title={intl.formatMessage({ id: "menu.drinks.soju" })} />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.soju.soju-1.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.soju.soju-1.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.soju.soju-1.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.soju.soju-1.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.soju.soju-2.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.soju.soju-2.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.soju.soju-2.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.soju.soju-2.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.soju.soju-3.name",
-              })}
-              abv={intl.formatMessage({ id: "menu.drinks.soju.soju-3.abv" })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.soju.soju-3.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.soju.soju-3.price",
-              })}
-            />
-          </MenuCard>
-          <MenuCard id="alcohol-free-menu" className="col-span-1">
-            <MenuTitle
-              title={intl.formatMessage({ id: "menu.drinks.alcohol-free" })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola-zero.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola-zero.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.coca-cola-zero.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-natural.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-natural.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-natural.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-citrus.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-citrus.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.ramlosa-citrus.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.fanta.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.fanta.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.fanta.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.mariestads-alcohol-free.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.mariestads-alcohol-free.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.mariestads-alcohol-free.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-ginger-beer.price",
-              })}
-            />
-            <MenuItem
-              title={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.name",
-              })}
-              amount={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.amount",
-              })}
-              price={intl.formatMessage({
-                id: "menu.drinks.alcohol-free.le-tribute-pink-grapefruit.price",
-              })}
-            />
-          </MenuCard>
-        </MenuCard>
-      </MenuCard>
+    <div id="menu" className={`flex flex-col gap-4 text-center ${cn}`}>
+      <MenuSheet>
+        <MenuTitle i18n={"menu.weekly"} />
+        <MenuRow cols={1}>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.weekly.weekly-1.name" />
+              <MenuItemPrice i18n="menu.weekly.weekly-1.price" />
+              <MenuItemIngredients i18n="menu.weekly.weekly-1.ingredients" />
+              <MenuItemAllergens i18n="menu.weekly.weekly-1.allergies" />
+            </MenuItem>
+          </MenuColumn>
+        </MenuRow>
+      </MenuSheet>
+      <MenuSheet>
+        <MenuTitle i18n={"menu.starters" } />
+        <MenuRow cols={1}>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.starters.starter-1.name" />
+              <MenuItemPrice i18n="menu.starters.starter-1.price" />
+              <MenuItemIngredients i18n="menu.starters.starter-1.ingredients" />
+              <MenuItemAllergens i18n="menu.starters.starter-1.allergies" />
+            </MenuItem>
+          </MenuColumn>
+        </MenuRow>
+      </MenuSheet>
+      <MenuSheet>
+        <MenuTitle i18n={"menu.mains" } />
+        <MenuRow cols={2}>
+          <MenuColumn>
+            <MenuItemCategory i18n="menu.mains.bibimbap" />
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.bibimbap-1.name" />
+              <MenuItemPrice i18n="menu.mains.bibimbap-1.price" />
+              <MenuItemIngredients i18n="menu.mains.bibimbap-1.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.bibimbap-1.allergies" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.bibimbap-2.name" />
+              <MenuItemPrice i18n="menu.mains.bibimbap-2.price" />
+              <MenuItemIngredients i18n="menu.mains.bibimbap-2.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.bibimbap-2.allergies" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItemCategory i18n="menu.mains.korean-fried-chicken" />
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.korean-fried-chicken-1.name" />
+              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-1.price" />
+              <MenuItemExtraInfo i18n="menu.mains.korean-fried-chicken-1.extra-info" />
+              <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-1.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-1.allergies" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.korean-fried-chicken-2.name" />
+              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-2.price" />
+              <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-2.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-2.allergies" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.korean-fried-chicken-3.name" />
+              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-3.price" />
+              <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-3.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-3.allergies" />
+            </MenuItem>
+          </MenuColumn>
+        </MenuRow>
+      </MenuSheet>
+      <MenuSheet>
+        <MenuTitle i18n={"menu.desserts" } />
+        <MenuRow cols={2}>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.desserts.dessert-1.name" />
+              <MenuItemPrice i18n="menu.desserts.dessert-1.price" />
+              <MenuItemIngredients i18n="menu.desserts.dessert-1.ingredients" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-1.allergies" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.desserts.dessert-2.name" />
+              <MenuItemPrice i18n="menu.desserts.dessert-2.price" />
+              <MenuItemIngredients i18n="menu.desserts.dessert-2.ingredients" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-2.allergies" />
+            </MenuItem>
+          </MenuColumn>
+        </MenuRow>
+      </MenuSheet>
+      <MenuSheet>
+        <MenuTitle i18n={"menu.drinks" } />
+        <MenuRow cols={2}>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n={"menu.drinks.beer" } />
+              <MenuItemName i18n="menu.drinks.beer.beer-3.name" />
+              <MenuItemPrice i18n="menu.drinks.beer.beer-3.price" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.beer.beer-4.name" />
+              <MenuItemPrice i18n="menu.drinks.beer.beer-4.price" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n={"menu.drinks.soju" } />
+              <MenuItemName i18n="menu.drinks.soju.soju-1.name" />
+              <MenuItemPrice i18n="menu.drinks.soju.soju-1.price" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.soju.soju-2.name" />
+              <MenuItemPrice i18n="menu.drinks.soju.soju-2.price" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.soju.soju-3.name" />
+              <MenuItemPrice i18n="menu.drinks.soju.soju-3.price" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n={"menu.drinks.wine" } />
+              <MenuItemSubcategory i18n={"menu.drinks.wine.red" } />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.wine.red-1.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.red-1.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.red-1.ingredients" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.wine.red-2.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.red-2.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.red-2.ingredients" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemSubcategory i18n={"menu.drinks.wine.white" } />
+              <MenuItemName i18n="menu.drinks.wine.white-1.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.white-1.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.white-1.ingredients" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.wine.white-2.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.white-2.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.white-2.ingredients" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemSubcategory i18n={"menu.drinks.wine.orange" } />
+              <MenuItemName i18n="menu.drinks.wine.orange-1.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.orange-1.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.orange-1.ingredients" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemSubcategory i18n={"menu.drinks.wine.rose" } />
+              <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
+              <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
+              <MenuItemIngredients i18n="menu.drinks.wine.rose-1.ingredients" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n={"menu.drinks.alcohol-free" } />
+              <MenuItemName i18n="menu.drinks.alcohol-free-1.name" />
+              <MenuItemName i18n="menu.drinks.alcohol-free-2.name" />
+              <MenuItemName i18n="menu.drinks.alcohol-free-3.name" />
+              <MenuItemName i18n="menu.drinks.alcohol-free-4.name" />
+              <MenuItemName i18n="menu.drinks.alcohol-free-5.name" />
+              <MenuItemPrice i18n="menu.drinks.alcohol-free-5.price" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.alcohol-free-6.name" />
+              <MenuItemPrice i18n="menu.drinks.alcohol-free-6.price" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.drinks.alcohol-free-7.name" />
+              <MenuItemName i18n="menu.drinks.alcohol-free-8.name" />
+              <MenuItemPrice i18n="menu.drinks.alcohol-free-8.price" />
+            </MenuItem>
+          </MenuColumn>
+        </MenuRow>
+      </MenuSheet>
     </div>
   );
 }

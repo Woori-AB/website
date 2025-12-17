@@ -3,295 +3,640 @@
 exports[`Menu > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="container"
+    class="flex flex-col gap-4 text-center undefined"
+    id="menu"
   >
-    <mocked-menucard
-      id="full-menu"
+    <div
+      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
     >
-      <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        id="weekly-menu"
+      <h1
+        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
       >
-        <mocked-menutitle
-          title="mocked-i18n-'menu.weekly'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.weekly.weekly-1.allergies'"
-          ingredients="mocked-i18n-'menu.weekly.weekly-1.ingredients'"
-          price="mocked-i18n-'menu.weekly.weekly-1.price'"
-          title="mocked-i18n-'menu.weekly.weekly-1.name'"
-        />
-      </mocked-menucard>
-      <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        id="starters-menu"
+        mocked-i18n-'menu.weekly'
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
       >
-        <mocked-menutitle
-          title="mocked-i18n-'menu.starters'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.starters.starter-1.allergies'"
-          ingredients="mocked-i18n-'menu.starters.starter-1.ingredients'"
-          price="mocked-i18n-'menu.starters.starter-1.price'"
-          title="mocked-i18n-'menu.starters.starter-1.name'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.starters.starter-2.allergies'"
-          ingredients="mocked-i18n-'menu.starters.starter-2.ingredients'"
-          price="mocked-i18n-'menu.starters.starter-2.price'"
-          title="mocked-i18n-'menu.starters.starter-2.name'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.starters.starter-3.allergies'"
-          ingredients="mocked-i18n-'menu.starters.starter-3.ingredients'"
-          price="mocked-i18n-'menu.starters.starter-3.price'"
-          title="mocked-i18n-'menu.starters.starter-3.name'"
-        />
-      </mocked-menucard>
-      <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1 md:grid-cols-2"
-        id="mains-menu"
-      >
-        <mocked-menutitle
-          class="col-span-1 md:col-span-2"
-          title="mocked-i18n-'menu.mains'"
-        />
-        <mocked-menucard
-          id="bibimbap-menu"
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <mocked-menutitle
-            title="mocked-i18n-'menu.bibimbap'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.bibimbap.beef-bibimbap.allergies'"
-            ingredients="mocked-i18n-'menu.bibimbap.beef-bibimbap.ingredients'"
-            price="mocked-i18n-'menu.bibimbap.beef-bibimbap.price'"
-            title="mocked-i18n-'menu.bibimbap.beef-bibimbap.name'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.allergies'"
-            ingredients="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.ingredients'"
-            price="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.price'"
-            title="mocked-i18n-'menu.bibimbap.mushroom-bibimbap.name'"
-          />
-        </mocked-menucard>
-        <mocked-menucard
-          id="kfc-menu"
-        >
-          <mocked-menutitle
-            title="mocked-i18n-'menu.korean-fried-chicken'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.allergies'"
-            ingredients="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.ingredients'"
-            price="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.price'"
-            title="mocked-i18n-'menu.korean-fried-chicken.woori-chicken-plate.name'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.allergies'"
-            ingredients="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.ingredients'"
-            price="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.price'"
-            title="mocked-i18n-'menu.korean-fried-chicken.sweet-spicy.name'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.korean-fried-chicken.honey-soy.allergies'"
-            ingredients="mocked-i18n-'menu.korean-fried-chicken.honey-soy.ingredients'"
-            price="mocked-i18n-'menu.korean-fried-chicken.honey-soy.price'"
-            title="mocked-i18n-'menu.korean-fried-chicken.honey-soy.name'"
-          />
-          <mocked-menuitem
-            allergies="mocked-i18n-'menu.korean-fried-chicken.kids-menu.allergies'"
-            ingredients="mocked-i18n-'menu.korean-fried-chicken.kids-menu.ingredients'"
-            price="mocked-i18n-'menu.korean-fried-chicken.kids-menu.price'"
-            title="mocked-i18n-'menu.korean-fried-chicken.kids-menu.name'"
-          />
-        </mocked-menucard>
-      </mocked-menucard>
-      <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3"
-        id="desserts-menu"
-      >
-        <mocked-menutitle
-          title="mocked-i18n-'menu.desserts'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.desserts.dessert-1.allergies'"
-          ingredients="mocked-i18n-'menu.desserts.dessert-1.ingredients'"
-          price="mocked-i18n-'menu.desserts.dessert-1.price'"
-          title="mocked-i18n-'menu.desserts.dessert-1.name'"
-        />
-        <mocked-menuitem
-          allergies="mocked-i18n-'menu.desserts.dessert-2.allergies'"
-          ingredients="mocked-i18n-'menu.desserts.dessert-2.ingredients'"
-          price="mocked-i18n-'menu.desserts.dessert-2.price'"
-          title="mocked-i18n-'menu.desserts.dessert-2.name'"
-        />
-      </mocked-menucard>
-      <mocked-menucard
-        class="rounded-sm border-black/20 bg-black/3 dark:bg-white/3 grid-cols-1"
-        id="drinks-menu"
-      >
-        <mocked-menucard
-          class="md:grid-cols-2 sm:grid-cols-1"
-          id="wine-menu"
-        >
-          <mocked-menutitle
-            class="md:col-span-2 sm:grid-cols-1"
-            title="mocked-i18n-'menu.drinks.wine'"
-          />
-          <mocked-menucard
-            id="red-wine-menu"
+          <div
+            class="flex flex-col w-full"
           >
-            <mocked-menutitle
-              title="mocked-i18n-'menu.drinks.wine.red'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.red.raiola-2021.abv'"
-              price="mocked-i18n-'menu.drinks.wine.red.raiola-2021.price'"
-              title="mocked-i18n-'menu.drinks.wine.red.raiola-2021.name'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.abv'"
-              price="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.price'"
-              title="mocked-i18n-'menu.drinks.wine.red.belfo-palhete-2024.name'"
-            />
-          </mocked-menucard>
-          <mocked-menucard
-            id="white-wine-menu"
-          >
-            <mocked-menutitle
-              title="mocked-i18n-'menu.drinks.wine.white'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.white.branco-2022.abv'"
-              price="mocked-i18n-'menu.drinks.wine.white.branco-2022.price'"
-              title="mocked-i18n-'menu.drinks.wine.white.branco-2022.name'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.abv'"
-              price="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.price'"
-              title="mocked-i18n-'menu.drinks.wine.white.primieras-gotas-bica.name'"
-            />
-          </mocked-menucard>
-          <mocked-menucard
-            id="orange-wine-menu"
-          >
-            <mocked-menutitle
-              title="mocked-i18n-'menu.drinks.wine.orange'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.abv'"
-              price="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.price'"
-              title="mocked-i18n-'menu.drinks.wine.orange.dolia-branco-2023.name'"
-            />
-          </mocked-menucard>
-          <mocked-menucard
-            id="rose-wine-menu"
-          >
-            <mocked-menutitle
-              title="mocked-i18n-'menu.drinks.wine.rose'"
-            />
-            <mocked-menuitem
-              abv="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.abv'"
-              price="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.price'"
-              title="mocked-i18n-'menu.drinks.wine.rose.baga-rosado-2024.name'"
-            />
-          </mocked-menucard>
-        </mocked-menucard>
-        <mocked-menucard
-          id="beer-menu"
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.weekly.weekly-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.weekly.weekly-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.weekly.weekly-1.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.weekly.weekly-1.allergies'
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+    >
+      <h1
+        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+      >
+        mocked-i18n-'menu.starters'
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
+      >
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <mocked-menutitle
-            title="mocked-i18n-'menu.drinks.beer'"
-          />
-          <mocked-menuitem
-            abv="mocked-i18n-'menu.drinks.beer.beer-3.abv'"
-            amount="mocked-i18n-'menu.drinks.beer.beer-3.amount'"
-            price="mocked-i18n-'menu.drinks.beer.beer-3.price'"
-            title="mocked-i18n-'menu.drinks.beer.beer-3.name'"
-          />
-          <mocked-menuitem
-            abv="mocked-i18n-'menu.drinks.beer.beer-4.abv'"
-            amount="mocked-i18n-'menu.drinks.beer.beer-4.amount'"
-            price="mocked-i18n-'menu.drinks.beer.beer-4.price'"
-            title="mocked-i18n-'menu.drinks.beer.beer-4.name'"
-          />
-        </mocked-menucard>
-        <mocked-menucard
-          id="soju-menu"
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.starters.starter-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.starters.starter-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.starters.starter-1.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.starters.starter-1.allergies'
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+    >
+      <h1
+        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+      >
+        mocked-i18n-'menu.mains'
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+      >
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <mocked-menutitle
-            title="mocked-i18n-'menu.drinks.soju'"
-          />
-          <mocked-menuitem
-            abv="mocked-i18n-'menu.drinks.soju.soju-1.abv'"
-            amount="mocked-i18n-'menu.drinks.soju.soju-1.amount'"
-            price="mocked-i18n-'menu.drinks.soju.soju-1.price'"
-            title="mocked-i18n-'menu.drinks.soju.soju-1.name'"
-          />
-          <mocked-menuitem
-            abv="mocked-i18n-'menu.drinks.soju.soju-2.abv'"
-            amount="mocked-i18n-'menu.drinks.soju.soju-2.amount'"
-            price="mocked-i18n-'menu.drinks.soju.soju-2.price'"
-            title="mocked-i18n-'menu.drinks.soju.soju-2.name'"
-          />
-          <mocked-menuitem
-            abv="mocked-i18n-'menu.drinks.soju.soju-3.abv'"
-            amount="mocked-i18n-'menu.drinks.soju.soju-3.amount'"
-            price="mocked-i18n-'menu.drinks.soju.soju-3.price'"
-            title="mocked-i18n-'menu.drinks.soju.soju-3.name'"
-          />
-        </mocked-menucard>
-        <mocked-menucard
-          class="col-span-1"
-          id="alcohol-free-menu"
+          <h2
+            class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+          >
+            mocked-i18n-'menu.mains.bibimbap'
+          </h2>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.mains.bibimbap-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.mains.bibimbap-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.bibimbap-1.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.mains.bibimbap-1.allergies'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.mains.bibimbap-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.mains.bibimbap-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.bibimbap-2.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.mains.bibimbap-2.allergies'
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <mocked-menutitle
-            title="mocked-i18n-'menu.drinks.alcohol-free'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.coca-cola.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.coca-cola-zero.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-natural.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.ramlosa-citrus.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.fanta.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.fanta.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.fanta.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.mariestads-alcohol-free.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-ginger-beer.name'"
-          />
-          <mocked-menuitem
-            amount="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.amount'"
-            price="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.price'"
-            title="mocked-i18n-'menu.drinks.alcohol-free.le-tribute-pink-grapefruit.name'"
-          />
-        </mocked-menucard>
-      </mocked-menucard>
-    </mocked-menucard>
+          <h2
+            class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+          >
+            mocked-i18n-'menu.mains.korean-fried-chicken'
+          </h2>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-1.extra-info'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-1.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-1.allergies'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-2.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-2.allergies'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-3.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-3.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.mains.korean-fried-chicken-3.allergies'
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+    >
+      <h1
+        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+      >
+        mocked-i18n-'menu.desserts'
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+      >
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.desserts.dessert-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.desserts.dessert-1.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.desserts.dessert-1.allergies'
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.desserts.dessert-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.desserts.dessert-2.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_30%,transparent)]"
+            >
+              mocked-i18n-'menu.desserts.dessert-2.allergies'
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+    >
+      <h1
+        class="flex justify-center mb-2 bg-white/20 dark:bg-black/20"
+      >
+        mocked-i18n-'menu.drinks'
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+      >
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <h2
+              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            >
+              mocked-i18n-'menu.drinks.beer'
+            </h2>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.beer.beer-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.beer.beer-3.price'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.beer.beer-4.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.beer.beer-4.price'
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <h2
+              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            >
+              mocked-i18n-'menu.drinks.soju'
+            </h2>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-1.price'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-2.price'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.soju.soju-3.price'
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <h2
+              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            >
+              mocked-i18n-'menu.drinks.wine'
+            </h2>
+            <h3
+              class="flex justify-center font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.red'
+            </h3>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.red-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.red-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.red-1.ingredients'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.red-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.red-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.red-2.ingredients'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <h3
+              class="flex justify-center font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.white'
+            </h3>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.white-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.white-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.white-1.ingredients'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.white-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.white-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.white-2.ingredients'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <h3
+              class="flex justify-center font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.orange'
+            </h3>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.orange-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.orange-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.orange-1.ingredients'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <h3
+              class="flex justify-center font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.rose'
+            </h3>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.rose-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.rose-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.wine.rose-1.ingredients'
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <h2
+              class="flex justify-center mt-2 mb-2 bg-white/20 dark:bg-black/20"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free'
+            </h2>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-4.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-5.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-5.price'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-6.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-6.price'
+            </span>
+          </div>
+          <div
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-7.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-8.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.alcohol-free-8.price'
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
