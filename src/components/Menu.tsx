@@ -116,7 +116,7 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.weekly.weekly-1.name" />
               <MenuItemPrice i18n="menu.weekly.weekly-1.price" />
               <MenuItemIngredients i18n="menu.weekly.weekly-1.ingredients" />
-              <MenuItemAllergens i18n="menu.weekly.weekly-1.allergies" />
+              <MenuItemAllergens i18n="menu.weekly.weekly-1.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
@@ -129,7 +129,7 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.starters.starter-1.name" />
               <MenuItemPrice i18n="menu.starters.starter-1.price" />
               <MenuItemIngredients i18n="menu.starters.starter-1.ingredients" />
-              <MenuItemAllergens i18n="menu.starters.starter-1.allergies" />
+              <MenuItemAllergens i18n="menu.starters.starter-1.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
@@ -143,13 +143,13 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.mains.bibimbap-1.name" />
               <MenuItemPrice i18n="menu.mains.bibimbap-1.price" />
               <MenuItemIngredients i18n="menu.mains.bibimbap-1.ingredients" />
-              <MenuItemAllergens i18n="menu.mains.bibimbap-1.allergies" />
+              <MenuItemAllergens i18n="menu.mains.bibimbap-1.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.bibimbap-2.name" />
               <MenuItemPrice i18n="menu.mains.bibimbap-2.price" />
               <MenuItemIngredients i18n="menu.mains.bibimbap-2.ingredients" />
-              <MenuItemAllergens i18n="menu.mains.bibimbap-2.allergies" />
+              <MenuItemAllergens i18n="menu.mains.bibimbap-2.allergens" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
@@ -159,19 +159,19 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemPrice i18n="menu.mains.korean-fried-chicken-1.price" />
               <MenuItemExtraInfo i18n="menu.mains.korean-fried-chicken-1.extra-info" />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-1.ingredients" />
-              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-1.allergies" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-1.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.korean-fried-chicken-2.name" />
               <MenuItemPrice i18n="menu.mains.korean-fried-chicken-2.price" />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-2.ingredients" />
-              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-2.allergies" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-2.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.korean-fried-chicken-3.name" />
               <MenuItemPrice i18n="menu.mains.korean-fried-chicken-3.price" />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-3.ingredients" />
-              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-3.allergies" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-3.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
@@ -184,7 +184,7 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.desserts.dessert-1.name" />
               <MenuItemPrice i18n="menu.desserts.dessert-1.price" />
               <MenuItemIngredients i18n="menu.desserts.dessert-1.ingredients" />
-              <MenuItemAllergens i18n="menu.desserts.dessert-1.allergies" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-1.allergens" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
@@ -192,7 +192,7 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.desserts.dessert-2.name" />
               <MenuItemPrice i18n="menu.desserts.dessert-2.price" />
               <MenuItemIngredients i18n="menu.desserts.dessert-2.ingredients" />
-              <MenuItemAllergens i18n="menu.desserts.dessert-2.allergies" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-2.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
