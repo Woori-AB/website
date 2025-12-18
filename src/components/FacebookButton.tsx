@@ -2,23 +2,27 @@
 
 import { Facebook } from "lucide-react";
 import { useIntl } from "react-intl";
+import Button from "@/components/Button";
 
 export default function FacebookButton() {
   const intl = useIntl();
 
   return (
-    <div className="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2 select-none">
-      <a
-        className="flex gap-2"
-        href="https://www.facebook.com/people/Woori/61577166415207"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Facebook style={{ marginLeft: -2 }} />{" "}
-        <span style={{ marginLeft: 2 }}>
-          {intl.formatMessage({ id: "follow-on-facebook" })}
-        </span>
-      </a>
-    </div>
+    <Button
+      data-testid="facebook-button"
+      aria-label={intl.formatMessage({
+        id: "follow-on-facebook",
+      })}
+      onClick={() =>
+        window.open(
+          "https://www.facebook.com/people/Woori/61577166415207",
+          "_blank",
+          "noopener,noreferrer"
+        )
+      }
+    >
+      <Facebook className="-ml-[2px] " />
+      {intl.formatMessage({ id: "follow-on-facebook" })}
+    </Button>
   );
 }

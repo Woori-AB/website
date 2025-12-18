@@ -2,19 +2,12 @@
 
 exports[`InstagramButton > matches snapshot(s) 1`] = `
 <div>
-  <div
-    class="bg-black/40 hover:bg-black/70 text-white rounded-4xl px-4 py-2 select-none"
+  <mocked-button
+    aria-label="mocked-i18n-'follow-on-instagram'"
+    data-testid="instagram-button"
   >
-    <a
-      class="flex gap-2"
-      href="https://www.instagram.com/wooristockholm"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <mocked-lucide-react-instagram />
-       
-      mocked-i18n-'follow-on-instagram'
-    </a>
-  </div>
+    <mocked-lucide-react-instagram />
+    mocked-i18n-'follow-on-instagram'
+  </mocked-button>
 </div>
 `;

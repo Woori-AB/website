@@ -6,7 +6,7 @@ import InstagramButton from "@/components/InstagramButton";
 import FacebookButton from "@/components/FacebookButton";
 import FoodoraButton from "@/components/FoodoraButton";
 import UberEatsButton from "@/components/UberEatsButton";
-import TikTokButton from "./TikTokButton";
+import TikTokButton from "@/components/TikTokButton";
 
 export default function Header() {
   return (

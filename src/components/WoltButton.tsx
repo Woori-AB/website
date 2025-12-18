@@ -2,22 +2,27 @@
 
 import { useIntl } from "react-intl";
 import WoltLogo from "@/components/WoltLogo";
+import Button from "@/components/Button";
 
 export default function WoltButton() {
   const intl = useIntl();
 
   return (
-    <div className="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5] text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center">
-      <a
-        className="flex gap-2"
-        href="https://wolt.com/en/swe/stockholm/restaurant/woori"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={intl.formatMessage({ id: "wolt-link-description" })}
-      >
-        <WoltLogo />
-        <div className="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10"></div>
-      </a>
-    </div>
+    <Button
+      data-testid="wolt-button"
+      aria-label={intl.formatMessage({
+        id: "wolt-link-description",
+      })}
+      onClick={() =>
+        window.open(
+          "https://wolt.com/en/swe/stockholm/restaurant/woori",
+          "_blank",
+          "noopener,noreferrer"
+        )
+      }
+      className="bg-[#00c2e8]/90 hover:bg-[#31d5f5]"
+    >
+      <WoltLogo />
+    </Button>
   );
 }

@@ -3,13 +3,13 @@
 exports[`FoodoraLogo > matches snapshot(s) 1`] = `
 <div>
   <div
-    style="width: 139px; height: 31px; overflow: hidden;"
+    style="width: 83.39999999999999px; height: 18.599999999999998px; overflow: hidden;"
   >
     <svg
       fill="none"
-      height="30"
+      height="18"
       viewBox="0 0 139 30"
-      width="139"
+      width="83.39999999999999"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

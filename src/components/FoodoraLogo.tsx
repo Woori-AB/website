@@ -8,15 +8,15 @@ export default function FoodoraLogo({ size }: Props) {
   return (
     <div
       style={{
-        width: 139 * (size ?? 1),
-        height: 31 * (size ?? 1),
+        width: 139 * (size ?? 0.6),
+        height: 31 * (size ?? 0.6),
         overflow: "hidden",
       }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={139 * (size ?? 1)}
-        height={30 * (size ?? 1)}
+        width={139 * (size ?? 0.6)}
+        height={30 * (size ?? 0.6)}
         viewBox="0 0 139 30"
         fill="none"
       >

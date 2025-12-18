@@ -28,6 +28,7 @@ vi.mock("@/app/providers/index", () => createMockComponent("Providers"));
 vi.mock("@/app/page", () => createMockComponent("Page"));
 
 // Mocked components
+vi.mock("@/components/Button", () => createMockComponent("Button"));
 vi.mock("@/components/Carousel", () => createMockComponent("Carousel"));
 vi.mock("@/components/ContactDetails", () =>
   createMockComponent("ContactDetails")

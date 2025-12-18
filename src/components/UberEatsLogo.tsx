@@ -8,8 +8,8 @@ export default function UberEatsLogo({ size }: Props) {
   return (
     <div
       style={{
-        width: 139 * (size ?? 1),
-        height: 23 * (size ?? 1),
+        width: 139 * (size ?? 0.6),
+        height: 23 * (size ?? 0.6),
         overflow: "hidden",
       }}
     >

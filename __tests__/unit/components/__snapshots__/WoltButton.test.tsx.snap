@@ -2,21 +2,12 @@
 
 exports[`WoltButton > matches snapshot(s) 1`] = `
 <div>
-  <div
-    class="relative bg-[#00c2e8]/90 hover:bg-[#31d5f5] text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
+  <mocked-button
+    aria-label="mocked-i18n-'wolt-link-description'"
+    class="bg-[#00c2e8]/90 hover:bg-[#31d5f5]"
+    data-testid="wolt-button"
   >
-    <a
-      aria-label="mocked-i18n-'wolt-link-description'"
-      class="flex gap-2"
-      href="https://wolt.com/en/swe/stockholm/restaurant/woori"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <mocked-woltlogo />
-      <div
-        class="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10"
-      />
-    </a>
-  </div>
+    <mocked-woltlogo />
+  </mocked-button>
 </div>
 `;

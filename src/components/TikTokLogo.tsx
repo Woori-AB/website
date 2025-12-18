@@ -8,6 +8,7 @@ export default function TikTokLogo({ size }: Props) {
   return (
     <div
       style={{
+        marginLeft: -2,
         width: 24 * (size ?? 1),
         height: 24 * (size ?? 1),
         overflow: "hidden",

@@ -2,23 +2,12 @@
 
 exports[`FoodoraButton > matches snapshot(s) 1`] = `
 <div>
-  <div
-    class="relative bg-[#df1067]/90 hover:bg-[#ed478c] text-white rounded-4xl px-4 py-2 overflow-hidden flex items-center justify-center"
+  <mocked-button
+    aria-label="mocked-i18n-'wolt-link-description'"
+    class="bg-[#df1067]/90 hover:bg-[#ed478c]"
+    data-testid="foodora-button"
   >
-    <a
-      aria-label="mocked-i18n-'foodora-link-description'"
-      class="flex gap-2"
-      href="https://www.foodora.se/en/restaurant/lzn4/woori"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <mocked-foodoralogo
-        size="0.6"
-      />
-      <div
-        class="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10"
-      />
-    </a>
-  </div>
+    <mocked-foodoralogo />
+  </mocked-button>
 </div>
 `;
