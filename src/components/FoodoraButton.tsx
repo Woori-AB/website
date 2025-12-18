@@ -2,7 +2,7 @@
 
 import { useIntl } from "react-intl";
 import FoodoraLogo from "@/components/FoodoraLogo";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function FoodoraButton() {
   const intl = useIntl();

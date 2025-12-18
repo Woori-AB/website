@@ -2,7 +2,7 @@
 
 import { useIntl } from "react-intl";
 import TikTokLogo from "@/components/TikTokLogo";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function TikTokButton() {
   const intl = useIntl();

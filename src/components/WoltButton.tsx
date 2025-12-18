@@ -2,7 +2,7 @@
 
 import { useIntl } from "react-intl";
 import WoltLogo from "@/components/WoltLogo";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function WoltButton() {
   const intl = useIntl();

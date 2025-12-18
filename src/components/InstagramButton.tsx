@@ -2,7 +2,7 @@
 
 import { Instagram } from "lucide-react";
 import { useIntl } from "react-intl";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function InstagramButton() {
   const intl = useIntl();

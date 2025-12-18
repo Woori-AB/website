@@ -2,7 +2,7 @@
 
 import { useIntl } from "react-intl";
 import UberEatsLogo from "@/components/UberEatsLogo";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function UberEatsButton() {
   const intl = useIntl();

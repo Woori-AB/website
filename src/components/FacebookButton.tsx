@@ -2,7 +2,7 @@
 
 import { Facebook } from "lucide-react";
 import { useIntl } from "react-intl";
-import Button from "@/components/Button";
+import Button from "@/ui/Button";
 
 export default function FacebookButton() {
   const intl = useIntl();

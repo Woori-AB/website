@@ -1,6 +1,6 @@
 "use client";
 
-import Carousel from "@/components/Carousel";
+import Carousel from "@/ui/Carousel";
 import ContactDetails from "@/components/ContactDetails";
 import Header from "@/components/Header";
 import LanguageSwitcher from "@/components/LanguageSwitcher";

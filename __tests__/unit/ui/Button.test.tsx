@@ -2,7 +2,7 @@ import { cleanup, render } from "@testing-library/react";
 import { vi } from "vitest";
 import * as useStyle from "@/hooks/useStyle";
 
-describe("Carousel", () => {
+describe("Button", () => {
   afterEach(() => {
     cleanup();
     vi.clearAllMocks();
@@ -10,20 +10,18 @@ describe("Carousel", () => {
 
   it("matches snapshot(s)", async () => {
     // Arrange
-    const { default: Carousel } = await vi.importActual<
+    const { default: Button } = await vi.importActual<
       // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-      typeof import("@/components/Carousel")
-    >("@/components/Carousel");
+      typeof import("@/ui/Button")
+    >("@/ui/Button");
 
     const useStyleSpy = vi.spyOn(useStyle, "useStyle");
 
     // Act
     const { container } = render(
-      <Carousel
-        images={["/foo.jpg", "/bar.jpg"]}
-        opaqueDuration={5}
-        crossfadeDuration={3}
-      />
+      <Button aria-label="mock-aria-label" onClick={vi.fn()}>
+        Mock text
+      </Button>
     );
 
     // Assert
