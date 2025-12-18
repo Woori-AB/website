@@ -23,7 +23,7 @@
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-intl": "^7.1.11",
+    "react-intl": "^8.0.0",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
