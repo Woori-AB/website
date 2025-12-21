@@ -109,7 +109,7 @@ export default function Menu({ className: cn }: Props) {
   return (
     <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
       <MenuSheet>
-        <MenuTitle i18n={"menu.weekly"} />
+        <MenuTitle i18n="menu.weekly" />
         <MenuRow cols={1}>
           <MenuColumn>
             <MenuItem>
@@ -122,7 +122,7 @@ export default function Menu({ className: cn }: Props) {
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.starters"} />
+        <MenuTitle i18n="menu.starters" />
         <MenuRow cols={1}>
           <MenuColumn>
             <MenuItem>
@@ -135,7 +135,7 @@ export default function Menu({ className: cn }: Props) {
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.mains"} />
+        <MenuTitle i18n="menu.mains" />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItemCategory i18n="menu.mains.bibimbap" />
@@ -177,7 +177,7 @@ export default function Menu({ className: cn }: Props) {
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.desserts"} />
+        <MenuTitle i18n="menu.desserts" />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
@@ -198,11 +198,11 @@ export default function Menu({ className: cn }: Props) {
         </MenuRow>
       </MenuSheet>
       <MenuSheet>
-        <MenuTitle i18n={"menu.drinks"} />
+        <MenuTitle i18n="menu.drinks" />
         <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.beer"} />
+              <MenuItemCategory i18n="menu.drinks.beer" />
               <MenuItemName i18n="menu.drinks.beer.beer-3.name" />
               <MenuItemPrice i18n="menu.drinks.beer.beer-3.price" />
             </MenuItem>
@@ -213,7 +213,7 @@ export default function Menu({ className: cn }: Props) {
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.soju"} />
+              <MenuItemCategory i18n="menu.drinks.soju" />
               <MenuItemName i18n="menu.drinks.soju.soju-1.name" />
               <MenuItemPrice i18n="menu.drinks.soju.soju-1.price" />
             </MenuItem>
@@ -228,8 +228,8 @@ export default function Menu({ className: cn }: Props) {
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.wine"} />
-              <MenuItemSubcategory i18n={"menu.drinks.wine.red"} />
+              <MenuItemCategory i18n="menu.drinks.wine" />
+              <MenuItemSubcategory i18n="menu.drinks.wine.red" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-1.name" />
@@ -240,7 +240,7 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemPrice i18n="menu.drinks.wine.red-2.price" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.white"} />
+              <MenuItemSubcategory i18n="menu.drinks.wine.white" />
               <MenuItemName i18n="menu.drinks.wine.white-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.white-1.price" />
             </MenuItem>
@@ -249,19 +249,19 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemPrice i18n="menu.drinks.wine.white-2.price" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.orange"} />
+              <MenuItemSubcategory i18n="menu.drinks.wine.orange" />
               <MenuItemName i18n="menu.drinks.wine.orange-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.orange-1.price" />
             </MenuItem>
             <MenuItem>
-              <MenuItemSubcategory i18n={"menu.drinks.wine.rose"} />
+              <MenuItemSubcategory i18n="menu.drinks.wine.rose" />
               <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n={"menu.drinks.alcohol-free"} />
+              <MenuItemCategory i18n="menu.drinks.alcohol-free" />
               <MenuItemName i18n="menu.drinks.alcohol-free-1.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-2.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-3.name" />
