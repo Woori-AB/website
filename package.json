@@ -1,6 +1,19 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "homepage": "https://github.com/Woori-AB/website#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Woori AB",
+    "email": "kontakt@wooristockholm.se",
+    "url": "https://wooristockholm.se"
+  },
+  "contributors": [
+    {
+      "name": "Anton Wiklund",
+      "email": "anton.wiklund@wooristockholm.se"
+    }
+  ],
   "private": true,
   "engines": {
     "node": ">=24",
