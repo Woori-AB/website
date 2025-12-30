@@ -1,5 +1,19 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Layout > exports generateStaticParams which lists of available locales 1`] = `
+[
+  {
+    "locale": "sv",
+  },
+  {
+    "locale": "en",
+  },
+  {
+    "locale": "ko",
+  },
+]
+`;
+
 exports[`Layout > matches snapshot(s) 1`] = `
 <div>
   <div>

@@ -1,19 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Page > exports generateStaticParams which lists of available locales 1`] = `
-[
-  {
-    "locale": "sv",
-  },
-  {
-    "locale": "en",
-  },
-  {
-    "locale": "ko",
-  },
-]
-`;
-
 exports[`Page > matches snapshot(s) 1`] = `
 <div>
   <mocked-home />
