@@ -3,7 +3,7 @@
 exports[`FoodoraButton > matches snapshot(s) 1`] = `
 <div>
   <mocked-button
-    aria-label="mocked-i18n-'wolt-link-description'"
+    aria-label="mocked-i18n-'foodora-link-description'"
     class="bg-[#df1067]/90 hover:bg-[#ed478c]"
     data-testid="foodora-button"
   >

@@ -11,7 +11,7 @@ export default function FoodoraButton() {
     <Button
       data-testid="foodora-button"
       aria-label={intl.formatMessage({
-        id: "wolt-link-description",
+        id: "foodora-link-description",
       })}
       onClick={() =>
         window.open(
