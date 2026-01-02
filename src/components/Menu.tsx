@@ -1,7 +1,9 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { type ReactNode } from "react";
 import { useIntl } from "react-intl";
+import MenuSelector from "@/components/MenuSelector";
+import { useDisplayLunchPricesQueryParam } from "@/hooks/useDisplayLunchPricesQueryParam";
 
 function MenuItemName({ i18n }: { i18n: string }) {
   const intl = useIntl();
@@ -106,15 +108,24 @@ export type Props = {
 };
 
 export default function Menu({ className: cn }: Props) {
+  const displayLunchPrices = useDisplayLunchPricesQueryParam();
+
   return (
     <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
+      <MenuSelector />
       <MenuSheet>
         <MenuTitle i18n="menu.weekly" />
         <MenuRow cols={1}>
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.weekly.weekly-1.name" />
-              <MenuItemPrice i18n="menu.weekly.weekly-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.weekly.weekly-1.price.lunch"
+                    : "menu.weekly.weekly-1.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.weekly.weekly-1.ingredients" />
               <MenuItemAllergens i18n="menu.weekly.weekly-1.allergens" />
             </MenuItem>
@@ -127,7 +138,13 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.starters.starter-1.name" />
-              <MenuItemPrice i18n="menu.starters.starter-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.starters.starter-1.price.lunch"
+                    : "menu.starters.starter-1.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.starters.starter-1.ingredients" />
               <MenuItemAllergens i18n="menu.starters.starter-1.allergens" />
             </MenuItem>
@@ -141,13 +158,25 @@ export default function Menu({ className: cn }: Props) {
             <MenuItemCategory i18n="menu.mains.bibimbap" />
             <MenuItem>
               <MenuItemName i18n="menu.mains.bibimbap-1.name" />
-              <MenuItemPrice i18n="menu.mains.bibimbap-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.mains.bibimbap-1.price.lunch"
+                    : "menu.mains.bibimbap-1.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.mains.bibimbap-1.ingredients" />
               <MenuItemAllergens i18n="menu.mains.bibimbap-1.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.bibimbap-2.name" />
-              <MenuItemPrice i18n="menu.mains.bibimbap-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.mains.bibimbap-2.price.lunch"
+                    : "menu.mains.bibimbap-2.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.mains.bibimbap-2.ingredients" />
               <MenuItemAllergens i18n="menu.mains.bibimbap-2.allergens" />
             </MenuItem>
@@ -156,20 +185,38 @@ export default function Menu({ className: cn }: Props) {
             <MenuItemCategory i18n="menu.mains.korean-fried-chicken" />
             <MenuItem>
               <MenuItemName i18n="menu.mains.korean-fried-chicken-1.name" />
-              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.mains.korean-fried-chicken-1.price.lunch"
+                    : "menu.mains.korean-fried-chicken-1.price.dinner"
+                }
+              />
               <MenuItemExtraInfo i18n="menu.mains.korean-fried-chicken-1.extra-info" />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-1.ingredients" />
               <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-1.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.korean-fried-chicken-2.name" />
-              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.mains.korean-fried-chicken-2.price.lunch"
+                    : "menu.mains.korean-fried-chicken-2.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-2.ingredients" />
               <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-2.allergens" />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.mains.korean-fried-chicken-3.name" />
-              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-3.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.mains.korean-fried-chicken-3.price.lunch"
+                    : "menu.mains.korean-fried-chicken-3.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-3.ingredients" />
               <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-3.allergens" />
             </MenuItem>
@@ -182,7 +229,13 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.desserts.dessert-1.name" />
-              <MenuItemPrice i18n="menu.desserts.dessert-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.desserts.dessert-1.price.lunch"
+                    : "menu.desserts.dessert-1.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.desserts.dessert-1.ingredients" />
               <MenuItemAllergens i18n="menu.desserts.dessert-1.allergens" />
             </MenuItem>
@@ -190,7 +243,13 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.desserts.dessert-2.name" />
-              <MenuItemPrice i18n="menu.desserts.dessert-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.desserts.dessert-2.price.lunch"
+                    : "menu.desserts.dessert-2.price.dinner"
+                }
+              />
               <MenuItemIngredients i18n="menu.desserts.dessert-2.ingredients" />
               <MenuItemAllergens i18n="menu.desserts.dessert-2.allergens" />
             </MenuItem>
@@ -204,26 +263,56 @@ export default function Menu({ className: cn }: Props) {
             <MenuItem>
               <MenuItemCategory i18n="menu.drinks.beer" />
               <MenuItemName i18n="menu.drinks.beer.beer-3.name" />
-              <MenuItemPrice i18n="menu.drinks.beer.beer-3.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.beer.beer-3.price.lunch"
+                    : "menu.drinks.beer.beer-3.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.beer.beer-4.name" />
-              <MenuItemPrice i18n="menu.drinks.beer.beer-4.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.beer.beer-4.price.lunch"
+                    : "menu.drinks.beer.beer-4.price.dinner"
+                }
+              />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
               <MenuItemCategory i18n="menu.drinks.soju" />
               <MenuItemName i18n="menu.drinks.soju.soju-1.name" />
-              <MenuItemPrice i18n="menu.drinks.soju.soju-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.soju.soju-1.price.lunch"
+                    : "menu.drinks.soju.soju-1.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.soju.soju-2.name" />
-              <MenuItemPrice i18n="menu.drinks.soju.soju-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.soju.soju-2.price.lunch"
+                    : "menu.drinks.soju.soju-2.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.soju.soju-3.name" />
-              <MenuItemPrice i18n="menu.drinks.soju.soju-3.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.soju.soju-3.price.lunch"
+                    : "menu.drinks.soju.soju-3.price.dinner"
+                }
+              />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
@@ -233,30 +322,66 @@ export default function Menu({ className: cn }: Props) {
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-1.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.red-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.red-1.price.lunch"
+                    : "menu.drinks.wine.red-1.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-2.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.red-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.red-2.price.lunch"
+                    : "menu.drinks.wine.red-2.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemSubcategory i18n="menu.drinks.wine.white" />
               <MenuItemName i18n="menu.drinks.wine.white-1.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.white-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.white-1.price.lunch"
+                    : "menu.drinks.wine.white-1.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.white-2.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.white-2.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.white-2.price.lunch"
+                    : "menu.drinks.wine.white-2.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemSubcategory i18n="menu.drinks.wine.orange" />
               <MenuItemName i18n="menu.drinks.wine.orange-1.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.orange-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.orange-1.price.lunch"
+                    : "menu.drinks.wine.orange-1.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemSubcategory i18n="menu.drinks.wine.rose" />
               <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.wine.rose-1.price.lunch"
+                    : "menu.drinks.wine.rose-1.price.dinner"
+                }
+              />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
@@ -267,16 +392,34 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemName i18n="menu.drinks.alcohol-free-3.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-4.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-5.name" />
-              <MenuItemPrice i18n="menu.drinks.alcohol-free-5.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.alcohol-free-5.price.lunch"
+                    : "menu.drinks.alcohol-free-5.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.alcohol-free-6.name" />
-              <MenuItemPrice i18n="menu.drinks.alcohol-free-6.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.alcohol-free-6.price.lunch"
+                    : "menu.drinks.alcohol-free-6.price.dinner"
+                }
+              />
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.alcohol-free-7.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-8.name" />
-              <MenuItemPrice i18n="menu.drinks.alcohol-free-8.price" />
+              <MenuItemPrice
+                i18n={
+                  displayLunchPrices
+                    ? "menu.drinks.alcohol-free-8.price.lunch"
+                    : "menu.drinks.alcohol-free-8.price.dinner"
+                }
+              />
             </MenuItem>
           </MenuColumn>
         </MenuRow>

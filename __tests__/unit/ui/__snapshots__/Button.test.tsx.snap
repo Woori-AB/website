@@ -4,15 +4,26 @@ exports[`Button > matches snapshot(s) 1`] = `
 <div>
   <button
     aria-label="mock-aria-label"
-    class="flex gap-2 relative rounded-4xl px-4 py-2 items-center cursor-pointer bg-black/40 hover:bg-black/70 text-white select-none"
+    class="flex gap-2 relative rounded-4xl px-4 py-2 items-center cursor-pointer select-none transition bg-black/40 hover:bg-black/70 text-white"
     type="button"
   >
     Mock text
-    <div
-      class="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10 pointer-events-none"
-    />
   </button>
 </div>
 `;
 
 exports[`Button > matches snapshot(s) 2`] = `[MockFunction]`;
+
+exports[`Button > matches snapshot(s) when button is active 1`] = `
+<div>
+  <button
+    aria-label="mock-aria-label"
+    class="flex gap-2 relative rounded-4xl px-4 py-2 items-center cursor-pointer select-none transition text-white bg-yellow-500 font-bold"
+    type="button"
+  >
+    Mock text
+  </button>
+</div>
+`;
+
+exports[`Button > matches snapshot(s) when button is active 2`] = `[MockFunction]`;
