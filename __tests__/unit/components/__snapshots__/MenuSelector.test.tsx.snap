@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MenuSelector > matches snapshot(s) 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-2"
+  >
+    <div
+      class="flex justify-center gap-2"
+    >
+      <mocked-button
+        aria-label="mocked-i18n-'lunch-prices'"
+        data-testid="lunch-prices-button"
+      >
+        mocked-i18n-'lunch-prices'
+      </mocked-button>
+      <mocked-button
+        active=""
+        aria-label="mocked-i18n-'dinner-prices'"
+        data-testid="dinner-prices-button"
+      >
+        mocked-i18n-'dinner-prices'
+      </mocked-button>
+    </div>
+  </div>
+</div>
+`;
