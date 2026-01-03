@@ -28,17 +28,16 @@ const singleDay = Single_Day({
 export const metadata: Metadata = {
   category: "Food & Drink",
   creator: "Woori",
-  title: "Woori",
-  description: "Koreanska rätter i Fredhäll, Kristineberg!",
+  title: "Woori - Koreanska rätter i Fredhäll, Kristineberg, Stockholm",
+  description:
+    "Woori serverar autentiska koreanska rätter i Fredhäll, Kristineberg, Stockholm. Se vår meny, öppettider, adress och kontaktuppgifter. Välkommen!",
   keywords: [
     "Woori",
-    "Korean",
-    "Koreansk",
-    "Italiensk",
-    "Restaurang",
+    "Koreansk restaurang",
     "Bibimbap",
     "Bulgogi",
-    "Pizza",
+    "Koreansk friterad kyckling",
+    "Soju",
     "Fredhäll",
     "Kristineberg",
     "Stockholm",
@@ -52,8 +51,9 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   openGraph: {
     siteName: "Woori Stockholm",
-    title: "Woori",
-    description: "Koreanska rätter i Fredhäll, Kristineberg!",
+    title: "Woori - Autentisk koreansk restaurang i Stockholm",
+    description:
+      "Woori serverar autentiska koreanska rätter i Fredhäll, Kristineberg, Stockholm. Se vår meny, öppettider, adress och kontaktuppgifter. Välkommen!",
     authors: "Woori",
     url: "https://wooristockholm.se",
   },
