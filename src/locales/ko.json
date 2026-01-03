@@ -1,9 +1,12 @@
 {
+  "language-selector": "언어 선택",
   "welcome": "한국의 맛이 있는 레스토랑 우리에 오신 것을 환영합니다! 우리라는 이름처럼 모두가 공동체의 일원인 이 곳에서 한국의 맛을 즐겨 보세요!",
   "follow-on-instagram": "Instagram에서 저희를 팔로우하세요",
   "follow-on-facebook": "Facebook에서 저희를 팔로우하세요",
   "follow-on-tiktok": "TikTok에서 저희를 팔로우하세요",
   "delivery-to-door": "문 앞까지 배달",
+  "order-food": "음식 주문",
+  "social-media": "소셜 미디어",
   "opening-hours-open": "{day}: {open} - {close}",
   "opening-hours-close": "{day}: {close}",
   "opening-hours": "영업 시간",

@@ -2,27 +2,22 @@
 
 exports[`WooriLogo > matches snapshot(s) 1`] = `
 <div>
-  <div
+  <h1
     class="flex relative select-none"
   >
-    <div
+    <span
       class="relative"
+      id="header-title-primary"
     >
-      <span
-        id="header-title-primary"
-      >
-        WOORI
-      </span>
-    </div>
-    <div
+      WOORI
+    </span>
+    <span
+      aria-hidden="true"
       class="relative top-6"
+      id="header-title-secondary"
     >
-      <span
-        id="header-title-secondary"
-      >
-        우리
-      </span>
-    </div>
-  </div>
+      우리
+    </span>
+  </h1>
 </div>
 `;

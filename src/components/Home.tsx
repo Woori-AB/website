@@ -12,8 +12,8 @@ export default function Home() {
   const intl = useIntl();
 
   return (
-    <div data-testid="Home">
-      <section
+    <>
+      <header
         id="header"
         className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
         style={{
@@ -24,31 +24,26 @@ export default function Home() {
         <div className="absolute top-0 right-0 m-2 z-100">
           <LanguageSwitcher />
         </div>
-      </section>
-      <section
-        id="intro"
-        className="flex flex-col justify-center p-8 items-center"
-      >
-        <div className="container max-w-xl">
-          <p className="text-2xl p-2 text-center font-gloryLight bg-yellow-500 font-bold text-white">
-            {intl.formatMessage({ id: "notice" })}
-          </p>
-          <div className="flex flex-col py-12 gap-8">
-            <p className="text-2xl italic font-gloryLight">
-              {intl.formatMessage({ id: "welcome" })}
+      </header>
+      <main>
+        <section
+          id="section-intro"
+          className="flex flex-col justify-center p-8 items-center"
+        >
+          <div className="container max-w-xl">
+            <p className="text-2xl p-2 text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 border-yellow-400 font-bold">
+              {intl.formatMessage({ id: "notice" })}
             </p>
+            <div className="flex flex-col py-12 gap-8">
+              <p className="text-2xl italic font-gloryLight">
+                {intl.formatMessage({ id: "welcome" })}
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section
-        id="menu"
-        className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
-        style={{
-          maxHeight: "420px",
-        }}
-      >
-        <div
-          className="w-full overflow-hidden"
+        </section>
+        <section
+          id="section-featured"
+          className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
           style={{
             maxHeight: "420px",
           }}
@@ -68,23 +63,23 @@ export default function Home() {
               "/tuna-salad-sm.jpg",
             ]}
           />
-        </div>
-      </section>
-      <section
-        id="menu"
-        className="flex flex-col items-center justify-center py-12 px-0"
-      >
-        <Menu />
-      </section>
-      <section
-        id="location"
-        className="flex justify-center py-12 dark:bg-black/50 bg-black/3  px-8"
+        </section>
+        <section
+          id="section-menu"
+          className="flex flex-col items-center justify-center py-12 px-0"
+        >
+          <Menu />
+        </section>
+      </main>
+      <footer
+        id="footer"
+        className="flex justify-center py-12 dark:bg-black/50 bg-black/3 px-8"
       >
         <div className="container max-w-5xl grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch">
           <OpeningHours />
           <ContactDetails />
         </div>
-      </section>
-    </div>
+      </footer>
+    </>
   );
 }

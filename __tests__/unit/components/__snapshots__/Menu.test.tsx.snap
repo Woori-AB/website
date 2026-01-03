@@ -7,20 +7,20 @@ exports[`Menu > matches snapshot(s) 1`] = `
     id="menu"
   >
     <div
-      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
     >
-      <h1
+      <h2
         class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.weekly'
-      </h1>
+      </h2>
       <div
         class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
       >
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -39,29 +39,29 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.weekly.weekly-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.weekly.weekly-1.allergens'
             </span>
-          </div>
+          </article>
         </div>
       </div>
     </div>
     <div
-      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
     >
-      <h1
+      <h2
         class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.starters'
-      </h1>
+      </h2>
       <div
         class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
       >
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -80,22 +80,22 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.starters.starter-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.starters.starter-1.allergens'
             </span>
-          </div>
+          </article>
         </div>
       </div>
     </div>
     <div
-      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
     >
-      <h1
+      <h2
         class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.mains'
-      </h1>
+      </h2>
       <div
         class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
       >
@@ -107,7 +107,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
           >
             mocked-i18n-'menu.mains.bibimbap'
           </h2>
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -126,12 +126,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.bibimbap-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.mains.bibimbap-1.allergens'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -150,11 +150,11 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.bibimbap-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.mains.bibimbap-2.allergens'
             </span>
-          </div>
+          </article>
         </div>
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
@@ -164,7 +164,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
           >
             mocked-i18n-'menu.mains.korean-fried-chicken'
           </h2>
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -188,12 +188,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-1.allergens'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -212,12 +212,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-2.allergens'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -236,29 +236,29 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.mains.korean-fried-chicken-3.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.mains.korean-fried-chicken-3.allergens'
             </span>
-          </div>
+          </article>
         </div>
       </div>
     </div>
     <div
-      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
     >
-      <h1
+      <h2
         class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.desserts'
-      </h1>
+      </h2>
       <div
         class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
       >
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -277,16 +277,16 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.desserts.dessert-1.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.desserts.dessert-1.allergens'
             </span>
-          </div>
+          </article>
         </div>
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -305,29 +305,29 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.desserts.dessert-2.ingredients'
             </span>
             <span
-              class="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]"
+              class="flex w-full justify-center"
             >
               mocked-i18n-'menu.desserts.dessert-2.allergens'
             </span>
-          </div>
+          </article>
         </div>
       </div>
     </div>
     <div
-      class="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3"
+      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
     >
-      <h1
+      <h2
         class="flex justify-center mb-2"
       >
         mocked-i18n-'menu.drinks'
-      </h1>
+      </h2>
       <div
         class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
       >
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <h2
@@ -345,8 +345,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.beer.beer-3.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -359,12 +359,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.beer.beer-4.price'
             </span>
-          </div>
+          </article>
         </div>
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <h2
@@ -382,8 +382,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.soju.soju-1.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -396,8 +396,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.soju.soju-2.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -410,12 +410,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.soju.soju-3.price'
             </span>
-          </div>
+          </article>
         </div>
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <h2
@@ -428,8 +428,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.red'
             </h3>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -442,8 +442,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.red-1.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -456,8 +456,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.red-2.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <h3
@@ -475,8 +475,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.white-1.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -489,8 +489,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.white-2.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <h3
@@ -508,8 +508,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.orange-1.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <h3
@@ -527,12 +527,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.rose-1.price'
             </span>
-          </div>
+          </article>
         </div>
         <div
           class="flex flex-col gap-2 w-full pt-2 pb-4"
         >
-          <div
+          <article
             class="flex flex-col w-full"
           >
             <h2
@@ -570,8 +570,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.alcohol-free-5.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -584,8 +584,8 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.alcohol-free-6.price'
             </span>
-          </div>
-          <div
+          </article>
+          <article
             class="flex flex-col w-full"
           >
             <span
@@ -603,7 +603,7 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.alcohol-free-8.price'
             </span>
-          </div>
+          </article>
         </div>
       </div>
     </div>

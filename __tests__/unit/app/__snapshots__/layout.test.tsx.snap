@@ -5,11 +5,7 @@ exports[`Layout > matches snapshot(s) 1`] = `
   class="antialiased"
 >
   <div>
-    <main>
-      <div>
-        Foo
-      </div>
-    </main>
+    Foo
   </div>
 </body>
 `;

@@ -12,7 +12,7 @@ export default function ContactDetails() {
       className="flex flex-col items-center text-center gap-4"
     >
       <div className="flex flex-col items-center text-center">
-        <h1>{intl.formatMessage({ id: "visit-us" })}</h1>
+        <h2>{intl.formatMessage({ id: "visit-us" })}</h2>
         <span>
           <a
             href="https://maps.app.goo.gl/9Ne5EDEXKdsdvig7A"
@@ -24,7 +24,7 @@ export default function ContactDetails() {
         </span>
       </div>
       <div className="flex flex-col items-center text-center">
-        <h1>{intl.formatMessage({ id: "contact" })}</h1>
+        <h2>{intl.formatMessage({ id: "contact" })}</h2>
         <span>
           <a
             href="tel:+4686566675"

@@ -1,10 +1,12 @@
 "use client";
 
+import { useIntl } from "react-intl";
 import { useRouter, usePathname } from "next/navigation";
 import Flag from "@/components/Flag";
 import type { Locales } from "@/locales/messages";
 
 export default function LanguageSwitcher() {
+  const intl = useIntl();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -15,7 +17,10 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex flex-row gap-2">
+    <nav
+      className="flex flex-row gap-2"
+      aria-label={intl.formatMessage({ id: "language-selector" })}
+    >
       <Flag
         src="/flags/sv.svg"
         alt="Svenska"
@@ -31,6 +36,6 @@ export default function LanguageSwitcher() {
         alt="한국어"
         onClick={() => changeLocale("ko")}
       />
-    </div>
+    </nav>
   );
 }

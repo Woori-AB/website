@@ -36,24 +36,20 @@ export default function Carousel({
   useStyle(keyframes);
 
   return (
-    <div className="select-none">
+    <div id="carousel" className="relative select-none w-full overflow-hidden">
       {images.map((src, index) => (
-        <div
-          className="absolute w-full h-full opacity-0 ease-in-out fill-both"
+        <Image
+          key={index}
+          src={src}
+          alt={`Slide ${index + 1}`}
+          fill
+          className="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+          sizes="100vw"
           style={{
             animation: `fade ${totalDuration}s infinite`,
             animationDelay: `${index * opaqueDuration}s`,
           }}
-          key={index}
-        >
-          <Image
-            src={src}
-            alt={`Slide ${index + 1}`}
-            fill
-            className="object-cover w-full h-full"
-            sizes="100vw"
-          />
-        </div>
+        />
       ))}
     </div>
   );

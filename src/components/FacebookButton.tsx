@@ -21,7 +21,7 @@ export default function FacebookButton() {
         )
       }
     >
-      <Facebook className="-ml-[2px] " />
+      <Facebook className="-ml-0.5 " />
       {intl.formatMessage({ id: "follow-on-facebook" })}
     </Button>
   );

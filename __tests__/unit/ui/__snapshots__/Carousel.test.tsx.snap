@@ -3,32 +3,25 @@
 exports[`Carousel > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="select-none"
+    class="relative select-none w-full overflow-hidden"
+    id="carousel"
   >
-    <div
-      class="absolute w-full h-full opacity-0 ease-in-out fill-both"
+    <mocked-image
+      alt="Slide 1"
+      class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+      fill=""
+      sizes="100vw"
+      src="/foo.jpg"
       style="animation: fade 10s infinite; animation-delay: 0s;"
-    >
-      <mocked-image
-        alt="Slide 1"
-        class="object-cover w-full h-full"
-        fill=""
-        sizes="100vw"
-        src="/foo.jpg"
-      />
-    </div>
-    <div
-      class="absolute w-full h-full opacity-0 ease-in-out fill-both"
+    />
+    <mocked-image
+      alt="Slide 2"
+      class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+      fill=""
+      sizes="100vw"
+      src="/bar.jpg"
       style="animation: fade 10s infinite; animation-delay: 5s;"
-    >
-      <mocked-image
-        alt="Slide 2"
-        class="object-cover w-full h-full"
-        fill=""
-        sizes="100vw"
-        src="/bar.jpg"
-      />
-    </div>
+    />
   </div>
 </div>
 `;

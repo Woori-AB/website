@@ -2,13 +2,13 @@
 
 :root {
   --background: #fff9ed;
-  --foreground: #392806;
+  --foreground: #1d1402;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a1711;
-    --foreground: #e3dbcb;
+    --background: #16140e;
+    --foreground: #fcf3df;
   }
 }
 
@@ -32,12 +32,8 @@ body {
   font-size: 1rem;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
 h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h3 {

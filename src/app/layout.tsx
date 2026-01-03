@@ -69,11 +69,7 @@ export default function RootLayout({
       lang="en"
       className={`${zenLoop.variable} ${glory.variable} ${kodchasan.variable} ${singleDay.variable} font-sans`}
     >
-      <body className={"antialiased"}>
-        <main>
-          <div>{children}</div>
-        </main>
-      </body>
+      <body className={"antialiased"}>{children}</body>
     </html>
   );
 }

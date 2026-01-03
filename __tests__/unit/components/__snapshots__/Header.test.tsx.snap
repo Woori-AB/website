@@ -4,11 +4,14 @@ exports[`Header > matches snapshot(s) 1`] = `
 <div>
   <div
     class="w-full overflow-hidden"
-    style="max-height: 420px;"
+    style="max-height: 420px; position: relative;"
   >
-    <div
-      class="bg-no-repeat bg-cover w-full h-full overflow-hidden"
-      style="background-image: url("/main-picture-fall-1-small.jpg"); background-position: 50% 65%;"
+    <img
+      alt="Main picture"
+      class="w-full h-full object-cover"
+      loading="eager"
+      src="/main-picture-fall-1-small.jpg"
+      style="object-position: 50% 65%;"
     />
   </div>
   <div
@@ -22,19 +25,22 @@ exports[`Header > matches snapshot(s) 1`] = `
     >
       <mocked-woorilogo />
       <div
+        aria-label="mocked-i18n-'order-food'"
         class="flex gap-2"
+        role="group"
       >
         <mocked-foodorabutton />
         <mocked-ubereatsbutton />
         <mocked-woltbutton />
       </div>
-      <div
+      <nav
+        aria-label="mocked-i18n-'social-media'"
         class="flex flex-col gap-2"
       >
         <mocked-instagrambutton />
         <mocked-facebookbutton />
         <mocked-tiktokbutton />
-      </div>
+      </nav>
     </div>
   </div>
 </div>

@@ -2,13 +2,17 @@
 
 export default function WooriLogo() {
   return (
-    <div className="flex relative select-none">
-      <div className="relative">
-        <span id="header-title-primary">WOORI</span>
-      </div>
-      <div className="relative top-6">
-        <span id="header-title-secondary">우리</span>
-      </div>
-    </div>
+    <h1 className="flex relative select-none">
+      <span id="header-title-primary" className="relative">
+        WOORI
+      </span>
+      <span
+        id="header-title-secondary"
+        className="relative top-6"
+        aria-hidden="true"
+      >
+        우리
+      </span>
+    </h1>
   );
 }

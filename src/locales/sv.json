@@ -1,9 +1,12 @@
 {
+  "language-selector": "Språkväljare",
   "welcome": "Välkommen till Woori, en restaurang med koreanska smaker. Namnet \"Woori\" betyder \"vi\" på koreanska, och här är alla en del av vår gemenskap. Njut av våra koreanska rätter!",
   "follow-on-instagram": "Följ oss på Instagram",
   "follow-on-facebook": "Följ oss på Facebook",
   "follow-on-tiktok": "Följ oss på TikTok",
   "delivery-to-door": "Leverans till dörren",
+  "order-food": "Beställ mat",
+  "social-media": "Social media",
   "opening-hours": "Öppettider",
   "opening-hours-subtitle": "Stängt 23 dec - 7 jan",
   "opening-hours-open": "{day}: {open} - {close}",

@@ -2,7 +2,8 @@
 
 exports[`LanguageSwitcher > matches snapshot(s) 1`] = `
 <div>
-  <div
+  <nav
+    aria-label="mocked-i18n-'language-selector'"
     class="flex flex-row gap-2"
   >
     <mocked-flag
@@ -17,6 +18,6 @@ exports[`LanguageSwitcher > matches snapshot(s) 1`] = `
       alt="한국어"
       src="/flags/ko.svg"
     />
-  </div>
+  </nav>
 </div>
 `;

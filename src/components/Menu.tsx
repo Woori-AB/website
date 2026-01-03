@@ -42,7 +42,7 @@ function MenuItemExtraInfo({ i18n }: { i18n: string }) {
 function MenuItemAllergens({ i18n }: { i18n: string }) {
   const intl = useIntl();
   return (
-    <span className="flex w-full justify-center italic text-[color-mix(in_srgb,currentColor_50%,transparent)]">
+    <span className="flex w-full justify-center">
       {intl.formatMessage({ id: i18n })}
     </span>
   );
@@ -51,9 +51,9 @@ function MenuItemAllergens({ i18n }: { i18n: string }) {
 function MenuTitle({ i18n }: { i18n: string }) {
   const intl = useIntl();
   return (
-    <h1 className="flex justify-center mb-2">
+    <h2 className="flex justify-center mb-2">
       {intl.formatMessage({ id: i18n })}
-    </h1>
+    </h2>
   );
 }
 
@@ -76,7 +76,7 @@ function MenuItemSubcategory({ i18n }: { i18n: string }) {
 }
 
 function MenuItem({ children }: { children: ReactNode }) {
-  return <div className="flex flex-col w-full">{children}</div>;
+  return <article className="flex flex-col w-full">{children}</article>;
 }
 
 function MenuRow({ children, cols }: { children: ReactNode; cols: number }) {
@@ -95,7 +95,7 @@ function MenuColumn({ children }: { children: ReactNode }) {
 
 function MenuSheet({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col gap w-full py-2 bg-black/3 dark:bg-white/3">
+    <div className="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4">
       {children}
     </div>
   );

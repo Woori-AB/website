@@ -7,7 +7,7 @@ exports[`FacebookButton > matches snapshot(s) 1`] = `
     data-testid="facebook-button"
   >
     <mocked-lucide-react-facebook
-      class="-ml-[2px] "
+      class="-ml-0.5 "
     />
     mocked-i18n-'follow-on-facebook'
   </mocked-button>
