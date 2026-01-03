@@ -2,7 +2,9 @@ import { test, expect } from "@playwright/test";
 
 test("has title", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveTitle(/^Woori$/);
+  await expect(page).toHaveTitle(
+    /^Woori - Koreanska rätter i Fredhäll, Kristineberg, Stockholm$/
+  );
 });
 
 test("has welcome text", async ({ page }) => {
