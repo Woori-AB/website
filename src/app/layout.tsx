@@ -26,6 +26,7 @@ const singleDay = Single_Day({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wooristockholm.se"),
   category: "Food & Drink",
   creator: "Woori",
   title: "Woori - Koreanska rätter i Fredhäll, Kristineberg, Stockholm",
