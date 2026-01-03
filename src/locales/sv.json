@@ -6,6 +6,8 @@
   "delivery-to-door": "Leverans till dörren",
   "opening-hours": "Öppettider",
   "opening-hours-subtitle": "Stängt 23 dec - 7 jan",
+  "opening-hours-open": "{day}: {open} - {close}",
+  "opening-hours-close": "{day}: {close}",
   "visit-us": "Besök oss",
   "contact": "Kontakt",
   "monday": "Måndag",

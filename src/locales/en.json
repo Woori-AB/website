@@ -4,6 +4,8 @@
   "follow-on-facebook": "Follow us on Facebook",
   "follow-on-tiktok": "Follow us on TikTok",
   "delivery-to-door": "Delivery to door",
+  "opening-hours-open": "{day}: {open} - {close}",
+  "opening-hours-close": "{day}: {close}",
   "opening-hours": "Opening hours",
   "opening-hours-subtitle": "Closed 23 Dec - 7 Jan",
   "visit-us": "Visit us",
