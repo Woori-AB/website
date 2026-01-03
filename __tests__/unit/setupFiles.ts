@@ -8,7 +8,6 @@ vi.mock("react-intl");
 vi.mock("next/image");
 vi.mock("next/font/google");
 vi.mock("@/hooks/useStyle");
-vi.mock("@/hooks/useDisplayLunchPricesQueryParam");
 
 // Mocked project modules below...
 
@@ -53,7 +52,6 @@ vi.mock("@/components/LanguageSwitcher", () =>
 vi.mock("@/components/OpeningHours", () => createMockComponent("OpeningHours"));
 
 vi.mock("@/components/Menu", () => createMockComponent("Menu"));
-vi.mock("@/components/MenuSelector", () => createMockComponent("MenuSelector"));
 
 vi.mock("@/components/TikTokButton", () => createMockComponent("TikTokButton"));
 vi.mock("@/components/TikTokLogo", () => createMockComponent("TikTokLogo"));

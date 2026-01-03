@@ -8,7 +8,6 @@ type Props = {
   className?: string;
   onClick: () => void;
   children: ReactNode;
-  active?: boolean;
 };
 
 export default function Button({
@@ -16,22 +15,19 @@ export default function Button({
   className,
   onClick,
   children,
-  active,
 }: Props) {
   return (
     <button
       type="button"
       className={cn(
-        "flex gap-2 relative rounded-4xl px-4 py-2 items-center cursor-pointer select-none transition",
-        active
-          ? "text-white bg-yellow-500 font-bold"
-          : "bg-black/40 hover:bg-black/70 text-white",
+        "flex gap-2 relative rounded-4xl px-4 py-2 items-center cursor-pointer bg-black/40 hover:bg-black/70 text-white select-none",
         className
       )}
       aria-label={ariaLabel}
       onClick={onClick}
     >
       {children}
+      <div className="absolute inset-0 bg-linear-to-b from-white/10 to-white/0 z-10 pointer-events-none" />
     </button>
   );
 }
