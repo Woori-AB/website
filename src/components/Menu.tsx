@@ -178,6 +178,12 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-2.ingredients" />
               <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-2.allergens" />
             </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.mains.korean-fried-chicken-3.name" />
+              <MenuItemPrice i18n="menu.mains.korean-fried-chicken-3.price" />
+              <MenuItemIngredients i18n="menu.mains.korean-fried-chicken-3.ingredients" />
+              <MenuItemAllergens i18n="menu.mains.korean-fried-chicken-3.allergens" />
+            </MenuItem>
           </MenuColumn>
         </MenuRow>
       </MenuSheet>
