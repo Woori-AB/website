@@ -31,9 +31,9 @@ export default function Home() {
           className="flex flex-col justify-center p-8 items-center"
         >
           <div className="container max-w-xl">
-            <p className="text-2xl p-2 text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 border-yellow-400 font-bold">
+            {/*<p className="text-2xl p-2 text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 border-yellow-400 font-bold">
               {intl.formatMessage({ id: "notice" })}
-            </p>
+            </p>*/}
             <div className="flex flex-col py-12 gap-8">
               <p className="text-2xl italic font-gloryLight">
                 {intl.formatMessage({ id: "welcome" })}

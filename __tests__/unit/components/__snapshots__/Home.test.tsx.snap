@@ -22,11 +22,6 @@ exports[`Home > matches snapshot(s) 1`] = `
       <div
         class="container max-w-xl"
       >
-        <p
-          class="text-2xl p-2 text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 border-yellow-400 font-bold"
-        >
-          mocked-i18n-'notice'
-        </p>
         <div
           class="flex flex-col py-12 gap-8"
         >
