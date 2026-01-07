@@ -131,6 +131,18 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemIngredients i18n="menu.starters.starter-1.ingredients" />
               <MenuItemAllergens i18n="menu.starters.starter-1.allergens" />
             </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.starters.starter-2.name" />
+              <MenuItemPrice i18n="menu.starters.starter-2.price" />
+              <MenuItemIngredients i18n="menu.starters.starter-2.ingredients" />
+              <MenuItemAllergens i18n="menu.starters.starter-2.allergens" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.starters.starter-3.name" />
+              <MenuItemPrice i18n="menu.starters.starter-3.price" />
+              <MenuItemIngredients i18n="menu.starters.starter-3.ingredients" />
+              <MenuItemAllergens i18n="menu.starters.starter-3.allergens" />
+            </MenuItem>
           </MenuColumn>
         </MenuRow>
       </MenuSheet>

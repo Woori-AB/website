@@ -85,6 +85,54 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.starters.starter-1.allergens'
             </span>
           </article>
+          <article
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.starters.starter-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.starters.starter-2.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.starters.starter-2.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.starters.starter-2.allergens'
+            </span>
+          </article>
+          <article
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.starters.starter-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.starters.starter-3.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.starters.starter-3.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.starters.starter-3.allergens'
+            </span>
+          </article>
         </div>
       </div>
     </div>
