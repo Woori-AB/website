@@ -30,14 +30,14 @@ function MenuItemIngredients({ i18n }: { i18n: string }) {
   );
 }
 
-function MenuItemExtraInfo({ i18n }: { i18n: string }) {
+/*function MenuItemExtraInfo({ i18n }: { i18n: string }) {
   const intl = useIntl();
   return (
     <span className="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4">
       {intl.formatMessage({ id: i18n })}
     </span>
   );
-}
+}*/
 
 function MenuItemAllergens({ i18n }: { i18n: string }) {
   const intl = useIntl();
