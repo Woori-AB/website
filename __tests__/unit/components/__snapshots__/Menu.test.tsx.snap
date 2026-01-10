@@ -12,47 +12,6 @@ exports[`Menu > matches snapshot(s) 1`] = `
       <h2
         class="flex justify-center mb-2"
       >
-        mocked-i18n-'menu.weekly'
-      </h2>
-      <div
-        class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
-      >
-        <div
-          class="flex flex-col gap-2 w-full pt-2 pb-4"
-        >
-          <article
-            class="flex flex-col w-full"
-          >
-            <span
-              class="flex w-full justify-center text-lg font-bold"
-            >
-              mocked-i18n-'menu.weekly.weekly-1.name'
-            </span>
-            <span
-              class="flex w-full justify-center"
-            >
-              mocked-i18n-'menu.weekly.weekly-1.price'
-            </span>
-            <span
-              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
-            >
-              mocked-i18n-'menu.weekly.weekly-1.ingredients'
-            </span>
-            <span
-              class="flex w-full justify-center"
-            >
-              mocked-i18n-'menu.weekly.weekly-1.allergens'
-            </span>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div
-      class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4"
-    >
-      <h2
-        class="flex justify-center mb-2"
-      >
         mocked-i18n-'menu.starters'
       </h2>
       <div
