@@ -109,19 +109,6 @@ export default function Menu({ className: cn }: Props) {
   return (
     <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
       <MenuSheet>
-        <MenuTitle i18n="menu.weekly" />
-        <MenuRow cols={1}>
-          <MenuColumn>
-            <MenuItem>
-              <MenuItemName i18n="menu.weekly.weekly-1.name" />
-              <MenuItemPrice i18n="menu.weekly.weekly-1.price" />
-              <MenuItemIngredients i18n="menu.weekly.weekly-1.ingredients" />
-              <MenuItemAllergens i18n="menu.weekly.weekly-1.allergens" />
-            </MenuItem>
-          </MenuColumn>
-        </MenuRow>
-      </MenuSheet>
-      <MenuSheet>
         <MenuTitle i18n="menu.starters" />
         <MenuRow cols={1}>
           <MenuColumn>
