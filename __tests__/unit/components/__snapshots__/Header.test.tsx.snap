@@ -10,8 +10,8 @@ exports[`Header > matches snapshot(s) 1`] = `
       alt="Main picture"
       class="w-full h-full object-cover"
       loading="eager"
-      src="/main-picture-fall-1-small.jpg"
-      style="object-position: 50% 65%;"
+      src="/main-picture-winter-1-small.jpg"
+      style="object-position: 50% 56%;"
     />
   </div>
   <div
