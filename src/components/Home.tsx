@@ -7,6 +7,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Menu from "@/components/Menu";
 import OpeningHours from "@/components/OpeningHours";
 import { useIntl } from "react-intl";
+import Featured from "@/components/Featured";
 
 export default function Home() {
   const intl = useIntl();
@@ -68,6 +69,7 @@ export default function Home() {
           id="section-menu"
           className="flex flex-col items-center justify-center py-12 px-0"
         >
+          <Featured />
           <Menu />
         </section>
       </main>

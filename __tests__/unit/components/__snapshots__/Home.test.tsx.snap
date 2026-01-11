@@ -48,6 +48,7 @@ exports[`Home > matches snapshot(s) 1`] = `
       class="flex flex-col items-center justify-center py-12 px-0"
       id="section-menu"
     >
+      <mocked-featured />
       <mocked-menu />
     </section>
   </main>

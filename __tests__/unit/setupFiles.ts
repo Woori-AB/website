@@ -36,6 +36,7 @@ vi.mock("@/components/ContactDetails", () =>
 vi.mock("@/components/FacebookButton", () =>
   createMockComponent("FacebookButton")
 );
+vi.mock("@/components/Featured", () => createMockComponent("Featured"));
 vi.mock("@/components/Flag", () => createMockComponent("Flag"));
 vi.mock("@/components/FoodoraButton", () =>
   createMockComponent("FoodoraButton")
