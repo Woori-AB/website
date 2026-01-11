@@ -2,17 +2,17 @@
 
 exports[`Home > matches snapshot(s) 1`] = `
 <div>
+  <div
+    class="fixed top-0 right-0 m-2 z-100"
+  >
+    <mocked-languageswitcher />
+  </div>
   <header
     class="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
     id="header"
     style="max-height: 420px;"
   >
     <mocked-header />
-    <div
-      class="absolute top-0 right-0 m-2 z-100"
-    >
-      <mocked-languageswitcher />
-    </div>
   </header>
   <main>
     <section

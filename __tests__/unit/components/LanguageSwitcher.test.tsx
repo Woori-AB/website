@@ -51,7 +51,9 @@ describe("LanguageSwitcher", () => {
     fireEvent.click(flag);
 
     // Assert
-    expect(useRouterMock.push).toHaveBeenCalledWith("/sv/bar/baz");
+    expect(useRouterMock.push).toHaveBeenCalledWith("/sv/bar/baz", {
+      scroll: false,
+    });
   });
 
   it("invokes router.push() puts '/en' at the beginning of the path when the Swedish flag is clicked", async () => {
@@ -67,7 +69,9 @@ describe("LanguageSwitcher", () => {
     fireEvent.click(flag);
 
     // Assert
-    expect(useRouterMock.push).toHaveBeenCalledWith("/en/bar/baz");
+    expect(useRouterMock.push).toHaveBeenCalledWith("/en/bar/baz", {
+      scroll: false,
+    });
   });
 
   it("invokes router.push() puts '/ko' at the beginning of the path when the Swedish flag is clicked", async () => {
@@ -83,6 +87,8 @@ describe("LanguageSwitcher", () => {
     fireEvent.click(flag);
 
     // Assert
-    expect(useRouterMock.push).toHaveBeenCalledWith("/ko/bar/baz");
+    expect(useRouterMock.push).toHaveBeenCalledWith("/ko/bar/baz", {
+      scroll: false,
+    });
   });
 });
