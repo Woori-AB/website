@@ -18,10 +18,10 @@ export default function Header() {
         style={{ maxHeight: "420px", position: "relative" }}
       >
         <img
-          src="/main-picture-fall-1-small.jpg"
+          src="/main-picture-winter-1-small.jpg"
           alt="Main picture"
           className="w-full h-full object-cover"
-          style={{ objectPosition: "50% 65%" }}
+          style={{ objectPosition: "50% 56%" }}
           loading="eager"
         />
       </div>
