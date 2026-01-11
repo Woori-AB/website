@@ -6,9 +6,13 @@ export default defineConfig({
   plugins: [react()],
   test: {
     globals: true,
-    dir: "__tests__/unit",
     environment: "jsdom",
     setupFiles: ["./__tests__/unit/setupFiles.ts"],
+    include: [
+      "__tests__/unit/**/*.{test,spec}.{ts,tsx,js,jsx}",
+      "__tests__/integration/**/*.{test,spec}.{ts,tsx,js,jsx}",
+    ],
+    exclude: ["__tests__/e2e/**", "**/node_modules/**", "**/dist/**"],
     coverage: {
       thresholds: {
         lines: 100,
