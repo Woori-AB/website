@@ -14,6 +14,9 @@ export default function Home() {
 
   return (
     <>
+      <div className="fixed top-0 right-0 m-2 z-100">
+        <LanguageSwitcher />
+      </div>
       <header
         id="header"
         className="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
@@ -22,9 +25,6 @@ export default function Home() {
         }}
       >
         <Header />
-        <div className="absolute top-0 right-0 m-2 z-100">
-          <LanguageSwitcher />
-        </div>
       </header>
       <main>
         <section

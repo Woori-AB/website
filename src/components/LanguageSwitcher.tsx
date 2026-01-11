@@ -13,7 +13,7 @@ export default function LanguageSwitcher() {
   const changeLocale = (locale: Locales) => {
     const segments = pathname.split("/").filter(Boolean);
     segments[0] = locale; // Assuming locale is always the first segment of the path
-    router.push("/" + segments.join("/"));
+    router.push("/" + segments.join("/"), { scroll: false });
   };
 
   return (
