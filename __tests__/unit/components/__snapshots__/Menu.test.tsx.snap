@@ -284,10 +284,6 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.desserts.dessert-1.allergens'
             </span>
           </article>
-        </div>
-        <div
-          class="flex flex-col gap-2 w-full pt-2 pb-4"
-        >
           <article
             class="flex flex-col w-full"
           >
@@ -310,6 +306,58 @@ exports[`Menu > matches snapshot(s) 1`] = `
               class="flex w-full justify-center"
             >
               mocked-i18n-'menu.desserts.dessert-2.allergens'
+            </span>
+          </article>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <article
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.desserts.dessert-3.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-3.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.desserts.dessert-3.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-3.allergens'
+            </span>
+          </article>
+          <article
+            class="flex flex-col w-full"
+          >
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.desserts.dessert-4.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-4.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.desserts.dessert-4.ingredients'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.desserts.dessert-4.allergens'
             </span>
           </article>
         </div>
