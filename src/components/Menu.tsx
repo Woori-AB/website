@@ -213,6 +213,10 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemCategory i18n="menu.drinks.beer" />
+              <MenuItemName i18n="menu.drinks.beer.beer-2.name" />
+              <MenuItemPrice i18n="menu.drinks.beer.beer-2.price" />
+            </MenuItem>
+            <MenuItem>
               <MenuItemName i18n="menu.drinks.beer.beer-3.name" />
               <MenuItemPrice i18n="menu.drinks.beer.beer-3.price" />
             </MenuItem>
