@@ -40,7 +40,7 @@ exports[`Home > matches snapshot(s) 1`] = `
     >
       <mocked-carousel
         crossfadeduration="3"
-        images="/korean-fried-chicken-original.jpg,/beef-bibimbap.jpg,/korean-fried-chicken-sweet-spicy.jpg,/bulgogi-sm.jpg,/korean-fried-chicken-honey-soy.jpg,/natural-wines.jpg,/pesto-pasta-sm.jpg,/truffle-pasta-sm.jpg,/tuna-salad-sm.jpg"
+        images="/korean-fried-chicken-original.jpg,/beef-bibimbap.jpg,/korean-fried-chicken-sweet-spicy.jpg,/bulgogi-sm.jpg"
         opaqueduration="5"
       />
     </section>
