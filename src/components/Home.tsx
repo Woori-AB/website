@@ -8,6 +8,7 @@ import Menu from "@/components/Menu";
 import OpeningHours from "@/components/OpeningHours";
 import { useIntl } from "react-intl";
 import Featured from "@/components/Featured";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   const intl = useIntl();
@@ -39,6 +40,23 @@ export default function Home() {
               <p className="text-2xl italic font-gloryLight">
                 {intl.formatMessage({ id: "welcome" })}
               </p>
+            </div>
+            <div className="text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 p-2 border-yellow-400">
+              <p className="text-xl font-bold">
+                {intl.formatMessage({ id: "reserve-table-title" })}
+              </p>
+              <p className="text-l">
+                {intl.formatMessage({ id: "reserve-table-text" })}
+              </p>
+              <span className="block text-center">
+                <a
+                  href="mailto:kontakt@wooristockholm.se"
+                  className="inline-flex gap-1 hover:underline items-center"
+                >
+                  <Mail size={"1.2rem"} />
+                  kontakt@wooristockholm.se
+                </a>
+              </span>
             </div>
           </div>
         </section>
