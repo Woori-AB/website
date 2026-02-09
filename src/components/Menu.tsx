@@ -176,7 +176,7 @@ export default function Menu({ className: cn }: Props) {
       </MenuSheet>
       <MenuSheet>
         <MenuTitle i18n="menu.desserts" />
-        <MenuRow cols={1}>
+        <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.desserts.dessert-1.name" />
@@ -189,6 +189,14 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemPrice i18n="menu.desserts.dessert-2.price" />
               <MenuItemIngredients i18n="menu.desserts.dessert-2.ingredients" />
               <MenuItemAllergens i18n="menu.desserts.dessert-2.allergens" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.desserts.dessert-3.name" />
+              <MenuItemPrice i18n="menu.desserts.dessert-3.price" />
+              <MenuItemIngredients i18n="menu.desserts.dessert-3.ingredients" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-3.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
