@@ -12,7 +12,7 @@ function MenuItemName({ i18n }: { i18n: string }) {
   );
 }
 
-function MenuItemNameSubtitle({ i18n }: { i18n: string }) {
+function MenuItemCategorySubtitle({ i18n }: { i18n: string }) {
   const intl = useIntl();
   return (
     <span className="flex w-full justify-center text-md">
@@ -231,7 +231,7 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemCategory i18n="menu.drinks.soju" />
-              <MenuItemNameSubtitle i18n="menu.drinks.soju.subtitle" />
+              <MenuItemCategorySubtitle i18n="menu.drinks.soju.subtitle" />
               <MenuItemName i18n="menu.drinks.soju.soju-1.name" />
               <MenuItemPrice i18n="menu.drinks.soju.soju-1.price" />
             </MenuItem>
@@ -247,6 +247,7 @@ export default function Menu({ className: cn }: Props) {
           <MenuColumn>
             <MenuItem>
               <MenuItemCategory i18n="menu.drinks.wine" />
+              <MenuItemCategorySubtitle i18n="menu.drinks.wine.subtitle" />
               <MenuItemSubcategory i18n="menu.drinks.wine.red" />
             </MenuItem>
             <MenuItem>
