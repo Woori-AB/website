@@ -468,6 +468,11 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine'
             </h2>
+            <span
+              class="flex w-full justify-center text-md"
+            >
+              mocked-i18n-'menu.drinks.wine.subtitle'
+            </span>
             <h3
               class="flex justify-center font-bold"
             >
