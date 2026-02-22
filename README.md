@@ -7,6 +7,12 @@ The easiest way to get started is to use the development container provided with
 1. Install [**Visual Studio Code**](https://code.visualstudio.com/) and the [**Dev Containers**](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 2. Clone and open this repository with [**Visual Studio Code**](https://code.visualstudio.com/).
 3. Start the **Dev container** by clicking **"Reopen in container"** when prompted (or choose `Dev Containers: Reopen in Container` via the `F1` menu)
+4. For Git authentication within your Dev Container, enable your `ssh-agent` service on your host machine by:
+   1. **On Windows** - Open Powershell as Administrator:
+      - `Get-Service ssh-agent`
+      - `Set-Service -Name ssh-agent -StartupType Automatic`
+      - `Start-Service ssh-agent`
+      - `ssh-add $env:USERPROFILE\.ssh\id_ed25519`
 
 ## Quick script reference
 

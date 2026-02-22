@@ -13,16 +13,16 @@ exports[`OpeningHours > matches snapshot(s) 1`] = `
       mocked-i18n-'opening-hours-close'
     </span>
     <span>
-      mocked-i18n-'opening-hours-open'
+      mocked-i18n-'opening-hours-open-lunch-and-dinner'
     </span>
     <span>
-      mocked-i18n-'opening-hours-open'
+      mocked-i18n-'opening-hours-open-lunch-and-dinner'
     </span>
     <span>
-      mocked-i18n-'opening-hours-open'
+      mocked-i18n-'opening-hours-open-lunch-and-dinner'
     </span>
     <span>
-      mocked-i18n-'opening-hours-open'
+      mocked-i18n-'opening-hours-open-lunch-and-dinner'
     </span>
     <span>
       mocked-i18n-'opening-hours-open'

@@ -15,47 +15,55 @@ export default function OpeningHours() {
           {
             day: intl.formatMessage({ id: "monday" }),
             close: intl.formatMessage({ id: "closed" }),
-          }
+          },
         )}
       </span>
       <span>
         {intl.formatMessage(
-          { id: "opening-hours-open" },
+          { id: "opening-hours-open-lunch-and-dinner" },
           {
             day: intl.formatMessage({ id: "tuesday" }),
-            open: "11:00",
-            close: "20:00",
-          }
+            lunchOpen: "12",
+            lunchClose: "15",
+            dinnerOpen: "16",
+            dinnerClose: "20",
+          },
         )}
       </span>
       <span>
         {intl.formatMessage(
-          { id: "opening-hours-open" },
+          { id: "opening-hours-open-lunch-and-dinner" },
           {
             day: intl.formatMessage({ id: "wednesday" }),
-            open: "11:00",
-            close: "20:00",
-          }
+            lunchOpen: "11",
+            lunchClose: "15",
+            dinnerOpen: "16",
+            dinnerClose: "20",
+          },
         )}
       </span>
       <span>
         {intl.formatMessage(
-          { id: "opening-hours-open" },
+          { id: "opening-hours-open-lunch-and-dinner" },
           {
             day: intl.formatMessage({ id: "thursday" }),
-            open: "11:00",
-            close: "20:00",
-          }
+            lunchOpen: "11",
+            lunchClose: "15",
+            dinnerOpen: "16",
+            dinnerClose: "20",
+          },
         )}
       </span>
       <span>
         {intl.formatMessage(
-          { id: "opening-hours-open" },
+          { id: "opening-hours-open-lunch-and-dinner" },
           {
             day: intl.formatMessage({ id: "friday" }),
-            open: "11:00",
-            close: "20:00",
-          }
+            lunchOpen: "11",
+            lunchClose: "15",
+            dinnerOpen: "16",
+            dinnerClose: "20",
+          },
         )}
       </span>
       <span>
@@ -63,9 +71,9 @@ export default function OpeningHours() {
           { id: "opening-hours-open" },
           {
             day: intl.formatMessage({ id: "saturday" }),
-            open: "11:00",
-            close: "20:00",
-          }
+            open: "11",
+            close: "20",
+          },
         )}
       </span>
       <span>
@@ -74,7 +82,7 @@ export default function OpeningHours() {
           {
             day: intl.formatMessage({ id: "sunday" }),
             close: intl.formatMessage({ id: "closed" }),
-          }
+          },
         )}
       </span>
     </div>
