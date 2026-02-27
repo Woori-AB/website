@@ -464,6 +464,16 @@ exports[`Menu > matches snapshot(s) 1`] = `
             >
               mocked-i18n-'menu.drinks.wine.red-1.price'
             </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.red-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.red-2.price'
+            </span>
           </article>
           <article
             class="flex flex-col w-full"
@@ -501,6 +511,16 @@ exports[`Menu > matches snapshot(s) 1`] = `
               class="flex w-full justify-center"
             >
               mocked-i18n-'menu.drinks.wine.rose-1.price'
+            </span>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.wine.rose-2.name'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.wine.rose-2.price'
             </span>
           </article>
         </div>
