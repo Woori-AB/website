@@ -14,6 +14,13 @@ The easiest way to get started is to use the development container provided with
       - `Start-Service ssh-agent`
       - `ssh-add $env:USERPROFILE\.ssh\id_ed25519`
 
+### Run end-to-end tests with Playwright in the Dev Container
+
+```
+$ npx playwright install --with-deps
+$ npm run test:e2e
+```
+
 ## Quick script reference
 
 | Npm script                   | Description                                                                                                     |
