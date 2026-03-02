@@ -33,6 +33,7 @@ exports[`Home > matches snapshot(s) 1`] = `
         </div>
         <div
           class="text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 p-2 border-yellow-400"
+          id="reserve-a-table"
         >
           <p
             class="text-xl font-bold"
