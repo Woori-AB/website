@@ -41,7 +41,10 @@ export default function Home() {
                 {intl.formatMessage({ id: "welcome" })}
               </p>
             </div>
-            <div className="text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 p-2 border-yellow-400">
+            <div
+              id="reserve-a-table"
+              className="text-center font-gloryLight border border-l-12 border-r-12 bg-yellow-400/6 p-2 border-yellow-400"
+            >
               <p className="text-xl font-bold">
                 {intl.formatMessage({ id: "reserve-table-title" })}
               </p>
