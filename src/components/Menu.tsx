@@ -245,13 +245,6 @@ export default function Menu({ className: cn }: Props) {
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.red-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.red-1.price" />
-              <MenuItemName i18n="menu.drinks.wine.red-2.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.red-2.price" />
-            </MenuItem>
-            <MenuItem>
-              <MenuItemSubcategory i18n="menu.drinks.wine.orange" />
-              <MenuItemName i18n="menu.drinks.wine.orange-1.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.orange-1.price" />
             </MenuItem>
             <MenuItem>
               <MenuItemSubcategory i18n="menu.drinks.wine.rose" />
