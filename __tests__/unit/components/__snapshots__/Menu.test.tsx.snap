@@ -550,14 +550,9 @@ exports[`Menu > matches snapshot(s) 1`] = `
               mocked-i18n-'menu.drinks.alcohol-free-7.name'
             </span>
             <span
-              class="flex w-full justify-center text-lg font-bold"
-            >
-              mocked-i18n-'menu.drinks.alcohol-free-8.name'
-            </span>
-            <span
               class="flex w-full justify-center"
             >
-              mocked-i18n-'menu.drinks.alcohol-free-8.price'
+              mocked-i18n-'menu.drinks.alcohol-free-7.price'
             </span>
           </article>
         </div>

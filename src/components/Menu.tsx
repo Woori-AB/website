@@ -268,8 +268,7 @@ export default function Menu({ className: cn }: Props) {
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.alcohol-free-7.name" />
-              <MenuItemName i18n="menu.drinks.alcohol-free-8.name" />
-              <MenuItemPrice i18n="menu.drinks.alcohol-free-8.price" />
+              <MenuItemPrice i18n="menu.drinks.alcohol-free-7.price" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
