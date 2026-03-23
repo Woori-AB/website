@@ -53,7 +53,7 @@ export default function Jobb() {
             </ul>
             <h3>Meriterande</h3>
             <ul>
-              <li>• Erfarenhet av inom det asiatiska köket</li>
+              <li>• Erfarenhet inom det asiatiska köket</li>
             </ul>
             <h2>Ansökan</h2>
             <p>
