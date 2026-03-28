@@ -250,8 +250,6 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemSubcategory i18n="menu.drinks.wine.rose" />
               <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
-              <MenuItemName i18n="menu.drinks.wine.rose-2.name" />
-              <MenuItemPrice i18n="menu.drinks.wine.rose-2.price" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
@@ -270,8 +268,7 @@ export default function Menu({ className: cn }: Props) {
             </MenuItem>
             <MenuItem>
               <MenuItemName i18n="menu.drinks.alcohol-free-7.name" />
-              <MenuItemName i18n="menu.drinks.alcohol-free-8.name" />
-              <MenuItemPrice i18n="menu.drinks.alcohol-free-8.price" />
+              <MenuItemPrice i18n="menu.drinks.alcohol-free-7.price" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
