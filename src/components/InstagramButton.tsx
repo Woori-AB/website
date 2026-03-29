@@ -1,6 +1,7 @@
 "use client";
 
-import { Instagram } from "lucide-react";
+//import { Instagram } from "lucide-react";
+import InstagramLogo from "@/components/InstagramLogo";
 import { useIntl } from "react-intl";
 import Button from "@/ui/Button";
 
@@ -17,11 +18,11 @@ export default function InstagramButton() {
         window.open(
           "https://www.instagram.com/wooristockholm",
           "_blank",
-          "noopener,noreferrer"
+          "noopener,noreferrer",
         )
       }
     >
-      <Instagram />
+      <InstagramLogo />
       {intl.formatMessage({ id: "follow-on-instagram" })}
     </Button>
   );
