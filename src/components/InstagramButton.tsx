@@ -1,6 +1,5 @@
 "use client";
 
-//import { Instagram } from "lucide-react";
 import InstagramLogo from "@/components/InstagramLogo";
 import { useIntl } from "react-intl";
 import Button from "@/ui/Button";
