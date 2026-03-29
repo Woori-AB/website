@@ -448,31 +448,12 @@ exports[`Menu > matches snapshot(s) 1`] = `
             <h3
               class="flex justify-center font-bold"
             >
-              mocked-i18n-'menu.drinks.wine.red'
-            </h3>
-          </article>
-          <article
-            class="flex flex-col w-full"
-          >
-            <span
-              class="flex w-full justify-center text-lg font-bold"
-            >
-              mocked-i18n-'menu.drinks.wine.red-1.name'
-            </span>
-            <span
-              class="flex w-full justify-center"
-            >
-              mocked-i18n-'menu.drinks.wine.red-1.price'
-            </span>
-          </article>
-          <article
-            class="flex flex-col w-full"
-          >
-            <h3
-              class="flex justify-center font-bold"
-            >
               mocked-i18n-'menu.drinks.wine.rose'
             </h3>
+          </article>
+          <article
+            class="flex flex-col w-full"
+          >
             <span
               class="flex w-full justify-center text-lg font-bold"
             >
