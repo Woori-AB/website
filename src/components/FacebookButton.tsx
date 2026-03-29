@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook } from "lucide-react";
+import FacebookLogo from "@/components/FacebookLogo";
 import { useIntl } from "react-intl";
 import Button from "@/ui/Button";
 
@@ -17,11 +17,11 @@ export default function FacebookButton() {
         window.open(
           "https://www.facebook.com/people/Woori/61577166415207",
           "_blank",
-          "noopener,noreferrer"
+          "noopener,noreferrer",
         )
       }
     >
-      <Facebook className="-ml-0.5 " />
+      <FacebookLogo />
       {intl.formatMessage({ id: "follow-on-facebook" })}
     </Button>
   );

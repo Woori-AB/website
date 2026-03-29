@@ -31,24 +31,28 @@ vi.mock("@/app/page", () => createMockComponent("Page"));
 vi.mock("@/ui/Button", () => createMockComponent("Button"));
 vi.mock("@/ui/Carousel", () => createMockComponent("Carousel"));
 vi.mock("@/components/ContactDetails", () =>
-  createMockComponent("ContactDetails")
+  createMockComponent("ContactDetails"),
 );
 vi.mock("@/components/FacebookButton", () =>
-  createMockComponent("FacebookButton")
+  createMockComponent("FacebookButton"),
 );
+vi.mock("@/components/FacebookLogo", () => createMockComponent("FacebookLogo"));
 vi.mock("@/components/Featured", () => createMockComponent("Featured"));
 vi.mock("@/components/Flag", () => createMockComponent("Flag"));
 vi.mock("@/components/FoodoraButton", () =>
-  createMockComponent("FoodoraButton")
+  createMockComponent("FoodoraButton"),
 );
 vi.mock("@/components/FoodoraLogo", () => createMockComponent("FoodoraLogo"));
 vi.mock("@/components/Header", () => createMockComponent("Header"));
 vi.mock("@/components/Home", () => createMockComponent("Home"));
 vi.mock("@/components/InstagramButton", () =>
-  createMockComponent("InstagramButton")
+  createMockComponent("InstagramButton"),
+);
+vi.mock("@/components/InstagramLogo", () =>
+  createMockComponent("InstagramLogo"),
 );
 vi.mock("@/components/LanguageSwitcher", () =>
-  createMockComponent("LanguageSwitcher")
+  createMockComponent("LanguageSwitcher"),
 );
 vi.mock("@/components/OpeningHours", () => createMockComponent("OpeningHours"));
 
@@ -58,7 +62,7 @@ vi.mock("@/components/TikTokButton", () => createMockComponent("TikTokButton"));
 vi.mock("@/components/TikTokLogo", () => createMockComponent("TikTokLogo"));
 
 vi.mock("@/components/UberEatsButton", () =>
-  createMockComponent("UberEatsButton")
+  createMockComponent("UberEatsButton"),
 );
 vi.mock("@/components/UberEatsLogo", () => createMockComponent("UberEatsLogo"));
 vi.mock("@/components/WoltButton", () => createMockComponent("WoltButton"));
