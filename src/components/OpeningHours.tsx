@@ -8,7 +8,7 @@ export default function OpeningHours() {
   return (
     <div id="open-hours" className="flex flex-col items-center text-center">
       <h2>{intl.formatMessage({ id: "opening-hours" })}</h2>
-      <h3>{intl.formatMessage({ id: "opening-hours-subtitle" })}</h3>
+      {/*<h3>{intl.formatMessage({ id: "opening-hours-subtitle" })}</h3>*/}
       <span>
         {intl.formatMessage(
           { id: "opening-hours-close" },
