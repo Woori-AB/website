@@ -78,10 +78,12 @@
   "menu.desserts.dessert-2.ingredients": "밀가루 반죽을 입혀 튀겨 만든 소시지 핫도그",
   "menu.desserts.dessert-2.allergens": "(알레르기: 글루텐, 대두)",
   "menu.desserts.dessert-2.price": "49kr",
-  "menu.desserts.dessert-3.name": "딸기 타르트",
-  "menu.desserts.dessert-3.ingredients": "밀가루, 달걀, 우유, 크림, 젤라틴, 딸기",
-  "menu.desserts.dessert-3.allergens": "(알레르기: 유당, 우유, 달걀, 글루텐)",
-  "menu.desserts.dessert-3.price": "80kr",
+  "menu.desserts.dessert-3.name": "멜로나 망고",
+  "menu.desserts.dessert-3.allergens": "(알레르기: 글루텐, 우유, 귀리)",
+  "menu.desserts.dessert-3.price": "30kr",
+  "menu.desserts.dessert-4.name": "멜로나 멜론",
+  "menu.desserts.dessert-4.allergens": "(알레르기: 글루텐, 우유, 귀리)",
+  "menu.desserts.dessert-4.price": "30kr",
   "menu.drinks": "음료 메뉴",
   "menu.drinks.alcohol-free": "알콜프리",
   "menu.drinks.alcohol-free-1.name": "코카콜라, 25cl",
@@ -119,5 +121,8 @@
   "menu.drinks.wine.subtitle": "잔 / 병",
   "menu.drinks.wine.rose": "로제 와인",
   "menu.drinks.wine.rose-1.name": "Petnat Rosado, 13%",
-  "menu.drinks.wine.rose-1.price": "- / 470kr"
+  "menu.drinks.wine.rose-1.price": "- / 470kr",
+  "menu.drinks.cocktails": "칵테일",
+  "menu.drinks.cocktails.cocktail-1.name": "소맥",
+  "menu.drinks.cocktails.cocktail-1.price": "199kr"
 }

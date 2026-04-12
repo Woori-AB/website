@@ -185,7 +185,7 @@ export default function Menu({ className: cn }: Props) {
       </MenuSheet>
       <MenuSheet>
         <MenuTitle i18n="menu.desserts" />
-        <MenuRow cols={1}>
+        <MenuRow cols={2}>
           <MenuColumn>
             <MenuItem>
               <MenuItemName i18n="menu.desserts.dessert-1.name" />
@@ -198,6 +198,18 @@ export default function Menu({ className: cn }: Props) {
               <MenuItemPrice i18n="menu.desserts.dessert-2.price" />
               <MenuItemIngredients i18n="menu.desserts.dessert-2.ingredients" />
               <MenuItemAllergens i18n="menu.desserts.dessert-2.allergens" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemName i18n="menu.desserts.dessert-3.name" />
+              <MenuItemPrice i18n="menu.desserts.dessert-3.price" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-3.allergens" />
+            </MenuItem>
+            <MenuItem>
+              <MenuItemName i18n="menu.desserts.dessert-4.name" />
+              <MenuItemPrice i18n="menu.desserts.dessert-4.price" />
+              <MenuItemAllergens i18n="menu.desserts.dessert-4.allergens" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
@@ -245,6 +257,13 @@ export default function Menu({ className: cn }: Props) {
             <MenuItem>
               <MenuItemName i18n="menu.drinks.wine.rose-1.name" />
               <MenuItemPrice i18n="menu.drinks.wine.rose-1.price" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n="menu.drinks.cocktails" />
+              <MenuItemName i18n="menu.drinks.cocktails.cocktail-1.name" />
+              <MenuItemPrice i18n="menu.drinks.cocktails.cocktail-1.price" />
             </MenuItem>
           </MenuColumn>
           <MenuColumn>
