@@ -21,22 +21,19 @@ export default function Featured() {
             background: "linear-gradient(150deg, rgba(0,0,0,1), rgba(0,0,0,0))",
           }}
         >
-          <span className="text-xl font-bold font-gloryLight">
-            {intl.formatMessage({ id: "menu.weekly" })}
-          </span>
           <span className="text-3xl font-bold font-gloryLight mb-3">
-            {intl.formatMessage({ id: "menu.weekly.weekly-1.name" })}
+            {intl.formatMessage({ id: "menu.featured.feature-1.name" })}
           </span>
           <span className="text-xl font-gloryLight max-w-3xl mb-3">
-            {intl.formatMessage({ id: "menu.weekly.weekly-1.ingredients" })}
+            {intl.formatMessage({ id: "menu.featured.feature-1.ingredients" })}
           </span>
           <span className="text-xl font-gloryLight max-w-3xl mb-6">
-            {intl.formatMessage({ id: "menu.weekly.weekly-1.allergens" })}
+            {intl.formatMessage({ id: "menu.featured.feature-1.allergens" })}
           </span>
           <div className="flex text-2xl font-bold">
             <div className="bg-black/40 px-6 py-2 rounded-2xl">
               <span>
-                {intl.formatMessage({ id: "menu.weekly.weekly-1.price" })}
+                {intl.formatMessage({ id: "menu.featured.feature-1.price" })}
               </span>
             </div>
           </div>

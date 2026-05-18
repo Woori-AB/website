@@ -26,7 +26,7 @@ describe("locales", () => {
     // Assert
     expect(keys.length).toBeGreaterThan(0);
     keys.forEach((key) => {
-      if (key !== "menu.weekly.weekly-1.price") {
+      if (key !== "menu.featured.feature-1.price") {
         locales.forEach((locale) => {
           expect(locale[key]).toEqual(locales[0][key]);
         });
@@ -43,7 +43,7 @@ describe("locales", () => {
     expect(keys.length).toBeGreaterThan(0);
     keys.forEach((key) => {
       const isKeyEmptyInAnyLocale = locales.some(
-        (locale) => locale[key] === ""
+        (locale) => locale[key] === "",
       );
       if (isKeyEmptyInAnyLocale) {
         for (const locale of locales) {

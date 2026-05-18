@@ -14,24 +14,19 @@ exports[`Featured > matches snapshot(s) 1`] = `
         style="background: linear-gradient(150deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));"
       >
         <span
-          class="text-xl font-bold font-gloryLight"
-        >
-          mocked-i18n-'menu.weekly'
-        </span>
-        <span
           class="text-3xl font-bold font-gloryLight mb-3"
         >
-          mocked-i18n-'menu.weekly.weekly-1.name'
+          mocked-i18n-'menu.featured.feature-1.name'
         </span>
         <span
           class="text-xl font-gloryLight max-w-3xl mb-3"
         >
-          mocked-i18n-'menu.weekly.weekly-1.ingredients'
+          mocked-i18n-'menu.featured.feature-1.ingredients'
         </span>
         <span
           class="text-xl font-gloryLight max-w-3xl mb-6"
         >
-          mocked-i18n-'menu.weekly.weekly-1.allergens'
+          mocked-i18n-'menu.featured.feature-1.allergens'
         </span>
         <div
           class="flex text-2xl font-bold"
@@ -40,7 +35,7 @@ exports[`Featured > matches snapshot(s) 1`] = `
             class="bg-black/40 px-6 py-2 rounded-2xl"
           >
             <span>
-              mocked-i18n-'menu.weekly.weekly-1.price'
+              mocked-i18n-'menu.featured.feature-1.price'
             </span>
           </div>
         </div>
