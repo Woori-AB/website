@@ -3,7 +3,7 @@
 exports[`Menu > matches snapshot(s) 1`] = `
 <div>
   <div
-    class="flex flex-col px-4 gap-4 text-center undefined"
+    class="flex flex-col px-4 gap-4 text-center container undefined"
     id="menu"
   >
     <div
@@ -466,34 +466,6 @@ exports[`Menu > matches snapshot(s) 1`] = `
             <h2
               class="flex justify-center mt-2 mb-2"
             >
-              mocked-i18n-'menu.drinks.cocktails'
-            </h2>
-            <span
-              class="flex w-full justify-center text-lg font-bold"
-            >
-              mocked-i18n-'menu.drinks.cocktails.cocktail-1.name'
-            </span>
-            <span
-              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
-            >
-              mocked-i18n-'menu.drinks.cocktails.cocktail-1.extra-info'
-            </span>
-            <span
-              class="flex w-full justify-center"
-            >
-              mocked-i18n-'menu.drinks.cocktails.cocktail-1.price'
-            </span>
-          </article>
-        </div>
-        <div
-          class="flex flex-col gap-2 w-full pt-2 pb-4"
-        >
-          <article
-            class="flex flex-col w-full"
-          >
-            <h2
-              class="flex justify-center mt-2 mb-2"
-            >
               mocked-i18n-'menu.drinks.alcohol-free'
             </h2>
             <span
@@ -553,6 +525,34 @@ exports[`Menu > matches snapshot(s) 1`] = `
               class="flex w-full justify-center"
             >
               mocked-i18n-'menu.drinks.alcohol-free-7.price'
+            </span>
+          </article>
+        </div>
+        <div
+          class="flex flex-col gap-2 w-full pt-2 pb-4"
+        >
+          <article
+            class="flex flex-col w-full"
+          >
+            <h2
+              class="flex justify-center mt-2 mb-2"
+            >
+              mocked-i18n-'menu.drinks.cocktails'
+            </h2>
+            <span
+              class="flex w-full justify-center text-lg font-bold"
+            >
+              mocked-i18n-'menu.drinks.cocktails.cocktail-1.name'
+            </span>
+            <span
+              class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+            >
+              mocked-i18n-'menu.drinks.cocktails.cocktail-1.extra-info'
+            </span>
+            <span
+              class="flex w-full justify-center"
+            >
+              mocked-i18n-'menu.drinks.cocktails.cocktail-1.price'
             </span>
           </article>
         </div>

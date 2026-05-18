@@ -116,7 +116,10 @@ export type Props = {
 
 export default function Menu({ className: cn }: Props) {
   return (
-    <div id="menu" className={`flex flex-col px-4 gap-4 text-center ${cn}`}>
+    <div
+      id="menu"
+      className={`flex flex-col px-4 gap-4 text-center container ${cn}`}
+    >
       <MenuSheet>
         <MenuTitle i18n="menu.starters" />
         <MenuRow cols={1}>
@@ -246,14 +249,6 @@ export default function Menu({ className: cn }: Props) {
           </MenuColumn>
           <MenuColumn>
             <MenuItem>
-              <MenuItemCategory i18n="menu.drinks.cocktails" />
-              <MenuItemName i18n="menu.drinks.cocktails.cocktail-1.name" />
-              <MenuItemExtraInfo i18n="menu.drinks.cocktails.cocktail-1.extra-info" />
-              <MenuItemPrice i18n="menu.drinks.cocktails.cocktail-1.price" />
-            </MenuItem>
-          </MenuColumn>
-          <MenuColumn>
-            <MenuItem>
               <MenuItemCategory i18n="menu.drinks.alcohol-free" />
               <MenuItemName i18n="menu.drinks.alcohol-free-1.name" />
               <MenuItemName i18n="menu.drinks.alcohol-free-2.name" />
@@ -269,6 +264,14 @@ export default function Menu({ className: cn }: Props) {
             <MenuItem>
               <MenuItemName i18n="menu.drinks.alcohol-free-7.name" />
               <MenuItemPrice i18n="menu.drinks.alcohol-free-7.price" />
+            </MenuItem>
+          </MenuColumn>
+          <MenuColumn>
+            <MenuItem>
+              <MenuItemCategory i18n="menu.drinks.cocktails" />
+              <MenuItemName i18n="menu.drinks.cocktails.cocktail-1.name" />
+              <MenuItemExtraInfo i18n="menu.drinks.cocktails.cocktail-1.extra-info" />
+              <MenuItemPrice i18n="menu.drinks.cocktails.cocktail-1.price" />
             </MenuItem>
           </MenuColumn>
         </MenuRow>
