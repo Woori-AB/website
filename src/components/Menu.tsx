@@ -75,15 +75,6 @@ function MenuItemCategory({ i18n }: { i18n: string }) {
   );
 }
 
-function MenuItemSubcategory({ i18n }: { i18n: string }) {
-  const intl = useIntl();
-  return (
-    <h3 className="flex justify-center font-bold">
-      {intl.formatMessage({ id: i18n })}
-    </h3>
-  );
-}
-
 function MenuItem({ children }: { children: ReactNode }) {
   return <article className="flex flex-col w-full">{children}</article>;
 }
