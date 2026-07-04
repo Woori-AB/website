@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Allow: /sv
+Allow: /en
+Allow: /ko
+
+Sitemap: https://wooristockholm.se/sitemap.xml

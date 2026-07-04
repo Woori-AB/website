@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woori - Koreanska rätter i Fredhäll, Kristineberg, Stockholm</title>
+    <meta
+      name="description"
+      content="Woori serverar autentiska koreanska rätter i Fredhäll, Kristineberg, Stockholm. Se vår meny, öppettider, adress och kontaktuppgifter. Välkommen!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Single+Day&family=Zen+Loop:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="author" href="https://wooristockholm.se" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/korean-fried-chicken-original.jpg"
+    />
+    <link rel="preload" as="image" href="/images/beef-bibimbap.jpg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/korean-fried-chicken-sweet-spicy.jpg"
+    />
+    <link rel="preload" as="image" href="/images/bulgogi-sm.jpg" />
+    <meta name="author" content="Woori" />
+    <meta
+      name="keywords"
+      content="Woori,Koreansk restaurang,Bibimbap,Bulgogi,Koreansk friterad kyckling,Soju,Fredhäll,Kristineberg,Stockholm"
+    />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="creator" content="Woori" />
+    <meta name="robots" content="index, follow" />
+    <meta name="category" content="Food &amp; Drink" />
+    <meta
+      property="og:title"
+      content="Woori - Autentisk koreansk restaurang i Stockholm"
+    />
+    <meta
+      property="og:description"
+      content="Woori serverar autentiska koreanska rätter i Fredhäll, Kristineberg, Stockholm. Se vår meny, öppettider, adress och kontaktuppgifter. Välkommen!"
+    />
+    <meta property="og:url" content="https://wooristockholm.se" />
+    <meta property="og:site_name" content="Woori Stockholm" />
+    <meta
+      property="og:image"
+      content="https://wooristockholm.se/opengraph-image.jpg?opengraph-image.41qx6qwqf6-65.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Woori - Autentisk koreansk restaurang i Stockholm"
+    />
+    <meta
+      name="twitter:description"
+      content="Woori serverar autentiska koreanska rätter i Fredhäll, Kristineberg, Stockholm. Se vår meny, öppettider, adress och kontaktuppgifter. Välkommen!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://wooristockholm.se/twitter-image.jpg?twitter-image.41qx6qwqf6-65.jpg"
+    />
+    <meta name="twitter:image:type" content="image/jpeg" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/icon1.png" sizes="17x17" type="image/png" />
+    <link rel="icon" href="/icon2.png" sizes="33x33" type="image/png" />
+    <link rel="icon" href="/icon3.png" sizes="49x49" type="image/png" />
+    <link rel="icon" href="/icon4.png" sizes="168x168" type="image/png" />
+    <link rel="icon" href="/icon5.png" sizes="181x181" type="image/png" />
+    <link rel="icon" href="/icon6.png" sizes="193x193" type="image/png" />
+    <link rel="icon" href="/icon7.png" sizes="256x256" type="image/png" />
+    <link rel="icon" href="/icon8.png" sizes="512x512" type="image/png" />
+    <style>
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        7.5% {
+          opacity: 1;
+        }
+        32.5% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="m-0 p-0 bg-[#fff9ed] text-[#1d1402] font-['Glory']"
+    style="font-weight: 300"
+  >
+    <header
+      class="relative w-full flex flex-col items-center gap-2 overflow-hidden py-6"
+    >
+      <!-- background -->
+      <img
+        src="/images/main-picture-small.jpg"
+        class="absolute inset-0 w-full h-full object-cover -z-20"
+      />
+
+      <!-- gradient overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/00 to-transparent -z-10"
+      ></div>
+
+      <!-- language selector (TOP RIGHT) -->
+      <div class="fixed absolute top-0 right-0 flex gap-2 z-10">
+        <button class="lang-btn" data-lang="sv">
+          <img
+            src="/images/flag/sv.svg"
+            alt="Swedish"
+            class="w-8 h-8 rounded"
+          />
+        </button>
+        <button class="lang-btn" data-lang="en">
+          <img
+            src="/images/flag/en.svg"
+            alt="English"
+            class="w-8 h-8 rounded"
+          />
+        </button>
+        <button class="lang-btn" data-lang="ko">
+          <img src="/images/flag/ko.svg" alt="Korean" class="w-8 h-8 rounded" />
+        </button>
+      </div>
+
+      <!-- Logotype -->
+      <div class="text-white">
+        <span class="text-8xl font-['Zen_Loop'] font-normal">WOORI</span>
+        <span class="text-4xl font-['Single_Day'] relative -top-10">우리</span>
+      </div>
+      <!-- Delivery services -->
+      <div class="flex gap-2">
+        <button
+          class="h-12 flex items-center px-4 justify-center rounded-4xl cursor-pointer text-white select-none bg-[#df1067]/90 hover:bg-[#ed478c]"
+        >
+          <img
+            src="/images/logo/foodora.svg"
+            alt="Foodora"
+            class="h-5 w-auto"
+          />
+        </button>
+        <button
+          class="h-12 flex items-center px-4 justify-center rounded-4xl cursor-pointer text-white select-none bg-[#06c167]/90 hover:bg-[#32d184]"
+        >
+          <img
+            src="/images/logo/uber-eats.svg"
+            alt="Uber Eats"
+            class="h-4 w-auto"
+          />
+        </button>
+        <button
+          class="h-12 flex items-center px-4 justify-center rounded-4xl cursor-pointer text-white select-none bg-[#00c2e8]/90 hover:bg-[#31d5f5]"
+        >
+          <img src="/images/logo/wolt.svg" alt="Wolt" class="h-8 w-auto" />
+        </button>
+      </div>
+      <!-- Social media services -->
+      <div class="flex flex-col gap-2">
+        <button
+          class="h-12 flex gap-2 items-center px-4 rounded-4xl cursor-pointer text-white select-none bg-black/40 hover:bg-black/70"
+        >
+          <div
+            class="h-8 w-8 bg-white mask mask-[url('/images/logo/instagram.svg')] mask-no-repeat mask-contain"
+          ></div>
+          <span class="font-['Glory']" data-i18n="follow-on-instagram"></span>
+        </button>
+        <button
+          class="h-12 flex gap-2 items-center px-4 rounded-4xl cursor-pointer text-white select-none bg-black/40 hover:bg-black/70"
+        >
+          <div
+            class="h-8 w-8 bg-white mask mask-[url('/images/logo/facebook.svg')] mask-no-repeat mask-contain"
+          ></div>
+          <span class="font-['Glory']" data-i18n="follow-on-facebook"></span>
+        </button>
+        <button
+          class="h-12 flex gap-2 items-center px-4 rounded-4xl cursor-pointer text-white select-none bg-black/40 hover:bg-black/70"
+        >
+          <div
+            class="h-8 w-8 bg-white mask mask-[url('/images/logo/tiktok.svg')] mask-no-repeat mask-contain"
+          ></div>
+          <span class="font-['Glory']" data-i18n="follow-on-tiktok"></span>
+        </button>
+      </div>
+    </header>
+    <main class="flex flex-col py-12 gap-6 items-center justify-center">
+      <!-- Welcome text -->
+      <div class="container max-w-xl text-justify">
+        <span data-i18n="welcome" class="text-2xl italic"></span>
+      </div>
+      <!-- Reserve a table notice -->
+      <div class="container max-w-xl">
+        <div
+          id="reserve-a-table"
+          class="text-center border border-l-12 border-r-12 bg-yellow-400/6 p-2 border-yellow-400"
+        >
+          <p
+            class="text-xl"
+            style="font-weight: 500"
+            data-i18n="reserve-table-title"
+          ></p>
+          <p class="text-l" data-i18n="reserve-table-text"></p>
+          <span class="block text-center"
+            ><a
+              href="mailto:kontakt@wooristockholm.se"
+              class="inline-flex gap-1 hover:underline items-center"
+              ><div
+                class="h-5 w-5 bg-black mask mask-[url('/images/icon/email.svg')] mask-no-repeat mask-contain"
+              ></div>
+              kontakt@wooristockholm.se</a
+            ></span
+          >
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div
+        class="relative flex justify-center min-h-84 lg:aspect-3/1 w-full"
+        style="max-height: 420px"
+      >
+        <div id="carousel" class="relative select-none w-full overflow-hidden">
+          <img
+            alt="Slide 1"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+            src="/images/korean-fried-chicken-original.jpg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+              animation: 20s ease 0s infinite normal none running fade;
+            "
+          /><img
+            alt="Slide 2"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+            src="/images/beef-bibimbap.jpg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+              animation: 20s ease 5s infinite normal none running fade;
+            "
+          /><img
+            alt="Slide 3"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+            src="/images/korean-fried-chicken-sweet-spicy.jpg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+              animation: 20s ease 10s infinite normal none running fade;
+            "
+          /><img
+            alt="Slide 4"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover w-full h-full absolute opacity-0 ease-in-out fill-both"
+            src="/images/bulgogi-sm.jpg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+              animation: 20s ease 15s infinite normal none running fade;
+            "
+          />
+        </div>
+      </div>
+      <!-- Featured item -->
+      <div class="px-6">
+        <div
+          class="relative container max-w-5xl rounded rounded-2xl text-white"
+        >
+          <!-- Image -->
+          <img
+            src="/images/woori-table.jpg"
+            class="absolute rounded rounded-2xl inset-0 w-full h-full object-cover -z-20"
+          />
+          <!-- Gradient overlay -->
+          <div
+            class="relative flex flex-col justify-center rounded-2xl py-6 px-8"
+            style="
+              background: linear-gradient(
+                150deg,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0)
+              );
+            "
+          >
+            <span class="text-3xl mb-3" data-i18n="menu.featured.name"></span
+            ><span
+              class="text-xl max-w-3xl mb-3"
+              data-i18n="menu.featured.ingredients"
+            ></span
+            ><span
+              class="text-xl max-w-3xl mb-6"
+              data-i18n="menu.featured.allergens"
+            ></span>
+            <div class="flex text-2xl">
+              <div class="bg-black/40 px-6 py-2 rounded-2xl">
+                <span data-i18n="menu.featured.price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu -->
+      <div class="relative container max-w-5xl bg-black/4">
+        <!-- Starters menu -->
+        <div class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4">
+          <h2
+            class="flex justify-center mb-2 text-3xl"
+            data-i18n="menu.starters"
+          ></h2>
+          <div
+            class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1"
+          >
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.starters.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.1.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.starters.1.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.1.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.starters.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.2.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.starters.2.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.2.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.starters.3.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.3.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.starters.3.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.starters.3.allergens"
+                ></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main menu -->
+      <div class="relative container max-w-5xl bg-black/4">
+        <div class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4">
+          <h2
+            class="flex justify-center mb-2 text-3xl"
+            data-i18n="menu.mains"
+          ></h2>
+          <div
+            class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+          >
+            <!-- Left -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.mains.bibimbap"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.mains.bibimbap.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.bibimbap.1.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.mains.bibimbap.1.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.bibimbap.1.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.mains.bibimbap.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.bibimbap.2.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.mains.bibimbap.2.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.bibimbap.2.allergens"
+                ></span>
+              </article>
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.mains.korean-fried-chicken"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.mains.korean-fried-chicken.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.1.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.mains.korean-fried-chicken.1.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.1.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.mains.korean-fried-chicken.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.2.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.mains.korean-fried-chicken.2.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.2.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.mains.korean-fried-chicken.3.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.3.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.mains.korean-fried-chicken.3.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.mains.korean-fried-chicken.3.allergens"
+                ></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts menu -->
+      <div class="relative container max-w-5xl bg-black/4">
+        <div class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4">
+          <h2
+            class="flex justify-center mb-2 text-3xl"
+            data-i18n="menu.desserts"
+          ></h2>
+          <div
+            class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+          >
+            <!-- Left -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.desserts.bibimbap"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.desserts.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.1.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.desserts.1.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.1.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.desserts.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.2.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.desserts.2.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.2.allergens"
+                ></span>
+              </article>
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.desserts.korean-fried-chicken"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.desserts.3.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.3.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.desserts.3.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.3.allergens"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.desserts.4.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.4.price"
+                ></span>
+                <span
+                  class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4"
+                  data-i18n="menu.desserts.4.ingredients"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.desserts.4.allergens"
+                ></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beverages menu -->
+      <div class="relative container max-w-5xl bg-black/4">
+        <div class="flex flex-col gap w-full py-2 bg-black/4 dark:bg-white/4">
+          <h2
+            class="flex justify-center mb-2 text-3xl"
+            data-i18n="menu.beverages"
+          ></h2>
+          <div
+            class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2"
+          >
+            <!-- Beer menu -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.beverages.beer"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.beer.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.beer.1.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.beer.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.beer.2.price"
+                ></span>
+              </article>
+            </div>
+            <!-- Soju menu -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.beverages.soju"
+              ></h2>
+              <span
+                class="flex w-full justify-center text-md"
+                data-i18n="menu.beverages.soju.subtitle"
+              ></span>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.soju.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.soju.1.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.soju.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.soju.2.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.soju.3.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.soju.3.price"
+                ></span>
+              </article>
+            </div>
+            <!-- Alcohol free menu -->
+            <div class="flex flex-col gap-0 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.beverages.alcohol-free"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center hidden"
+                  data-i18n="menu.beverages.alcohol-free.1.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.2.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center hidden"
+                  data-i18n="menu.beverages.alcohol-free.2.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.3.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center hidden"
+                  data-i18n="menu.beverages.alcohol-free.3.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.4.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center hidden"
+                  data-i18n="menu.beverages.alcohol-free.4.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.5.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.alcohol-free.5.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.6.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.alcohol-free.6.price"
+                ></span>
+              </article>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.alcohol-free.7.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.alcohol-free.7.price"
+                ></span>
+              </article>
+            </div>
+            <!-- Cocktails menu -->
+            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+              <h2
+                class="flex justify-center mb-2 text-3xl"
+                data-i18n="menu.beverages.cocktails"
+              ></h2>
+              <article class="flex flex-col w-full">
+                <span
+                  class="flex w-full justify-center text-lg"
+                  style="font-weight: 500"
+                  data-i18n="menu.beverages.cocktails.1.name"
+                ></span>
+                <span
+                  class="flex w-full justify-center"
+                  data-i18n="menu.beverages.cocktails.1.price"
+                ></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      id="footer"
+      class="flex flex-col items-center justify-center pt-12 pb-4 bg-black/4 px-8"
+    >
+      <div class="mb-6">
+        <div
+          class="container max-w-5xl grid md:grid-cols-2 xs:grid-cols-2 gap-4 items-stretch"
+        >
+          <div id="open-hours" class="flex flex-col items-center text-center">
+            <h2 class="text-3xl" data-i18n="opening-hours"></h2>
+            <span data-i18n="opening-hours.monday"></span>
+            <span data-i18n="opening-hours.tuesday"></span
+            ><span data-i18n="opening-hours.wednesday"></span
+            ><span data-i18n="opening-hours.thursday"></span
+            ><span data-i18n="opening-hours.friday"></span>
+            <span data-i18n="opening-hours.saturday"></span
+            ><span data-i18n="opening-hours.sunday"></span>
+          </div>
+          <div
+            id="contact-details"
+            class="flex flex-col items-center text-center gap-4"
+          >
+            <div class="flex flex-col items-center text-center">
+              <h2 class="text-3xl" data-i18n="visit-us"></h2>
+              <span
+                ><a
+                  href="https://maps.app.goo.gl/9Ne5EDEXKdsdvig7A"
+                  class="flex gap-1 hover:underline items-start text-left"
+                  ><div
+                    class="h-5 w-5 bg-black mask mask-[url('/images/icon/location.svg')] mask-no-repeat mask-contain"
+                  ></div>
+                  Stagneliusvägen 47, 112 57, Stockholm</a
+                ></span
+              >
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <h2 class="text-3xl" data-i18n="contact"></h2>
+              <span
+                ><a
+                  href="tel:+4686566675"
+                  class="flex gap-1 hover:underline items-center"
+                  ><div
+                    class="h-5 w-5 bg-black mask mask-[url('/images/icon/phone.svg')] mask-no-repeat mask-contain"
+                  ></div>
+                  08-656 66 75</a
+                ></span
+              ><span
+                ><a
+                  href="mailto:kontakt@wooristockholm.se"
+                  class="flex gap-1 hover:underline items-center"
+                  ><div
+                    class="h-5 w-5 bg-black mask mask-[url('/images/icon/email.svg')] mask-no-repeat mask-contain"
+                  ></div>
+                  kontakt@wooristockholm.se</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>Copyright © 2025-2026 Woori AB</span>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
