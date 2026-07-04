@@ -69,6 +69,12 @@
     <link rel="preload" as="image" href="/images/bulgogi-sm.jpg" />
 
     <style>
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
       @keyframes fade {
         0% { opacity: 0; }
         7.5% { opacity: 1; }
@@ -528,7 +534,7 @@
       </div>
 
       <div class="text-white text-center pt-4">
-        <h1>
+        <h1 class="animate-[fadeIn_0.1s_ease-in_forwards]">
           <span class="text-8xl font-['Zen_Loop'] font-normal">WOORI</span>
           <span class="text-4xl font-['Single_Day'] relative -top-10">우리</span>
         </h1>
