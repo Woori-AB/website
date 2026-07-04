@@ -1,42 +1,30 @@
-# Woori website
+# Woori Stockholm Website
 
-## Developer setup
+A responsive, multilingual static website for **Woori**, a Korean restaurant located in Fredhäll, Kristineberg, Stockholm.
 
-The easiest way to get started is to use the development container provided with this project.
+**Live website:** https://wooristockholm.se
 
-1. Install [**Visual Studio Code**](https://code.visualstudio.com/) and the [**Dev Containers**](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
-2. Clone and open this repository with [**Visual Studio Code**](https://code.visualstudio.com/).
-3. Start the **Dev container** by clicking **"Reopen in container"** when prompted (or choose `Dev Containers: Reopen in Container` via the `F1` menu)
-4. For Git authentication within your Dev Container, enable your `ssh-agent` service on your host machine by:
-   1. **On Windows** - Open Powershell as Administrator:
-      - `Get-Service ssh-agent`
-      - `Set-Service -Name ssh-agent -StartupType Automatic`
-      - `Start-Service ssh-agent`
-      - `ssh-add $env:USERPROFILE\.ssh\id_ed25519`
+## Overview
 
-### Run end-to-end tests with Playwright in the Dev Container
+This repository contains the source code for Woori Stockholm’s public website, built with HTML, CSS, and JavaScript. Tailwind CSS and Google Fonts are loaded via CDN to keep the project lightweight and easy to maintain.
 
-```
-$ npx playwright install --with-deps
-$ npm run test:e2e
-```
+---
 
-## Quick script reference
+## Technologies
 
-| Npm script                   | Description                                                                                                     |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `npm run dev`                | Starts a local development server at port `3000`. Access it at [`http://localhost:3000`](http://localhost:3000) |
-| `npm run lint`               | Checks the source code for coding errors and enforces style rules                                               |
-| `npm run test`               | Runs automated tests to verify that the source code produces expected results                                   |
-| `npm run test:unit:coverage` | Runs the automated tests and generates a code coverage report to check how much of the code is tested           |
-| `npm run build`              | Compiles the source code into static files that are ready for deployment or publishing                          |
-| `npm run start`              | Starts the website using the compiled static files (must run `npm run build` first).                            |
+- HTML5
+- Tailwind CSS (CDN)
+- Google Fonts (CDN)
+- Vanilla JavaScript
 
-_See [`package.json`](package.json) for complete list of available npm scripts._
+No build tools or package manager are required.
 
-## Debugging
+## License
 
-Use the **Run and Debug** panel in [**Visual Studio Code**](https://code.visualstudio.com/) to
+This project is licensed under the **MIT License**.
 
-- Start the local development server with debugger attached.
-- Run tests with the debugger attached.
+Copyright © Woori AB
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction...
+
+See the full [LICENSE](LICENSE) file for details.
