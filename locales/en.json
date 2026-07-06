@@ -84,8 +84,6 @@
   "menu.beverages.alcohol-free.5.price": "20kr",
   "menu.beverages.alcohol-free.6.name": "Mariestads Alcohol-Free, 33cl",
   "menu.beverages.alcohol-free.6.price": "59kr",
-  "menu.beverages.alcohol-free.7.name": "Mojito Alcohol-Free",
-  "menu.beverages.alcohol-free.7.price": "89kr",
   "menu.beverages.beer": "Beer",
   "menu.beverages.beer.1.name": "Terra, 33cl, 4.6%",
   "menu.beverages.beer.1.price": "89kr",
@@ -102,5 +100,8 @@
   "menu.beverages.cocktails": "Cocktails",
   "menu.beverages.cocktails.1.name": "Somaek for two",
   "menu.beverages.cocktails.1.extra-info": "(1st Terra and 2st Soju shots)",
-  "menu.beverages.cocktails.1.price": "199kr"
+  "menu.beverages.cocktails.1.price": "199kr",
+  "menu.beverages.mocktails": "Mocktails",
+  "menu.beverages.mocktails.1.name": "Mojito Alcohol-Free",
+  "menu.beverages.mocktails.1.price": "89kr"
 }
