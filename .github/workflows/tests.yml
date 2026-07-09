@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  validate-i18n:
+  tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +17,5 @@ jobs:
         with:
           node-version: 24
 
-      - name: Validate translations
+      - name: Tests
         run: node tests.mjs
