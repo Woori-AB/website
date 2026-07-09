@@ -19,6 +19,12 @@ This repository contains the source code for Woori Stockholm’s public website,
 
 No build tools or package manager are required.
 
+## Tests
+
+```sh
+$ node tests.mjs
+```
+
 ## License
 
 This project is licensed under the **MIT License**.

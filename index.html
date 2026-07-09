@@ -576,7 +576,7 @@
 
     <main class="flex flex-col py-12 gap-6 items-center justify-center">
       <div class="container max-w-xl text-justify px-6">
-        <span data-i18n="welcome" class="text-2xl italic">Välkommen till Woori, en restaurang med koreanska smaker. Namnet \"Woori\" betyder \"vi\" på koreanska, och här är alla en del av vår gemenskap. Njut av våra koreanska rätter!</span>
+        <span data-i18n="welcome" class="text-2xl italic">Välkommen till Woori, en restaurang med koreanska smaker. Namnet "Woori" betyder "vi" på koreanska, och här är alla en del av vår gemenskap. Njut av våra koreanska rätter!</span>
       </div>
 
       <div class="container max-w-xl px-6">
@@ -611,7 +611,11 @@
             <span class="text-lg mb-4" data-i18n="menu.featured.allergens">(Allergener: Gluten, soja, sesam)</span>
             <div class="flex text-lg">
               <div class="bg-black/40 px-4 py-2 rounded-2xl">
-                <span data-i18n="menu.featured.price">Lunch 159 kr / Middag 179kr</span>
+                <span data-i18n="menu.featured.lunch">Lunch</span>
+                <span data-i18n="menu.featured.lunch.price">159kr</span>
+                <span>/</span>
+                <span data-i18n="menu.featured.dinner">Middag</span>
+                <span data-i18n="menu.featured.dinner.price">179kr</span>
               </div>
             </div>
           </div>
@@ -817,13 +821,27 @@
       <div class="container max-w-5xl grid md:grid-cols-2 gap-4 mb-6">
         <div id="opening-hours" class="flex flex-col items-center text-center">
           <h2 class="text-3xl" data-i18n="opening-hours">Öppettider</h2>
-          <span data-i18n="opening-hours.monday">Måndag: Stängt</span>
-          <span data-i18n="opening-hours.tuesday">Tisdag: 12-15 & 16-20</span>
-          <span data-i18n="opening-hours.wednesday">Onsdag: 11-15 & 16-20</span>
-          <span data-i18n="opening-hours.thursday">Torsdag: 11-15 & 16-20</span>
-          <span data-i18n="opening-hours.friday">Fredag: 11-15 & 16-20</span>
-          <span data-i18n="opening-hours.saturday">Lördag: 11-20</span>
-          <span data-i18n="opening-hours.sunday">Söndag: Stängt</span>
+          <div>
+            <span data-i18n="opening-hours.monday">Måndag</span>: <span data-i18n="opening-hours.monday.hours">-</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.tuesday">Tisdag</span>: <span data-i18n="opening-hours.tuesday.hours">12-15 & 16-20</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.wednesday">Onsdag</span>: <span data-i18n="opening-hours.wednesday.hours">11-15 & 16-20</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.thursday">Torsdag</span>: <span data-i18n="opening-hours.thursday.hours">11-15 & 16-20</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.friday">Fredag</span>: <span data-i18n="opening-hours.friday.hours">11-15 & 16-20</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.saturday">Lördag</span>: <span data-i18n="opening-hours.saturday.hours">11-20</span>
+          </div>
+          <div>
+            <span data-i18n="opening-hours.sunday">Söndag</span>: <span data-i18n="opening-hours.sunday.hours">-</span>
+          </div>
         </div>
 
         <div class="flex flex-col items-center text-center gap-4">
