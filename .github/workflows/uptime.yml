@@ -1,0 +1,17 @@
+name: Uptime
+
+on:
+  schedule:
+    - cron: "*/15 7-21 * * *"
+  workflow_dispatch:
+
+jobs:
+  check-site:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check website availability
+        run: |
+          curl --fail --silent --location --show-error https://wooristockholm.se/ | grep -q "Copyright.*Woori AB"
+          curl --fail --silent --location --show-error https://wooristockholm.se/sv | grep -q "Copyright.*Woori AB"
+          curl --fail --silent --location --show-error https://wooristockholm.se/en | grep -q "Copyright.*Woori AB"
+          curl --fail --silent --location --show-error https://wooristockholm.se/ko | grep -q "Copyright.*Woori AB"
