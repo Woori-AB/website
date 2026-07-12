@@ -577,7 +577,7 @@
 
     <main class="flex flex-col py-12 gap-6 items-center justify-center">
       <div class="container max-w-xl text-justify px-6">
-        <span data-i18n="welcome" class="text-2xl italic">Välkommen till Woori, en restaurang med koreanska smaker. Namnet "Woori" betyder "vi" på koreanska, och här är alla en del av vår gemenskap. Njut av våra koreanska rätter!</span>
+        <span id="welcome-text" data-i18n="welcome" class="text-2xl italic">Välkommen till Woori, en restaurang med koreanska smaker. Namnet "Woori" betyder "vi" på koreanska, och här är alla en del av vår gemenskap. Njut av våra koreanska rätter!</span>
       </div>
 
       <div class="container max-w-xl px-6">
@@ -602,215 +602,217 @@
         </div>
       </div>
 
-      <div class="px-6">
-        <!-- Featured menu item -->
-        <div id="featured" class="relative container max-w-5xl rounded-2xl text-white">
-          <img src="/images/woori-table.jpg" class="absolute inset-0 w-full h-full object-cover -z-20 rounded-2xl" alt="Table set with a selection of dishes served for dining" />
-          <div class="relative flex flex-col justify-center py-6 px-8 rounded-2xl" style="background: linear-gradient(150deg, rgba(0,0,0,1), rgba(0,0,0,0))">
-            <span class="text-3xl mb-3" data-i18n="menu.featured.name">Woori Husman</span>
-            <span class="text-lg" data-i18n="menu.featured.ingredients">Jeyuk-bokkeum (kryddstekt fläskkött), kimchi, ssamsallad med ssamjang, böngroddar och ris</span>
-            <span class="text-lg mb-4" data-i18n="menu.featured.allergens">(Allergener: Gluten, soja, sesam)</span>
-            <div class="flex text-lg">
-              <div class="bg-black/40 px-4 py-2 rounded-2xl">
-                <span data-i18n="menu.featured.lunch">Lunch</span>
-                <span data-i18n="menu.featured.lunch.price">159kr</span>
-                <span>/</span>
-                <span data-i18n="menu.featured.dinner">Middag</span>
-                <span data-i18n="menu.featured.dinner.price">179kr</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Menu -->
-      <div id="menu" class="relative container max-w-5xl bg-black/4">
+      <div id="menu" class="flex flex-col gap-6 items-center justify-center">
+        <div class="px-6">
+          <!-- Featured menu item -->
+          <div id="featured" class="relative container max-w-5xl rounded-2xl text-white">
+            <img src="/images/woori-table.jpg" class="absolute inset-0 w-full h-full object-cover -z-20 rounded-2xl" alt="Table set with a selection of dishes served for dining" />
+            <div class="relative flex flex-col justify-center py-6 px-8 rounded-2xl" style="background: linear-gradient(150deg, rgba(0,0,0,1), rgba(0,0,0,0))">
+              <span class="text-3xl mb-3" data-i18n="menu.featured.name">Woori Husman</span>
+              <span class="text-lg" data-i18n="menu.featured.ingredients">Jeyuk-bokkeum (kryddstekt fläskkött), kimchi, ssamsallad med ssamjang, böngroddar och ris</span>
+              <span class="text-lg mb-4" data-i18n="menu.featured.allergens">(Allergener: Gluten, soja, sesam)</span>
+              <div class="flex text-lg">
+                <div class="bg-black/40 px-4 py-2 rounded-2xl">
+                  <span data-i18n="menu.featured.lunch">Lunch</span>
+                  <span data-i18n="menu.featured.lunch.price">159kr</span>
+                  <span>/</span>
+                  <span data-i18n="menu.featured.dinner">Middag</span>
+                  <span data-i18n="menu.featured.dinner.price">179kr</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Starters menu -->
-        <div id="starters-menu" class="flex flex-col gap w-full py-2">
-          <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.starters">Förrätter</h2>
-          <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1">
-            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.1.name">Sjögräsrullar</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.1.price">79kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.1.ingredients">Heta sjögräsrullar fyllda med glasnudlar, chili och morötter</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.1.allergens">(Allergener: Gluten, soja)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.2.name">Krispiga kimchi dumplings</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.2.price">89kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.2.ingredients">Frasiga dumplings med smakrik fyllning av kimchi och fläsk serverat med soja</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.2.allergens">(Allergener: Gluten, fisk, skaldjur, soja)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.3.name">Calamares</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.3.price">79kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.3.ingredients">Friterade bläckfiskringar med aioli</span>
-                <span class="flex w-full justify-center" data-i18n="menu.starters.3.allergens">(Allergener: Gluten, skaldjur, citrus)</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Main menu -->
-      <div id="main-menu" class="relative container max-w-5xl bg-black/4">
-        <div class="flex flex-col gap w-full py-2">
-          <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains">Huvudrätter</h2>
-          <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
-            <div id="bibimbap-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains.bibimbap">Bibimbap</h2>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.bibimbap.1.name">Biff bibimbap</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.1.price">159kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.bibimbap.1.ingredients">Ris, sojamarinerad nötfärs, stekta morötter, zucchini, sockerärtor, gurkkimchi, champinjoner, ostronsås, sunny side up ägg, gochujangsås, sesamolja, sesamfrö</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.1.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg, fisk)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.bibimbap.2.name">Svamp bibimbap</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.2.price">149kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.bibimbap.2.ingredients">Ris, stekta champinjoner, stekta morötter, zucchini, sockerärtor, gurkkimchi, sunny side up ägg, gochujangsås, sesamolja, sesamfrö</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.2.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg)</span>
-              </article>
-            </div>
-            <div id="korean-fried-chicken-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains.korean-fried-chicken">Koreansk friterad kyckling</h2>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.1.name">Sweet spicy</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.1.price">159kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.1.ingredients">Kycklinglår (200g), vetemjöl, maizena, ägg, vitlök, svartpeppar, gochujang, chilipulver, sojasås, nötter, ris</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.1.allergens">(Allergener: Soja, gluten, ägg, nötter)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.2.name">Honey soy</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.2.price">159kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.2.ingredients">Kycklinglår (200g), vetemjöl, maizena, ägg, vitlök, svartpeppar, sojasås, honung, ostronsås, vinäger, sesam, ris</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.2.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.3.name">Barnmeny</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.3.price">99kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.3.ingredients">2st Kycklingfile med ris och sweet chilisås, vetemjöl, ägg, vitlök</span>
-                <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.3.allergens">(Allergener: Gluten, ägg)</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desserts menu -->
-      <div id="desserts-menu" class="relative container max-w-5xl bg-black/4">
-        <div class="flex flex-col gap w-full py-2">
-          <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.desserts">Efterrätter</h2>
-          <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
-            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.1.name">Hoppang</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.1.price">35kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.desserts.1.ingredients">Ångkokt bröd med adzuki-bönpasta</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.1.allergens">(Allergener: Gluten, soja)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.2.name">Corn dog</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.2.price">49kr</span>
-                <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.desserts.2.ingredients">Friterad varmkorv som rullats i vetemjöl och serveras på pinne</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.2.allergens">(Allergener: Gluten, soja)</span>
-              </article>
-            </div>
-            <div class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.3.name">Melona Mango</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.3.price">30kr</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.3.allergens">(Allergener: Gluten, mjölk, havre)</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.4.name">Melona Melon</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.4.price">30kr</span>
-                <span class="flex w-full justify-center" data-i18n="menu.desserts.4.allergens">(Allergener: Gluten, mjölk, havre)</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Beverages menu -->
-      <div id="beverages-menu" class="relative container max-w-5xl bg-black/4">
-        <div class="flex flex-col gap w-full py-2">
-          <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages">Dryckesmeny</h2>
-          <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
-            <!-- Beer menu -->
-            <div id="beer-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.beer">Öl</h2>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.1.name">Terra, 33cl, 4.6%</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.1.price">89kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.2.name">Mariestads Export, 50cl, 5.3%</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.2.price">79kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.3.name">Mariestads Alkoholfri, 33cl</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.3.price">59kr</span>
-              </article>
-            </div>
-            <!-- Soju menu -->
-            <div id="soju-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-              <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.soju">Soju</h2>
-              <span class="flex w-full justify-center text-md" data-i18n="menu.beverages.soju.subtitle">Shot (4cl) / Flaska (35cl)</span>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.1.name">Jinro Chamisul Fresh, 16%</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.1.price">59kr / 209kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.2.name">Jinro Chamisul Green Grape, 13%</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.2.price">55kr / 199kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.3.name">Jinro Peach Soju, 13%</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.3.price">55kr / 199kr</span>
-              </article>
-            </div>
-            <!-- Alcohol free menu -->
-            <div id="alcohol-free-menu" class="flex flex-col gap-0 w-full pt-2 pb-4">
-              <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.alcohol-free">Lättdryck</h2>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.1.name">Coca-Cola, 25cl</span>
-                <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.1.price">20kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.2.name">Coca-Cola Zero, 25cl</span>
-                <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.2.price">20kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.3.name">Ramlösa Naturell, 25cl</span>
-                <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.3.price">20kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.4.name">Ramlösa Citrus, 25cl</span>
-                <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.4.price">20kr</span>
-              </article>
-              <article class="flex flex-col w-full">
-                <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.5.name">Fanta, 25cl</span>
-                <span class="flex w-full justify-center" data-i18n="menu.beverages.alcohol-free.5.price">20kr</span>
-              </article>
-            </div>
-            <!-- Cocktails menu -->
-            <div>
-              <div id="cocktails-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.cocktails">Cocktails</h2>
+        <div id="starters-menu" class="relative container max-w-5xl bg-black/4">
+          <div class="flex flex-col gap w-full py-2">
+            <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.starters">Förrätter</h2>
+            <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-1">
+              <div class="flex flex-col gap-2 w-full pt-2 pb-4">
                 <article class="flex flex-col w-full">
-                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.cocktails.1.name">Somaek för två</span>
-                  <span class="flex w-full justify-center text-lg" data-i18n="menu.beverages.cocktails.1.extra-info">(1st Terra och 2st Soju shots)</span>
-                  <span class="flex w-full justify-center" data-i18n="menu.beverages.cocktails.1.price">199kr</span>
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.1.name">Sjögräsrullar</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.1.price">79kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.1.ingredients">Heta sjögräsrullar fyllda med glasnudlar, chili och morötter</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.1.allergens">(Allergener: Gluten, soja)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.2.name">Krispiga kimchi dumplings</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.2.price">89kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.2.ingredients">Frasiga dumplings med smakrik fyllning av kimchi och fläsk serverat med soja</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.2.allergens">(Allergener: Gluten, fisk, skaldjur, soja)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.starters.3.name">Calamares</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.3.price">79kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.starters.3.ingredients">Friterade bläckfiskringar med aioli</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.starters.3.allergens">(Allergener: Gluten, skaldjur, citrus)</span>
                 </article>
               </div>
-              <!-- Mocktails menu -->
-              <div id="mocktails-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
-                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.mocktails">Mocktails</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main menu -->
+        <div id="main-menu" class="relative container max-w-5xl bg-black/4">
+          <div class="flex flex-col gap w-full py-2">
+            <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains">Huvudrätter</h2>
+            <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
+              <div id="bibimbap-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains.bibimbap">Bibimbap</h2>
                 <article class="flex flex-col w-full">
-                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.mocktails.1.name">Mojito Alkoholfri</span>
-                  <span class="flex w-full justify-center" data-i18n="menu.beverages.mocktails.1.price">89kr</span>
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.bibimbap.1.name">Biff bibimbap</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.1.price">159kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.bibimbap.1.ingredients">Ris, sojamarinerad nötfärs, stekta morötter, zucchini, sockerärtor, gurkkimchi, champinjoner, ostronsås, sunny side up ägg, gochujangsås, sesamolja, sesamfrö</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.1.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg, fisk)</span>
                 </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.bibimbap.2.name">Svamp bibimbap</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.2.price">149kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.bibimbap.2.ingredients">Ris, stekta champinjoner, stekta morötter, zucchini, sockerärtor, gurkkimchi, sunny side up ägg, gochujangsås, sesamolja, sesamfrö</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.bibimbap.2.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg)</span>
+                </article>
+              </div>
+              <div id="korean-fried-chicken-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.mains.korean-fried-chicken">Koreansk friterad kyckling</h2>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.1.name">Sweet spicy</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.1.price">159kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.1.ingredients">Kycklinglår (200g), vetemjöl, maizena, ägg, vitlök, svartpeppar, gochujang, chilipulver, sojasås, nötter, ris</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.1.allergens">(Allergener: Soja, gluten, ägg, nötter)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.2.name">Honey soy</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.2.price">159kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.2.ingredients">Kycklinglår (200g), vetemjöl, maizena, ägg, vitlök, svartpeppar, sojasås, honung, ostronsås, vinäger, sesam, ris</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.2.allergens">(Allergener: Soja, gluten, sulfiter, sesam, ägg)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.mains.korean-fried-chicken.3.name">Barnmeny</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.3.price">99kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.mains.korean-fried-chicken.3.ingredients">2st Kycklingfile med ris och sweet chilisås, vetemjöl, ägg, vitlök</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.mains.korean-fried-chicken.3.allergens">(Allergener: Gluten, ägg)</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts menu -->
+        <div id="desserts-menu" class="relative container max-w-5xl bg-black/4">
+          <div class="flex flex-col gap w-full py-2">
+            <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.desserts">Efterrätter</h2>
+            <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
+              <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.1.name">Hoppang</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.1.price">35kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.desserts.1.ingredients">Ångkokt bröd med adzuki-bönpasta</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.1.allergens">(Allergener: Gluten, soja)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.2.name">Corn dog</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.2.price">49kr</span>
+                  <span class="flex w-full justify-center text-justify [hyphens:auto] [text-align-last:center] px-4" data-i18n="menu.desserts.2.ingredients">Friterad varmkorv som rullats i vetemjöl och serveras på pinne</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.2.allergens">(Allergener: Gluten, soja)</span>
+                </article>
+              </div>
+              <div class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.3.name">Melona Mango</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.3.price">30kr</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.3.allergens">(Allergener: Gluten, mjölk, havre)</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.desserts.4.name">Melona Melon</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.4.price">30kr</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.desserts.4.allergens">(Allergener: Gluten, mjölk, havre)</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages menu -->
+        <div id="beverages-menu" class="relative container max-w-5xl bg-black/4">
+          <div class="flex flex-col gap w-full py-2">
+            <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages">Dryckesmeny</h2>
+            <div class="grid grid-cols-1 gap-x-6 px-4 justify-items-center md:grid-cols-2">
+              <!-- Beer menu -->
+              <div id="beer-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.beer">Öl</h2>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.1.name">Terra, 33cl, 4.6%</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.1.price">89kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.2.name">Mariestads Export, 50cl, 5.3%</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.2.price">79kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.beer.3.name">Mariestads Alkoholfri, 33cl</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.beer.3.price">59kr</span>
+                </article>
+              </div>
+              <!-- Soju menu -->
+              <div id="soju-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.soju">Soju</h2>
+                <span class="flex w-full justify-center text-md" data-i18n="menu.beverages.soju.subtitle">Shot (4cl) / Flaska (35cl)</span>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.1.name">Jinro Chamisul Fresh, 16%</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.1.price">59kr / 209kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.2.name">Jinro Chamisul Green Grape, 13%</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.2.price">55kr / 199kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.soju.3.name">Jinro Peach Soju, 13%</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.soju.3.price">55kr / 199kr</span>
+                </article>
+              </div>
+              <!-- Alcohol free menu -->
+              <div id="alcohol-free-menu" class="flex flex-col gap-0 w-full pt-2 pb-4">
+                <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.alcohol-free">Lättdryck</h2>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.1.name">Coca-Cola, 25cl</span>
+                  <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.1.price">20kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.2.name">Coca-Cola Zero, 25cl</span>
+                  <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.2.price">20kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.3.name">Ramlösa Naturell, 25cl</span>
+                  <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.3.price">20kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.4.name">Ramlösa Citrus, 25cl</span>
+                  <span class="flex w-full justify-center hidden" data-i18n="menu.beverages.alcohol-free.4.price">20kr</span>
+                </article>
+                <article class="flex flex-col w-full">
+                  <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.alcohol-free.5.name">Fanta, 25cl</span>
+                  <span class="flex w-full justify-center" data-i18n="menu.beverages.alcohol-free.5.price">20kr</span>
+                </article>
+              </div>
+              <!-- Cocktails menu -->
+              <div>
+                <div id="cocktails-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                  <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.cocktails">Cocktails</h2>
+                  <article class="flex flex-col w-full">
+                    <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.cocktails.1.name">Somaek för två</span>
+                    <span class="flex w-full justify-center text-lg" data-i18n="menu.beverages.cocktails.1.extra-info">(1st Terra och 2st Soju shots)</span>
+                    <span class="flex w-full justify-center" data-i18n="menu.beverages.cocktails.1.price">199kr</span>
+                  </article>
+                </div>
+                <!-- Mocktails menu -->
+                <div id="mocktails-menu" class="flex flex-col gap-2 w-full pt-2 pb-4">
+                  <h2 class="flex justify-center mb-2 text-3xl" data-i18n="menu.beverages.mocktails">Mocktails</h2>
+                  <article class="flex flex-col w-full">
+                    <span class="flex w-full justify-center text-lg" style="font-weight: 500" data-i18n="menu.beverages.mocktails.1.name">Mojito Alkoholfri</span>
+                    <span class="flex w-full justify-center" data-i18n="menu.beverages.mocktails.1.price">89kr</span>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
