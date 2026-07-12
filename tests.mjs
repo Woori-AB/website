@@ -123,18 +123,11 @@ for (const match of html.matchAll(regex)) {
 // 3. Verify selected keys and patterns are identical in every locale
 // ---------------------------------------------------------------------
 
-const identicalKeys = [
-    "opening-hours.monday.hours",
-    "opening-hours.tuesday.hours",
-    "opening-hours.wednesday.hours",
-    "opening-hours.thursday.hours",
-    "opening-hours.friday.hours",
-    "opening-hours.saturday.hours",
-    "opening-hours.sunday.hours",
-];
+const identicalKeys = [];
 
 const identicalKeyPatterns = [
     /\.price$/,
+    /\.hours$/,
 ];
 
 function assertIdenticalKey(key) {
